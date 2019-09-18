@@ -1,0 +1,694 @@
+[{
+    "l_titles": ["手机", "充值"],
+    "r_l_tags": ["潮3C<i></i>", "手机<i></i>", "数码<i></i>", "以旧换新<i></i>", "手机充值<i></i>", "延保服务<i></i>", "智享生活<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 手机通讯 ",
+        "r_l_contents": ["手机", "对讲机", {
+            "className": "hot",
+            "text": "iPhone"
+        }, "华为", "小米", "荣耀", "三星", "OPPO", "vivo"]
+    }, {
+        "r_l_title": " 运营商 ",
+        "r_l_contents": ["中国移动", "中国联通"]
+    }, {
+        "r_l_title": " 手机配件 ",
+        "r_l_contents": ["手机壳", "贴膜", "手机存储卡", {
+            "className": "hot",
+            "text": "数据线"
+        }, "充电器", "手机耳机", {
+            "className": "hot",
+            "text": "移动电源"
+        }, "蓝牙耳机", "手机电池", "苹果周边", "车载配件"]
+    }, {
+        "r_l_title": " 充话费 ",
+        "r_l_contents": ["移动/联通/电信/极信"]
+    }, {
+        "r_l_title": " 充流量 ",
+        "r_l_contents": ["移动/联通/电信"]
+    }],
+    "r_r_brand_imgs": ["https://img12.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%8D%8E%E4%B8%BA-%E6%89%8B%E6%9C%BA.jpg", "https://img13.gomein.net.cn/image/prodimg/topics/qiaolu/201607/5/20160705155524.jpg", "https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E4%B8%89%E6%98%9F%E6%89%8B%E6%9C%BA.jpg", "https://img10.gomein.net.cn/image/prodimg/topics/qiaolu/201607/5/20160705155529.jpg", "https://img11.gomein.net.cn/image/prodimg/topics/qiaolu/201607/11/20160711182201.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/11/20160711182202.jpg"],
+    "r_r_big_img": "https://gfs13.gomein.net.cn/T1mr_XBvJT1RCvBVdK.jpg"
+}, {
+    "l_titles": ["相机", "智能数码"],
+    "r_l_tags": ["潮3C<i></i>", "数码<i></i>", "以旧换新<i></i>", "延保服务<i></i>", "智享生活<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 摄影摄像 ",
+        "r_l_contents": ["数码相机", {
+            "className": "hot",
+            "text": "单反相机"
+        }, "单电/微单相机", "摄像机", "拍立得"]
+    }, {
+        "r_l_title": " 数码配件 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "存储卡"
+        }, "三脚架/云台", "相机包", "滤镜", "相机清洁/贴膜", "单反镜头", "单反配件", "电池/充电器"]
+    }, {
+        "r_l_title": " 智能设备 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "智能手表"
+        }, "智能手环", "VR眼镜", {
+            "className": "hot",
+            "text": "智能家居"
+        }, "健康监测", "无人机", "智能配饰", "智享生活"]
+    }, {
+        "r_l_title": " 视听娱乐 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "耳机/耳麦"
+        }, {
+            "className": "hot",
+            "text": "音箱/音响"
+        }, "MP3/MP4", "收/录音机"]
+    }, {
+        "r_l_title": " 电子教育 ",
+        "r_l_contents": ["电子书", "电子词典", "录音笔", "学生平板", "点读机/复读机"]
+    }],
+    "r_r_brand_imgs": ["https://img13.gomein.net.cn/image/prodimg/topics/qiaolu/201607/8/20160708122040.jpg", "https://gfs10.gomein.net.cn/T1pdA_B7Av1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1LGYvBTEb1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1kLCvB4bQ1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1GPJjB_J_1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T10pKsByEv1RCvBVdK.jpg"],
+    "r_r_big_img": "https://gfs11.gomein.net.cn/T16Q_XBQZv1RCvBVdK.jpg"
+}, {
+    "l_titles": ["电脑", "办公配件"],
+    "r_l_tags": ["潮3C<i></i>", "电脑办公<i></i>", "精品配件<i></i>", "以旧换新<i></i>", "美通卡<i></i>", "延保服务<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 电脑整机 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "【爆品直降1000元】"
+        }, {
+            "className": "hot",
+            "text": "笔记本"
+        }, "游戏本", "平板电脑", "台式电脑", "一体机", "笔记本配件", "服务器"]
+    }, {
+        "r_l_title": " 外设产品 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "鼠标"
+        }, "键盘", "电脑包", "电脑音箱", "U盘", {
+            "className": "hot",
+            "text": "移动硬盘"
+        }, "鼠标垫", "摄像头/监控摄像", "线缆", "耳机", "UPS电源"]
+    }, {
+        "r_l_title": " 网络产品 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "路由器"
+        }, "网络机顶盒", "交换机", "网卡", "5G/4G/3G上网"]
+    }, {
+        "r_l_title": " 办公设备 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "投影机"
+        }, "投影配件", "多功能一体机", {
+            "className": "hot",
+            "text": "打印机"
+        }, "传真设备", "验钞/点钞机", "扫描设备", "收银机", "电话机", "保险柜", "白板/封装机"]
+    }, {
+        "r_l_title": " 文具/耗材 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "笔类"
+        }, "激光笔", "办公文具", "文件收纳", "学生文具", "计算器", "考勤设备", {
+            "className": "hot",
+            "text": "硒鼓"
+        }, "墨盒/墨粉", "色带", "纸类"]
+    }, {
+        "r_l_title": " 平板配件 ",
+        "r_l_contents": ["保护套/壳", "保护膜", "iPad配件", "苹果耳机", "连接线", "底座/支架", "触控笔"]
+    }, {
+        "r_l_title": " 电脑配件 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "显示器"
+        }, "CPU", "主板", "显卡", "硬盘", "内存", "机箱", "电源", "刻录机/光驱", "DIY整机", "装机配件"]
+    }, {
+        "r_l_title": " 增值产品 ",
+        "r_l_contents": ["电脑远程服务"]
+    }],
+    "r_r_brand_imgs": ["https://gfs12.gomein.net.cn/T1EnKvB5hT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T11TWvB4Zj1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T17eLvByEj1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1vgKvB5hT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1igKvBKbT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1VgKvBKVT1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1_MbgBKYv1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1fEhjB7E_1RCvBVdK.jpg"],
+    "r_r_big_img": "https://gfs12.gomein.net.cn/T1N1AXBQA_1RCvBVdK.jpg"
+}, {
+    "l_titles": ["电视 影音", "智能"],
+    "r_l_tags": ["电视影音<i></i>", "美通卡<i></i>", "以旧换新<i></i>", "延保服务<i></i>", "智享生活<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 电视 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "55英寸"
+        }, "65英寸", "32英寸", "42-43英寸", "海信", "创维", "长虹", "TCL", "康佳", "小米", "索尼", {
+            "className": "hot",
+            "text": "4K超高清"
+        }, "智能电视", "曲面电视", "超薄电视", "全部电视"]
+    }, {
+        "r_l_title": " 电视配件 ",
+        "r_l_contents": ["3D电视配件", "保养配件", "插线板", {
+            "className": "hot",
+            "text": "智能电视盒"
+        }, "电视挂架"]
+    }, {
+        "r_l_title": " 音响/DVD ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "影院"
+        }, "播放器", {
+            "className": "hot",
+            "text": "音响"
+        }]
+    }, {
+        "r_l_title": " 影音配件 ",
+        "r_l_contents": ["其他配件", "影音线材", "线材转换器"]
+    }, {
+        "r_l_title": " 智能设备 ",
+        "r_l_contents": ["智能手环", "智能手表", "智能眼镜", "智能家居", "航拍设备", "智能配饰", "智享生活"]
+    }],
+    "r_r_brand_imgs": ["https://gfs13.gomein.net.cn/T1YkKTBmJT1RCvBVdK.jpeg", "https://gfs10.gomein.net.cn/T1aoKTBg_v1RCvBVdK.jpeg", "https://gfs12.gomein.net.cn/T1sCbTB7CT1RCvBVdK.jpeg", "https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E7%94%B5%E8%A7%86%E5%BA%B7%E4%BD%B3.jpg", "https://gfs14.gomein.net.cn/T1YoKTBChv1RCvBVdK.jpeg", "https://gfs13.gomein.net.cn/T1Z_WvBKVg1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T12QZvBgCT1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1MQhvBvAv1RCvBVdK.jpg"],
+    "r_r_big_img": "https://gfs10.gomein.net.cn/T141EXBTZv1RCvBVdK.jpg"
+}, {
+    "l_titles": ["空调", "冰箱", "洗衣机"],
+    "r_l_tags": ["空调<i></i>", "冰箱<i></i>", "洗衣机<i></i>", "家电节能专区<i></i>", "美通卡<i></i>", "以旧换新<i></i>", "延保服务<i></i>", "家电清洗服务<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 空调/商用 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "家用空调"
+        }, "商用空调", "中央空调", "壁挂式空调", "柜式空调", "移动空调", "定频", "变频", "单冷空调", {
+            "className": "hot",
+            "text": "冷暖空调"
+        }, "冷暖电辅", "小1匹", "1匹", "1.5匹", "2匹", "3匹", "wifi操控", "圆柱型柜机"]
+    }, {
+        "r_l_title": " 冰箱/冷柜 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "冰箱"
+        }, "冰柜", "酒柜", "对开门", "三门", "双门", "多门", "单门", "迷你冰箱", "电脑式", "机械式", "冰箱配件"]
+    }, {
+        "r_l_title": " 洗衣机/干衣机 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "滚筒洗衣机"
+        }, "波轮洗衣机", "洗烘一体机", "迷你洗衣机", "双缸洗衣机", "干衣机", "洗衣机配件"]
+    }],
+    "r_r_brand_imgs": ["https://img10.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%86%B0%E6%B4%97%E6%B5%B7%E5%B0%94.jpg", "https://gfs12.gomein.net.cn/T1dLWbBsxv1RCvBVdK.jpg", "https://img11.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%86%B0%E6%B4%97%E7%BE%8E%E7%9A%84.jpg", "https://gfs13.gomein.net.cn/T1sWhgB5Jv1RCvBVdK.jpeg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214321.jpg", "https://gfs10.gomein.net.cn/T12khbB7Vv1RCvBVdK.jpeg", "https://gfs12.gomein.net.cn/T15kD_BsCT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1f3L_BCJv1RCvBVdK.jpeg"],
+    "r_r_big_img": "https://gfs12.gomein.net.cn/T1biWXB7Yv1RCvBVdK.jpg"
+}, {
+    "l_titles": ["厨房卫浴", "生活电器", "环境"],
+    "r_l_tags": ["烟灶卫浴馆<i></i>", "厨卫新活馆<i></i>", "净化器<i></i>", "小家电<i></i>", "取暖器<i></i>", "美通卡<i></i>", "延保服务<i></i>", "家电清洗服务<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 厨卫大电 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "油烟机"
+        }, "燃气灶", "消毒柜/商用大柜", {
+            "className": "hot",
+            "text": "燃气热水器"
+        }, "电热水器", "即热热水器", "浴霸/换气扇", "洗碗机", "嵌入式厨电", "壁挂炉", "太阳能热水器", "烟灶套餐", "厨卫配件"]
+    }, {
+        "r_l_title": " 厨房小电 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "微波炉"
+        }, "豆浆机", {
+            "className": "hot",
+            "text": "电饭煲"
+        }, "电磁炉/电陶炉", "电压力锅", "炊具", "原汁机/榨汁机", "破壁机/料理机", "电烤箱", "面包机/多士炉", "咖啡机", "电火锅", "电水壶", "电饼铛/烤饼机", "电蒸锅", "酸奶机/冰淇淋机", "煮蛋器", "电炖锅/炖盅", "多用途锅", "养生壶"]
+    }, {
+        "r_l_title": " 环境电器 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "电风扇"
+        }, "空调扇", {
+            "className": "hot",
+            "text": "空气净化器"
+        }, "除湿机", "加湿器", "净化器滤网", "取暖器"]
+    }, {
+        "r_l_title": " 个人护理 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "剃须刀"
+        }, {
+            "className": "hot",
+            "text": "电吹风"
+        }, "理发器", "剃/脱毛器", "鼻毛修剪器", "美发器", "美容仪", "电动牙刷", "冲牙器"]
+    }, {
+        "r_l_title": " 水家电 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "净水器/设备"
+        }, "饮水机", "滤水壶", "净水龙头", "净水桶", "滤料", "净饮机/智饮机"]
+    }, {
+        "r_l_title": " 家居电器 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "吸尘器/除螨仪"
+        }, "挂烫机", "扫地机器人", "干衣机/干鞋器", "毛球修剪器", "电熨斗"]
+    }, {
+        "r_l_title": " 健康电器 ",
+        "r_l_contents": ["甩脂瘦身", "足浴盆", "其他按摩器", "电子秤", "按摩椅", "眼部按摩机", "足疗机", "按摩椅垫"]
+    }],
+    "r_r_brand_imgs": ["https://img13.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%8E%A8%E5%8D%AB%E6%B5%B7%E5%B0%94.jpg", "https://gfs10.gomein.net.cn/T1_1hjBjhv1RCvBVdK.jpg", "https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%8E%A8%E5%8D%AB%E5%8D%8E%E5%B8%9D.jpg", "https://gfs10.gomein.net.cn/T1D0dgB7b_1RCvBVdK.jpg", "https://img10.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214658.jpg", "https://gfs10.gomein.net.cn/T1q5bTBg_v1RCvBVdK.jpeg", "https://img11.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704215156.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214702.jpg"],
+    "r_r_big_img": "https://gfs10.gomein.net.cn/T1gQCXBbDv1RCvBVdK.jpg"
+}, {
+    "l_titles": ["家具", "建材", "欧洲厨房"],
+    "r_l_tags": ["住宅家具<i></i>", "家装建材<i></i>", "家装馆<i></i>", "精品家具<i></i>", "家装服务<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 客厅家具 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "沙发"
+        }, "茶几", "电视柜", "鞋柜", "衣帽架"]
+    }, {
+        "r_l_title": " 卧室家具 ",
+        "r_l_contents": ["床头柜", "床", {
+            "className": "hot",
+            "text": "床垫"
+        }, "梳妆台", "衣柜", "镜类"]
+    }, {
+        "r_l_title": " 餐厅家具 ",
+        "r_l_contents": ["餐桌", "餐椅", {
+            "className": "hot",
+            "text": "餐桌椅套装"
+        }, "餐边柜"]
+    }, {
+        "r_l_title": " 儿童办公 ",
+        "r_l_contents": ["儿童桌椅", "儿童床类", "儿童衣柜", "儿童套装", "休闲躺椅", "班台桌", "办公椅", "文件柜"]
+    }, {
+        "r_l_title": " 书房家具 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "书桌/电脑桌"
+        }, "电脑椅", "书柜"]
+    }, {
+        "r_l_title": " 储物户外 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "置物架"
+        }, "层架", "晾衣架", "户外桌椅"]
+    }, {
+        "r_l_title": " 厨房卫浴 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "马桶"
+        }, "智能盖板", "淋浴花洒", "浴室柜", "水槽", "水龙头", "浴缸", "卫浴挂件", "厨房挂件", {
+            "className": "hot",
+            "text": "浴霸"
+        }, "吊顶", "换气扇", "地漏/角阀"]
+    }, {
+        "r_l_title": " 灯具光源 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "吸顶灯"
+        }, "吊灯", {
+            "className": "hot",
+            "text": "LED灯"
+        }, "台灯", "筒射灯", "厨卫照明", "应急/手电", "户外灯", "节能灯", "落地灯"]
+    }, {
+        "r_l_title": " 电工电料 ",
+        "r_l_contents": ["插座", {
+            "className": "hot",
+            "text": "开关"
+        }, {
+            "className": "hot",
+            "text": "接线板/排插"
+        }, "安防监控", "电线", "断路器", "电工配件"]
+    }, {
+        "r_l_title": " 装饰材料 ",
+        "r_l_contents": ["瓷砖", "油漆涂料", "散热器", "净化除味", "涂刷辅料", "门窗定制"]
+    }, {
+        "r_l_title": " 五金工具 ",
+        "r_l_contents": ["电/气动工具", "手动工具", "智能居家", "锁具", "仪器仪表", "指纹密码锁", "拉手", "家具五金"]
+    }, {
+        "r_l_title": " 装修服务 ",
+        "r_l_contents": ["家装设计", "家装定金"]
+    }],
+    "r_r_brand_imgs": ["https://gfs10.gomein.net.cn/T1UGDbBbKT1RCvBVdK.png", "https://gfs10.gomein.net.cn/T1axCjBgVT1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1cdJvBTZj1RCvBVdK.jpg", "https://img13.gomein.net.cn/image/prodimg/promotion_image/promoImg/201606/20160601/%E5%BB%BA%E6%9D%90-%E9%9B%B7%E5%A3%ABWW.jpg", "https://gfs13.gomein.net.cn/T1wdYvB4by1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T13U_vB7Jj1RCvBVdK.png"]
+}, {
+    "l_titles": ["家居家纺", "家居家装"],
+    "r_l_tags": ["家居日用<i></i>", "家居特卖惠<i></i>", "美家致选<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 清洁用品 ",
+        "r_l_contents": ["居室清洁", {
+            "className": "hot",
+            "text": "清洁工具"
+        }, "驱虫除害", {
+            "className": "hot",
+            "text": "纸品湿巾"
+        }, "垃圾收纳", "防护用品", "衣物清洁"]
+    }, {
+        "r_l_title": " 生活日用 ",
+        "r_l_contents": ["缝纫用品", {
+            "className": "hot",
+            "text": "收纳用品"
+        }, "洗晒用品", "浴室用品", "净化除味", "雨伞雨具", "衣橱衣架"]
+    }, {
+        "r_l_title": " 厨具 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "烹饪锅具"
+        }, {
+            "className": "hot",
+            "text": "刀剪砧板"
+        }, "保鲜收纳", "厨房小件", "精美餐具"]
+    }, {
+        "r_l_title": " 水具茶具 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "保温杯"
+        }, "保温壶/桶", "塑料杯", "茶具", "紫砂杯/陶瓷杯", "玻璃杯", "酒具"]
+    }, {
+        "r_l_title": " 床品件套 ",
+        "r_l_contents": ["三件套", {
+            "className": "hot",
+            "text": "四件套"
+        }, {
+            "className": "hot",
+            "text": "床单被罩"
+        }, "多件套", "婚庆件套", "六件套"]
+    }, {
+        "r_l_title": " 芯类 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "被子"
+        }, {
+            "className": "hot",
+            "text": "电热毯"
+        }, "枕芯枕套", "床垫/床褥", "抱枕靠垫", "毛巾被/毯"]
+    }, {
+        "r_l_title": " 毛巾家纺 ",
+        "r_l_contents": ["面巾", "浴巾", "方巾", "毛巾套装", "童巾", "浴衣/浴袍", "运动巾"]
+    }, {
+        "r_l_title": " 夏凉用品 ",
+        "r_l_contents": ["凉席", "夏凉被", "蚊帐", "凉枕", "凉品套装"]
+    }, {
+        "r_l_title": " 保健健康 ",
+        "r_l_contents": ["保健器械", "骨骼健康", "免疫调节", "肠胃养护"]
+    }, {
+        "r_l_title": " 家装软饰 ",
+        "r_l_contents": ["居家软饰", "工艺摆件", "创意小件", "家用保健", "家居鞋"]
+    }, {
+        "r_l_title": " 宠物用品 ",
+        "r_l_contents": ["宠物主粮", "宠物零食", "医护美容"]
+    }],
+    "r_r_brand_imgs": ["https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%AE%B6%E5%B1%85-%E8%8B%8F%E6%B3%8A%E5%B0%94logo.jpg", "https://gfs10.gomein.net.cn/T13wdbBK_v1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T18eCgBshv1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1ytdQBKCv1RCvBVdK.jpg", "https://img10.gomein.net.cn/image/prodimg/topics/qiaolu/201607/6/20160706142151.png"],
+    "r_r_big_img": "https://gfs12.gomein.net.cn/T1oAVjBQWT1RCvBVdK.jpg"
+}, {
+    "l_titles": ["食品酒水"],
+    "r_l_tags": ["食品酒水<i></i>", "食品酒水盛宴<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 休闲零食 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "坚果炒货"
+        }, "糖果巧克力", "肉干肉脯", "饼干糕点", "休闲零食", "膨化薯片"]
+    }, {
+        "r_l_title": " 粮油生鲜 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "食用油"
+        }, "大米", "南北干货", "方便速食", "厨房调料", {
+            "className": "hot",
+            "text": "水果蔬菜"
+        }, "猪牛羊肉", "海鲜水产", "熟食腊味"]
+    }, {
+        "r_l_title": " 进口食品 ",
+        "r_l_contents": ["牛奶", {
+            "className": "hot",
+            "text": "冲调饮品"
+        }, "饼干糕点", {
+            "className": "hot",
+            "text": "糖/巧克力"
+        }, "米面粮油", "休闲零食"]
+    }, {
+        "r_l_title": " 酒水 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "白酒"
+        }, "洋酒", {
+            "className": "hot",
+            "text": "葡萄酒"
+        }, "黄酒", "啤酒", "保健酒", "收藏酒/老酒"]
+    }, {
+        "r_l_title": " 礼卡特产 ",
+        "r_l_contents": ["东北", "西北", "华北", "西南", "华东", "月饼卡", "大闸蟹", "礼品城", "美通卡"]
+    }, {
+        "r_l_title": " 冲调饮品 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "牛奶"
+        }, "咖啡", "谷物冲调", "饮料/蔬果汁/水", "奶茶"]
+    }, {
+        "r_l_title": " 茶叶 ",
+        "r_l_contents": ["绿茶", "铁观音", "普洱茶", "红茶", "金骏眉", "花茶", "草本花果茶"]
+    }],
+    "r_r_brand_imgs": ["https://img11.gomein.net.cn/image/prodimg/ad_image/SI_1/201606/20160615/20160615173047.jpg"]
+}, {
+    "l_titles": ["母婴玩具"],
+    "r_l_tags": ["母婴玩具<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 奶粉 ",
+        "r_l_contents": ["1段奶粉", "2段奶粉", {
+            "className": "hot",
+            "text": "3段奶粉"
+        }, "4段奶粉", "妈妈奶粉", "学前奶粉"]
+    }, {
+        "r_l_title": " 童车童床 ",
+        "r_l_contents": ["婴儿推车", "安全座椅", "餐椅摇椅", "婴儿床", "自行车", "电动车"]
+    }, {
+        "r_l_title": " 尿裤湿巾 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "品牌尿裤"
+        }, "NB码", "S码", "M码", "L码", "拉拉裤"]
+    }, {
+        "r_l_title": " 喂养洗护 ",
+        "r_l_contents": ["奶瓶奶嘴", "餐具饮具", "暖奶/消毒", "吸奶器", "洗发沐浴", "清洁用品"]
+    }, {
+        "r_l_title": " 营养辅食 ",
+        "r_l_contents": ["米粉/菜粉", "肉松/面类", "DHA", "钙铁锌硒", "宝宝零食", "清火开胃"]
+    }, {
+        "r_l_title": " 服饰用品 ",
+        "r_l_contents": ["妈妈服饰", "外出用品", "妈妈护肤", "防辐射服"]
+    }, {
+        "r_l_title": " 玩具/动漫/乐器 ",
+        "r_l_contents": ["益智玩具", "电动遥控", "毛绒/布艺", "模型玩具", "文体用品", "动漫二次元"]
+    }],
+    "r_r_brand_imgs": ["https://gfs12.gomein.net.cn/T1pu_vB4K_1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T13yLsBbJv1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1e5WbBgVv1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T17jCbB5d_1RCvBVdK.jpg"]
+}, {
+    "l_titles": ["美妆个护"],
+    "r_l_tags": ["美妆个护<i></i>", "名品个护<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 面部护理 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "洁面"
+        }, "化妆水", "乳液面霜", {
+            "className": "hot",
+            "text": "面膜"
+        }, "防晒隔离", "套装礼盒", "眼部护理", "美容仪器"]
+    }, {
+        "r_l_title": " 身体护理 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "洗发护发"
+        }, "沐浴", "脱毛膏", "纤体瘦身"]
+    }, {
+        "r_l_title": " 个护清洁 ",
+        "r_l_contents": ["纸品湿巾", "口腔护理", {
+            "className": "hot",
+            "text": "女性护理"
+        }, "家庭清洁"]
+    }, {
+        "r_l_title": " 魅力彩妆 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "粉底遮瑕"
+        }, "卸妆", "睫毛膏", "唇彩", "化妆工具", "彩妆组合", "美甲"]
+    }, {
+        "r_l_title": " 香水香氛 ",
+        "r_l_contents": ["女士香水", "男士香水", "香水套装", "迷你香水", "香体走珠"]
+    }, {
+        "r_l_title": " 男士护理 ",
+        "r_l_contents": ["剃须护理", "防脱洗护", "脸部护理", "眼部护理", "男士唇膏"]
+    }],
+    "r_r_brand_imgs": ["https://gfs13.gomein.net.cn/T1J8_sBmCv1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1KaC_BTAv1RCvBVdK.jpg"]
+}, {
+    "l_titles": ["服饰鞋帽", "箱包奢品"],
+    "r_l_tags": ["服饰鞋帽<i></i>", "箱包奢品<i></i>", "服装城<i></i>", "潮流服饰<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 品质男装 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "卫衣"
+        }, {
+            "className": "hot",
+            "text": "休闲裤"
+        }, "牛仔裤", "夹克", "T恤", "polo衫", "衬衫", "针织衫", "西装", "西裤"]
+    }, {
+        "r_l_title": " 时尚女装 ",
+        "r_l_contents": ["羽绒服", "毛呢外套", "棉服", "毛衣", {
+            "className": "hot",
+            "text": "连衣裙"
+        }, {
+            "className": "hot",
+            "text": "风衣"
+        }, "打底裤", "卫衣/绒衫", "牛仔裤", "休闲裤", "T恤", "衬衫", "西装", "针织衫"]
+    }, {
+        "r_l_title": " 童装童鞋 ",
+        "r_l_contents": ["男童装", "女童装", "男童鞋", "女童鞋"]
+    }, {
+        "r_l_title": " 家居内衣 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "保暖内衣"
+        }, {
+            "className": "hot",
+            "text": "男袜"
+        }, "男士内裤", "抹胸/背心", "家居服", "女士内裤", "打底裤/丝袜", "女袜", "文胸", "泳装", "睡裙/睡袍", "儿童系列"]
+    }, {
+        "r_l_title": " 精品男鞋 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "商务鞋"
+        }, {
+            "className": "hot",
+            "text": "休闲鞋"
+        }, "板鞋", "帆布鞋", "凉鞋/沙滩鞋", "家居拖鞋", "男靴"]
+    }, {
+        "r_l_title": " 潮流女鞋 ",
+        "r_l_contents": ["单鞋", {
+            "className": "hot",
+            "text": "休闲鞋"
+        }, "凉鞋", "高跟鞋", "平底鞋", "帆布鞋", "家居拖鞋", "女靴"]
+    }, {
+        "r_l_title": " 服饰配件 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "太阳镜/眼镜"
+        }, "遮阳伞", "丝巾/披肩", {
+            "className": "hot",
+            "text": "男式皮带"
+        }, "鞋配件", "手套", "帽子", "围巾"]
+    }, {
+        "r_l_title": " 奢侈品 ",
+        "r_l_contents": ["单肩包", {
+            "className": "hot",
+            "text": "手提包"
+        }, "钱包/卡包", "斜挎包"]
+    }, {
+        "r_l_title": " 精品男包 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "斜挎包"
+        }, "钱包/卡包", "商务手提包", "皮带/礼盒", "手包"]
+    }, {
+        "r_l_title": " 箱包 ",
+        "r_l_contents": ["登山包", "学生包", "休闲运动包", "电脑包", "数码/摄影包", {
+            "className": "hot",
+            "text": "登机箱"
+        }, "旅行包", "拖运箱", "旅行配件"]
+    }, {
+        "r_l_title": " 时尚女包 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "单肩包"
+        }, {
+            "className": "hot",
+            "text": "钱包/卡包"
+        }, "手拿包", "手提包", "双肩包", "斜挎包"]
+    }],
+    "r_r_brand_imgs": ["https://gfs13.gomein.net.cn/T1wrWjBCLQ1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1fCdgBjCT1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1QqKvB5Cv1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1uLhQBydv1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1_rYjBKKv1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1G2LgBQAv1RCvBVdK.jpg"]
+}, {
+    "l_titles": ["运动户外", "钟表首饰"],
+    "r_l_tags": ["运动户外<i></i>", "钟表首饰<i></i>", "大牌便宜购<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 运动鞋服 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "跑步鞋"
+        }, "休闲鞋/板鞋", "帆布鞋", "篮球鞋", "足球鞋", "训练鞋", "凉鞋/拖鞋", "运动T恤", "运动短裤", "运动套装", "卫衣", "夹克", "运动长裤", "棉服", "羽绒服", "瑜伽"]
+    }, {
+        "r_l_title": " 运动器械 ",
+        "r_l_contents": ["自行车", "羽毛球", "篮球", {
+            "className": "hot",
+            "text": "器械/跑步机"
+        }, "运动器材", "瑜伽垫", "护具", "极限轮滑", "乒乓球", "网球", "足球", "电子琴", "运动健康", "其他健身"]
+    }, {
+        "r_l_title": " 户外装备 ",
+        "r_l_contents": ["帐篷", "背包", "桌椅床", "望远镜", "照明", "垫子", "工具", "炊具", "垂钓", "烧烤", "军迷用品", "其他"]
+    }, {
+        "r_l_title": " 户外鞋服 ",
+        "r_l_contents": ["户外T恤", "户外衬衣", "速干衣/裤", "沙滩鞋/拖鞋", "溯溪鞋", "休闲鞋", "徒步鞋", "越野鞋", "登山鞋", {
+            "className": "hot",
+            "text": "冲锋衣/裤"
+        }, "软壳", "夹克", "卫衣", "户外配饰"]
+    }, {
+        "r_l_title": " 钟表 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "瑞士品牌表"
+        }, "国产品牌表", "日韩品牌表", "时尚品牌表", "儿童手表", "挂钟闹钟"]
+    }, {
+        "r_l_title": " 珠宝首饰 ",
+        "r_l_contents": ["纯金K金饰品", {
+            "className": "hot",
+            "text": "金银投资"
+        }, {
+            "className": "hot",
+            "text": "银饰品"
+        }, "钻石饰品", "翡翠玉石", "水晶玛瑙", "宝石珍珠", "时尚饰品", "收藏品"]
+    }],
+    "r_r_brand_imgs": ["https://gfs10.gomein.net.cn/T1fCdgBjCT1RCvBVdK.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704215816.jpg", "https://gfs13.gomein.net.cn/T1bKJgBQ_v1RCvBVdK.jpg"],
+    "r_r_big_img": "https://gfs13.gomein.net.cn/T1e_AbB4xT1RCvBVdK.jpg"
+}, {
+    "l_titles": ["汽车整车", "汽车用品"],
+    "r_l_tags": ["国美汽车<i></i>", "车品真划算<i></i>", "轮胎满千减百<i></i>", "9.9元免运费<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 整车服务 ",
+        "r_l_contents": ["新车定金", "新车全款", "维修保养", "摩托车全款"]
+    }, {
+        "r_l_title": " 车载电器 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "行车记录仪"
+        }, "导航仪", "安全预警仪", "净化器", "车载冰箱", "吸尘器", "倒车雷达", "车载生活电器", "时尚影音", "蓝牙设备", "电源"]
+    }, {
+        "r_l_title": " 养护配件 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "机油"
+        }, "添加剂", "防冻液", "空调养护", "刹车油", "底盘装甲", "水箱养护", {
+            "className": "hot",
+            "text": "轮胎"
+        }, "雨刷", "滤清器", "车衣", "刹车片", "喇叭", "火花塞", "改装配件", "贴膜"]
+    }, {
+        "r_l_title": " 美容清洁 ",
+        "r_l_contents": ["洗车机/水枪", "车蜡", "玻璃水", "清洁剂", "汽车配件", "补漆笔"]
+    }, {
+        "r_l_title": " 车饰精品 ",
+        "r_l_contents": ["专车专用系列", "四季垫", "座套", "凉垫", "香水", "颈枕腰靠", "挂饰摆件", "功能精品", "内饰精品", "整理收纳", "脚垫", "毛垫", "多功能座垫", "后备箱垫"]
+    }, {
+        "r_l_title": " 安全自驾 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "儿童安全座椅"
+        }, "防盗设备", "胎压监测", "应急救援", "自驾装备", "倒车雷达", "打气泵", "摩托车用品", "电动平衡车"]
+    }],
+    "r_r_brand_imgs": ["https://gfs10.gomein.net.cn/T18RLgBTEv1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1PPYbBQdv1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T12dJbBTDv1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1wwxvBjJQ1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1mmhvBsLb1RCvBVdK.jpg"]
+}, {
+    "l_titles": ["国美管家"],
+    "r_l_tags": ["以旧换新<i></i>", "延保服务<i></i>"],
+    "r_l_navs": [{
+        "r_l_title": " 以旧换新 ",
+        "r_l_contents": ["手机回收", "家电回收", "电脑回收"]
+    }, {
+        "r_l_title": " 清洗保养 ",
+        "r_l_contents": ["家电清洗"]
+    }, {
+        "r_l_title": " 维修服务 ",
+        "r_l_contents": ["手机维修", "手机更换电池", "手机更换屏幕", "手机升级内存", "家电维修"]
+    }, {
+        "r_l_title": " 延长保修 ",
+        "r_l_contents": ["家电延长保修"]
+    }],
+    "r_r_brand_imgs": ["https://gfs12.gomein.net.cn/T1YJEQBsVT1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1YJEQBsVT1RCvBVdK.jpg"],
+    "r_r_big_img": "https://gfs11.gomein.net.cn/T1ISbXBQbT1RCvBVdK.jpg"
+}]
