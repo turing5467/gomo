@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/foot.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/store.min.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 
 <body>
@@ -22,8 +27,121 @@
                 <p class="safeTip"><em></em>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版<a href="https://login.gome.com.cn/authAgreeMentPrivacy" target="_blank">《国美隐私政策》</a>已上线，将更有利于保护您的个人隐私。</p>
             </div>
             <div class="content-bg">
+                <div class="box clearfix">
+                    <div class="login-box">
+                        <div class="login-head clearfix">
+                            <div class="login-tab tabLeft cur">
+                                <a href="javascript:void(0)" class="">扫码登录</a>
+                            </div>
+                            <div class="login-tab tabRight">
+                                <a href="javascript:void(0)" class="">账户登录</a>
+                            </div>
+                        </div>
+                        <div class="login-body">
+
+                            <div class="login-con loginLeft curr">
+                                <div class="qr-code-box">
+                                    <div class="qr-code-main">
+                                        <img src="../img/getQrcode.no" alt="" width="165">
+                                    </div>
+                                    <div class="qr-code-help">
+                                    </div>
+                                </div>
+                                <p class="open">打开手机<a href="http://shouji.gome.com.cn/?intcmp=sy-public01049#page2">国美</a></p>
+                                <p class="scan">扫一扫登录</p>
+                                <div class="clearfix"><a class="login fr" href="../html/register.html">免费注册</a></div>
+                            </div>
+
+                            <div class="login-con loginRight">
+                                <div class="tips err-tip">
+                                    <span class="icon"></span> 账号或密码不匹配，请重新输入
+                                </div>
+                                <div class="tips warning-tip">
+                                    <span class="icon"></span> 公共场所不建议自动登录，以防账号丢失
+                                </div>
+                                <form>
+                                    <div class="login-item">
+                                        <input type="text" tabindex="1" id="phone" placeholder="手机号码/用户名">
+                                        <button class="clearText">&times;</button>
+                                    </div>
+                                    <div class="login-item">
+                                        <input type="password" tabindex="2" id="password" placeholder="密码">
+                                        <button class="clearText">&times;</button>
+                                    </div>
+                                </form>
+                                <div class="roles clearfix">
+                                    <div class="autoLogin-box fl">
+                                        <input type="checkbox" class="autoLogin fl" tabindex="3">
+                                        <span>自动登陆</span>
+                                    </div>
+                                    <div class="fr  clearfix">
+                                        <a href="http://myhome.gome.com.cn/member/passwordReset" class="fl" target="_blank" id="forgetpwdmsg" tabindex="4" title="忘记密码">忘记密码</a>
+                                        <span class="fl border">|</span>
+                                        <a class="fontBlink fr" href="../html/register.html" target="_blank" title="免费注册" tabindex="5">免费注册</a>
+                                    </div>
+                                </div>
+                                <button class="loginBtn" tabindex="6">登陆</button>
+                                <p style="padding: 30px 0 15px;font-size: 12px;text-align: left">
+                                    <a href="javascript:;" class="fontBlink phoneLoginBtn" tabindex="7">手机号快速登录(支持门店预留手机)</a>
+                                </p>
+                            </div>
+                        </div>
+                        <dl class="corp-login">
+                            <dd class="play_icon clearfix">
+                                <a href="http://myhome.gome.com.cn/member/loginStore" class="borderLine" title="门店会员卡登录" tabindex="8" style="padding-left:0">门店会员卡登录</a>
+                                <a id="corp_qq" href="https://login.gome.com.cn/quicklogin/qqLogin.no" target="_parent" title="QQ" tabindex="9" class="borderLine"><em>QQ</em></a>
+                                <a id="corp_weixin" href="https://login.gome.com.cn/quicklogin/wechatLogin.no" target="_parent" title="微信" tabindex="10" class="borderLine">微信</a>
+                                <a id="corp_sina" href="https://login.gome.com.cn/quicklogin/sinaLogin.no" target="_parent" title="新浪微博" tabindex="11" class="borderLine">微博</a>
+                                <a id="corp_gomezhifu" href="https://login.gome.com.cn/quicklogin/gomePayLogin.no" target="_parent" title="美付宝" tabindex="12">美付宝</a>
+                                <a id="corp_jixintong" href="https://login.gome.com.cn/quicklogin/jixinLogin.no" target="_parent" title="极信通" tabindex="13" class="borderLine" style="padding-left:0">极信通</a>
+                                <a id="corp_alipay" href="https://login.gome.com.cn/quicklogin/alipayLogin.no" target="_parent" title="支付宝" tabindex="14">支付宝</a>
+                            </dd>
+                            <dd>
+                                <a class="more"></a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
 
             </div>
+        </div>
+        <div id="gm-foot">
+            <ul class="foot_small_zdy_w clearfix">
+                <li><a href="//www.gomeholdings.com" target="_blank">国美控股集团</a></li>
+                <li><a href="//www.gomegj.com/" target="_blank">国美管家</a></li>
+                <li><a href="//help.gome.com.cn/about/company.html" target="_blank">关于国美</a></li>
+                <li><a href="//zp.gome.com.cn" target="_blank">加入我们</a></li>
+                <li>|</li>
+                <li><a href="//brand.gome.com.cn/" target="_blank">品牌大全</a></li>
+                <li><a href="//www.gome.com.cn/topic/" target="_blank">商品专题</a></li>
+                <li><a href="//www.gome.com.cn/chanpin/" target="_blank">商品词</a></li>
+                <li><a href="//www.gome.com.cn/hotwords/" target="_blank">热词搜索</a></li>
+                <li><a href="//www.gome.com.cn/links/" target="_blank">友情链接</a></li>
+                <li><a href="//news.gome.com.cn/4-8ef49f4b-1-8.html" target="_blank">风险监测</a></li>
+                <li>|</li>
+                <li><a href="//cps.gome.com.cn/" target="_blank">销售联盟</a></li>
+                <li><a href="//www.gome.com.cn/join/" target="_blank">商家入驻</a></li>
+                <li><a href="//amp.gome.com.cn" target="_blank">广告营销</a></li>
+            </ul>
+            <p>本公司游戏产品适合18岁以上成年人使用&nbsp;&nbsp;违法和不良信息举报电话：021-39900132&nbsp;&nbsp;<a class="interDrug" href="//gfs13.gomein.net.cn/T1MvVsBCJT1RCvBVdK.jpg" target="_blank">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a></p>
+            <p>网络食品销售第三方平台提供者备案：沪网食备A0015号&nbsp;&nbsp;<a class="interDrug" href="http://gfs12.gomein.net.cn/wireless/T1TQWvB_DT1RCvBVdK_1594_2253.jpg" target="_blank">网络文化经营许可证沪网文[2017]5537-436号</a>&nbsp;&nbsp;<a class="interDrug" href="http://gfs10.gomein.net.cn/wireless/T1SdWQBXK_1RCvBVdK_2187_3157.jpg"
+                    target="_blank">增值电信业务经营许可证</a></p>
+            <p>客服电话:4008113333&nbsp;&nbsp;<a class="interDrug" href="http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action" target="_blank">沪ICP备11009419号/京ICP备 19011786号</a>&nbsp;&nbsp;<a class="interDrug" href="http://gfs11.gomein.net.cn/T12lAsBjdT1RCvBVdK.jpg"
+                    target="_blank">京B2-20191290</a>&nbsp;&nbsp;<a class="interDrug" href="//www.gome.com.cn/companyinfo/" target="_blank">经营执照</a>&nbsp;&nbsp;<a class="interDrug" href="//gfs13.gomein.net.cn/T1_sDQB5C_1RCvBVdK.jpg" target="_blank">营业执照</a>&nbsp;&nbsp;
+                <a class="interDrug" href="http://gfs13.gomein.net.cn/T1ThLXBCW_1RCvBVdK.jpg" target="_blank">出版物经营许可证</a>
+            </p>
+            <p>©2000-2019&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;<a class="interDrug tw-w-ico-wrap" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502038379" target="_blank"><i class="tw-w-mark-icon"></i>京公网安备 11010502038379号</a></p>
+            <div class="gm-foot-credit">
+                <a class="credit-baxx" href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020180207103133000002364548-SAIC_SHOW_310000-20111216142637606716&amp;signData=MEUCIQC1/jeZWEtg92x7131WE/PdcIn+wobhHCTeFwGuSnrATwIgdmtvHOPsmE7svEq21kZgzaodmdwbXGKccHzhgqxZ5Xk="
+                    target="_blank" rel="nofollow"><i></i><b>经营性网站备案信息</b></a>
+                <a class="credit-xypj" href="https://ss.knet.cn/verifyseal.dll?sn=2011071100100011373&amp;comefrom=trust" target="_blank" rel="nofollow"><i></i><b>可信网站信用评价</b></a>
+                <a class="credit-cxwz" href="https://credit.szfw.org/CX20111018000607000618.html" target="_blank" rel="nofollow"><i></i><b>诚信网站</b></a>
+                <a class="credit-hdjc" href="http://www.cyberpolice.cn/wfjb/" target="_blank" rel="nofollow"><i></i><b>朝阳网络警察</b></a>
+                <a class="credit-wgdj" href="http://scjgj.sh.gov.cn/platform/survey/step1_phone" target="_blank" rel="nofollow"><i></i><b>网购大家评</b></a>
+                <a class="credit-report" href="http://www.shjbzx.cn/" target="_blank" rel="nofollow"><i></i><b>上海市互联网违法和不良信息举报中心</b></a>
+                <!-- <a class="credit-syxy" href="https://sz.yhxy.org.cn/credit/verifyseal.php?sn=2008070300100000031&ct=df&pa=33&check=y" target="_blank" rel="nofollow"><i></i><b>炎黄鸿志商业信用认证体系</b></a> -->
+            </div>
+            <em class="turst-gome"></em>
         </div>
     </div>
 </body>
