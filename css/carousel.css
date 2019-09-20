@@ -1,0 +1,47 @@
+#slide {
+    position: absolute;
+    top: -450px;
+    left: -25px;
+    width: 750px;
+    height: 450px;
+}
+
+.sBtn {
+    width: 40px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    font-size: 30px;
+    background-color: #333;
+    opacity: .3;
+    text-align: center;
+}
+
+.sBtn:hover {
+    background-color: #000;
+}
+
+#slide .prev {
+    right: 45px;
+}
+
+#slide .next {
+    right: 4px;
+}
+
+#slide .page {
+    bottom: 20px;
+}
+
+#slide .page li {
+    cursor: pointer;
+    width: 30px;
+    height: 5px;
+    background: #ccc;
+    text-align: center;
+    margin: 0 5px;
+}
+
+#slide ul.page li.on {
+    background: red;
+}

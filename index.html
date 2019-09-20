@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/e5-do.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="top-nav w1200-bg clearfix" style="position: fixed;display:none;z-index: 999">
+            <div class="top-nav-hide fl">
+                <p class="nav-title">全部商品分类</p>
+            </div>
+        </div> -->
+        <div id="home-head">
+            <div class="head-top w1200">
+                <div class="clearfix w1200-bg">
+                    <div class="top-left fl ">
+                        <div class="user hover">
+                            Hi,
+                            <a href="#">
+                                <span class="user-name">turing5467</span>
+                                <em class="level"></em>
+                                <i></i>
+                            </a>
+                            <div class="hide-user-box"></div>
+                        </div>
+                        <span class="logout"><a href="./html/login.html">退出</a></span>
+                    </div>
+                    <div class="top-right fr">
+                        <ul>
+                            <li class="right-link"><a href="#">我的国美</a></li>
+                            <li class="right-link hover"><a href="#">企业采购</a>
+                                <i></i>
+                            </li>
+                            <li class="right-link hover"><a href="#">网站导航</a>
+                                <i></i></li>
+                            <li class="right-link w hover"><em class="icon"></em><a href="#">服务中心</a>
+                                <i></i></li>
+                            <li class="right-link hover"><a href="#">我的订单</a>
+                                <i></i></li>
+                            <li class="right-link w hover"><em class="icon"></em><a href="#">手机国美</a>
+                                <i></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="head-con w1200">
+                <div class="w1200-bg">
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo.png" alt=""></a>
+                    </div>
+                    <div class="serach-box clearfix">
+                        <div class="search fl">
+                            <span class="types">商品<i></i></span>
+                            <ul class="search-type">
+                                <li value="product">商品</li>
+                                <li value="shop">店铺</li>
+                                <li value="talk">话题</li>
+                                <li value="circle">圈子</li>
+                            </ul>
+                        </div>
+                        <div class="search-content fl">
+                            <input type="search" placeholder="洗衣机">
+                            <button class="searchBtn">搜索</button>
+                        </div>
+                        <div class="search-hots">
+                            <a href="#">华为智慧屏</a>
+                            <a href="#">iphone11</a>
+                            <a href="#">彩电家装季</a>
+                            <a href="#">空调1399</a>
+                            <a href="#">领券减1000</a>
+                            <a href="#">厨房卫浴</a>
+                            <a href="#">家电5折</a>
+                            <a href="#">购机免息</a>
+                        </div>
+                    </div>
+                    <div class="shop-car">
+                        <span class="cartlinkbox">
+                            <a data-code="public03004" rel="nofollow" class="menulink cartlink" href="./html/cart.html">
+                                <em class="i-cart">
+                                    <span class="shopnum">
+                                        <span id="commerceItemQuantityId">0
+                                        </span>
+                        <i></i>
+                        </span>
+                        </em>
+                        <span id="hdrcarttext">我的购物车</span>
+                        <b></b>
+                        </a>
+                        </span>
+                        <div class="menuhide j-overflowy" id="miniShoppingcartLoadId" carttype="up">
+                            <div carttype="asidecart" id="csEmptyMessage" class="noshop"> <a data-code="cart01002" href="//cart.gome.com.cn/home/cart" title="去购物车" style="text-decoration:underline;">购物车</a> 中还没有商品，赶紧选购吧！</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home-nav">
+            <div class="home-nav w1200">
+                <div class="home-nav-row w1200-bg clearfix">
+                    <div class="nav-title">全部商品分类</div>
+                    <ul class="mainnav clearfix">
+                        <li class="cur" style="display: none;">
+                            <a href="//www.gome.com.cn/" target="_blank">
+                                <span>首页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" data-code="1000000378-1" href="https://group.gome.com.cn" target="_blank">
+                                <span>发现</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="//tuan.gome.com.cn?intcmp=sy-1000000378-2" target="_blank">
+                                <span>真划算</span>
+                            </a>
+                            <span class="tag_line"></span>
+                        </li>
+                        <li>
+                            <a class="" href="//market.gome.com.cn/" target="_blank">
+                                <span>超市</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="//jiadian.gome.com.cn/" target="_blank">
+                                <span>电器城</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="//auto.gome.com.cn/" target="_blank">
+                                <span>汽车</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="//homes.gome.com.cn/" target="_blank">
+                                <span>家居家装</span></a><span class="tag_line">
+                                </span>
+                        </li>
+                        <li>
+                            <a class="" href="//smart.gome.com.cn/?intcm" target="_blank">
+                                <span>智能</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="//mall.gome.com.cn/80011410/" target="_blank">
+                                <span>管家</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="home-nav-column  w1200-bg">
+                    <div class="lisbg"></div>
+                    <ul class="nav-first">
+                        <script>
+                            let navFirst = $('.nav-first');
+                            $.getJSON('./server/nav.json', function(res) {
+                                console.log(res);
+                                //一级菜单
+                                let html = res.map(function(ele, index) {
+                                    let ahtml = ele.l_titles.map(
+                                        (e, index) => {
+                                            return `
+                                                        <a href="#">${e}</a>
+                                                    `;
+                                        }
+                                    ).join('');
+
+                                    //二级菜单
+
+                                    //标签
+                                    let tag_html = ele.r_l_tags.map((e, index) => {
+                                        return `
+                                                    <a href="#" class="sec-tag">${e}</a>
+                                                `;
+                                    }).join('');
+                                    let tagHTML = `<div class="sec-tags clearfix">${tag_html}</div>`
+
+                                    let list_html = ele.r_l_navs.map(
+                                        (e, index) => {
+                                            let title = `
+                                                        <div class="title">${e.r_l_title}</div>
+                                                    `;
+                                            let list = e.r_l_contents.map(
+                                                (ee, index) => {
+                                                    if (typeof ee == 'object') {
+                                                        return `
+                                                                <a class="hot">${ee.text}</a>
+                                                                `
+                                                    } else {
+                                                        return `
+                                                                <a>${ee}</a>
+                                                                `;
+                                                    }
+                                                }
+                                            ).join('');
+                                            list = `<div class="list">${list}</div>`
+                                            return `<div class="sec-list">${title+list}</div>`;
+                                        }
+                                    ).join('');
+                                    let listHTML = `<div class="sec-lists">${list_html}</div>`;
+                                    console.log(tagHTML, listHTML);
+
+                                    //右烂
+                                    let img_html = '';
+                                    let brand_img_html = ele.r_r_brand_imgs.map(
+                                        (e, index) => {
+                                            return `<a href="#">
+                                                    <img src=${e} > 
+                                                    </a>
+                                                    `
+                                        }
+                                    ).join('');
+                                    img_html = `
+                                                <div class="top_img_box">${brand_img_html}</div>
+                                            `;
+
+                                    if (ele.r_r_big_img) {
+                                        img_html += `
+                                                <div class="bottom_img_box">
+                                                        <a href="#">
+                                                <img src=${ele.r_r_big_img}>
+                                                </a>
+                                                </div>
+                                                `;
+                                    }
+                                    let imgHTML = `
+                                            <div class="sec-right-box clearfix">
+                                                ${img_html}
+                                            </div>
+                                            `;
+
+
+                                    let secHTML = `<div class="nav-second  clearfix">${tagHTML+listHTML+imgHTML}</div>`;
+
+
+                                    return `<li>${ahtml+secHTML}</li>`;
+                                });
+                                navFirst.html(html);
+
+                                //二级菜单
+
+                            });
+                        </script>
+                    </ul>
+                    <div class="gm_sever_bg"></div>
+                    <div class="gm_sever gm_kuaixun4">
+                        <div class="gm_kuaixun edit-mode" modelid="1000060768" modeltype="">
+                            <div class="gome_news">
+                                <h2 class="gome_news_title">快讯</h2>
+                                <a href="//news.gome.com.cn/?intcmp=sy-D-0-0-0" target="_blank" data-code="indexsever001">更多<span></span></a>
+                            </div>
+                            <div class="gome_news_content">
+                                <span>
+                                                    <a class="gome_news_sort edit-mode" href="https://news.gome.com.cn/1-8-1.html" target="_blank" data-code="1000060770" modelid="1000060770" modeltype="2">公告</a>
+                                                    <a class="gome_news_text  edit-mode" href="//news.gome.com.cn/20002989.html" target="_blank" data-code="1000060771" modelid="1000060771" modeltype="2">网络举报知识竞赛，拿丰厚奖品！</a>
+                                            </span>
+                                <span>
+                                                    <a class="gome_news_sort edit-mode" href="https://news.gome.com.cn/1-7-1.html" target="_blank" data-code="1000060773" modelid="1000060773" modeltype="2">特惠</a>
+                                                    <a class="gome_news_text red edit-mode" href="//prom.gome.com.cn/html/prodhtml/topics/201909/10/2759661856.html" target="_blank" data-code="1000060774" modelid="1000060774" modeltype="2">电脑九月特惠 爆品直降千元</a>
+                                            </span>
+                                <span>
+                                                    <a class="gome_news_sort edit-mode" href="https://news.gome.com.cn/1-7-1.html" target="_blank" data-code="1000060776" modelid="1000060776" modeltype="2">特惠</a>
+                                                    <a class="gome_news_text  edit-mode" href="//prom.gome.com.cn/html/prodhtml/topics/201909/9/1446764076.html" target="_blank" data-code="1000060777" modelid="1000060777" modeltype="2">手机狂欢购 易卡分期享30天免息</a>
+                                            </span>
+                                <span>
+                                                    <a class="gome_news_sort edit-mode" href="https://news.gome.com.cn/1-7-1.html" target="_blank" data-code="1000060779" modelid="1000060779" modeltype="2">特惠</a>
+                                                    <a class="gome_news_text  edit-mode" href="//prom.gome.com.cn/html/prodhtml/topics/201909/11/3220294761.html" target="_blank" data-code="1000060780" modelid="1000060780" modeltype="2">国美全面屏电视新品上市</a>
+                                            </span>
+                            </div>
+                        </div>
+                        <div class="icon_server_box edit-mode" modelid="1000060784" modeltype="">
+                            <div class="icon_box" id="icon_box">
+                                <ul class="icon_server" id="icon_server">
+                                    <li class="icon_server_li_bottom edit-mode" modelid="1000060786" modeltype="2">
+                                        <a class="icon_server_a" href="https://wt.gome.com.cn/recharge/" target="_blank" data-code="1000060785-1">
+                                            <i class="gm-icon">Ò</i>
+                                            <i class="icon_server_li_titile">充话费</i>
+                                            <i class="icon_server_li_triangle"></i>
+                                        </a>
+                                    </li>
+                                    <li class="icon_server_li_bottom edit-mode" modelid="1000060789" modeltype="2">
+                                        <a class="icon_server_a" href="https://wt.gome.com.cn/recharge/flowindex.html" target="_blank" data-code="1000060788-2">
+                                            <i class="gm-icon">ƒ</i>
+                                            <i class="icon_server_li_titile">充流量</i>
+                                            <i class="icon_server_li_triangle"></i>
+                                        </a>
+                                    </li>
+                                    <li class=" edit-mode" modelid="1000060792" modeltype="2">
+                                        <a class="icon_server_a" href="https://lingquan.gome.com.cn" target="_blank" data-code="1000060791-3">
+                                            <i class="gm-icon">Î</i>
+                                            <i class="icon_server_li_titile">领券</i>
+                                        </a>
+                                    </li>
+                                    <li class=" edit-mode" modelid="1000060795" modeltype="2">
+                                        <a class="icon_server_a" href="//club.gome.com.cn/" target="_blank" data-code="1000060794-4">
+                                            <i class="gm-icon">ﬂ</i>
+                                            <i class="icon_server_li_titile">会员</i>
+                                        </a>
+                                    </li>
+                                    <li class=" edit-mode" modelid="1000060798" modeltype="2">
+                                        <a class="icon_server_a" href="//help.gome.com.cn/bzfw" target="_blank" data-code="1000060797-5">
+                                            <i class="gm-icon">¨</i>
+                                            <i class="icon_server_li_titile">帮助</i>
+                                        </a>
+                                    </li>
+                                    <li class=" edit-mode" modelid="1000060801" modeltype="2">
+                                        <a class="icon_server_a" href="//mall.gome.com.cn/80011410/" target="_blank" data-code="1000060800-6">
+                                            <i class="gm-icon">Ù</i>
+                                            <i class="icon_server_li_titile">找服务</i>
+                                        </a>
+                                    </li>
+                                    <li class=" edit-mode" modelid="1000060804" modeltype="2">
+                                        <a class="icon_server_a" href="https://jr.gome.com.cn" target="_blank" data-code="1000060803-7">
+                                            <i class="gm-icon">Í</i>
+                                            <i class="icon_server_li_titile">金融</i>
+                                        </a>
+                                    </li>
+                                    <li class=" edit-mode" modelid="1000060807" modeltype="2">
+                                        <a class="icon_server_a" href="//gs.gome.com.cn/" target="_blank" data-code="1000060806-8">
+                                            <i class="gm-icon">Ì</i>
+                                            <i class="icon_server_li_titile">定期</i>
+                                        </a>
+                                    </li>
+                                    <li class=" edit-mode" modelid="1000060810" modeltype="2">
+                                        <a class="icon_server_a" href="//help.gome.com.cn/bzfw" target="_blank" data-code="1000060809-9">
+                                            <i class="gm-icon">¨</i>
+                                            <i class="icon_server_li_titile">帮助</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="round edit-mode" modelid="1000074638" modeltype="">
+                            <a class="round_out clearfix" href="//prom.gome.com.cn/html/prodhtml/topics/201909/17/4768498057.html" target="_blank" data-code="1000074638-1">
+                                <img class="lazyloading" src="./img/T1B3AXBTJT1RCvBVdK.jpg" width="250" height="130">
+                                <div class="round_tittle">
+                                    <p class="tittle_up"><span>[</span><span class="txt">厨房卫浴</span><span>]</span></p>
+                                    <p class="tittle_down">400元券免费领</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="slide" class="w1200-bg">
+                    <ul class="list">
+                        <li>
+                            <a href="javascript:;"><img src="./img/banner1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="./img/banner2.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="./img/banner3.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="./img/banner4.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="./img/banner5.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="./img/banner6.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="./img/banner7.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="./img/banner8.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    $('#slide').enCarousel({
+                        _width: 750,
+                        _height: 450,
+                        nextText: '>',
+                        prevText: '<',
+                        fade: 2000,
+                        time: 2000,
+                        pagelocat: true
+                    });
+                </script>
+            </div>
+
+
+        </div>
+        <div id="content" class="w1200">
+            <div class="w1200-bg">
+                <div class="mrbq">
+                    <div class="mrbq_head clearfix">
+                        <div class="line"></div>
+                        <div class="mrbq_title fl">
+                            <img src="./img/T1ovZvBTbb1RCvBVdK.jpeg" alt="">
+                            <h3>美日必抢</h3>
+                        </div>
+                        <div class="mrbq_time_box fr">
+                            <span>本场次剩余时间</span>
+                            <i class="timego">
+                                <em class="ac hour"></em>
+                                :
+                                <em class="ac minute"></em>
+                                :
+                                <em class="ac second"></em>
+                            </i>
+                            <script>
+                                let hour = $('.hour').eq(0);
+                                let minute = $('.minute').eq(0);
+                                let second = $('.second').eq(0);
+                                let start = new Date();
+                                let end = new Date('2019-9-21 23:00');
+                                let {
+                                    h,
+                                    m,
+                                    s
+                                } = e5.getEndTime(start, end);
+                                hour.text(h.toString().padStart(2, '0'))
+                                minute.text(m.toString().padStart(2, '0'))
+                                second.text(s.toString().padStart(2, '0'))
+                                window.setInterval(() => {
+                                    start = new Date();
+                                    let {
+                                        h,
+                                        m,
+                                        s
+                                    } = e5.getEndTime(start, end);
+                                    hour.text(h.toString().padStart(2, '0'))
+                                    minute.text(m.toString().padStart(2, '0'))
+                                    second.text(s.toString().padStart(2, '0'))
+                                }, 1000);
+                            </script>
+                        </div>
+                    </div>
+                    <div id="mrbq" class="mrbq_body">
+                        <ul></ul>
+                        <div class="btns">
+                            <button class="pre btn">&lt;</button>
+                            <button class="nex btn">&gt;</button>
+                        </div>
+                        <!-- 一个 li 4个div商品 -->
+                        <script>
+                            let ele = $('.mrbq_body ul').eq(0);
+                            $.getJSON('./server/mrbq.json', function(res) {
+                                let count = 4;
+                                let len = res.length;
+                                let group = Math.ceil(len / count);
+                                for (let i = 0; i < group; i++) {
+                                    let j = i * count;
+                                    let html = res.slice(j, j + count).map((ele, index) => {
+                                        return `<div class="list_li fl">
+                                            <a href="#">
+                                                <img src=${ele.src}>
+                                                <div class="price">
+                                                    <i>${ele.price}</i>
+                                                    <i class="del">${ele.del_price}</i>
+                                                </div>
+                                                <p class="name">${ele.title}</p>
+                                                </a>
+                                                </div>
+                                                `
+                                    });
+                                    $('<li class="clearfix">').html(html).appendTo(ele);
+                                }
+                            })
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
