@@ -56,7 +56,7 @@ var e5 = {
         };
     },
     //节流函数
-    throttle: function(fn, delay) {
+    throttle: function(fn, delay = 500) {
         let canRun = true;
         return function() {
             if (!canRun) {

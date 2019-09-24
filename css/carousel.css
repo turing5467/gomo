@@ -1,9 +1,9 @@
 #slide {
     position: absolute;
-    top: -450px;
-    left: -25px;
     width: 750px;
     height: 450px;
+    /* top: -450px; */
+    /* left: -25px; */
 }
 
 .sBtn {
