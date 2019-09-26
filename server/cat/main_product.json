@@ -1,663 +1,481 @@
 [{
-        "code": "gm-A0004958764-pop8010690303",
-        "name": "联想（Lenovo）天逸510S 第八代英特尔酷睿i3-8100 个人商务台式电脑 （集成显卡 Win10 ）(21.5英寸 显示器 4G内存/1T机械盘/标配)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1pChQB5dj1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1IjCjB4Vj1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1vCCgBgAg1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1ZibgB7Dv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1zdZ_BQxv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1dS__BTxg1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1S1__Bvx_1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1e9h_BXCj1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1EGA_BjW_1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4499.00",
-        "prom_text": "下单即送鼠标垫！【定制】是指：店铺在不影响整机保修的情况下，仅升级了内存或者固态，仅此内存或者固态为店铺保修3年！",
-        "comment": "<span class=grey>已有</span>728<span class=grey>人评价</span>",
-        "shop_name": "嘉和电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满2000-20",
-            "券1999-160"
-        ]
-    },
-    {
-        "code": "gm-A0005003447-pop8012228952",
-        "name": "联想ThinkCentre E74 商务办公家用台式机电脑 G4400 4G 500G 集显 Win10 串并口(21.5英寸显示器)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1KALQBm_v1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3099.00",
-        "prom_text": "Think？思路来源于想象！Think超你想象！精致小黑，主机标配扬声器，E73系列升级款Windows10系统丨兼容Windows7丨全国联保 全新行货 顺丰包邮！！！",
-        "comment": "<span class=grey>已有</span>163<span class=grey>人评价</span>",
-        "shop_name": "永兴电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "券2000-160"
-        ]
-    },
-    {
-        "code": "gm-9140106020-1130575179",
-        "name": "戴尔（DELL） S2319H 23英寸高清窄边框显示器",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T13vLjBKLT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥1000.00",
-        "prom_text": "【9.20-9.26戴尔约惠金秋】戴尔灵越5000轻薄本3899元限量抢》更多精彩请戳这里》",
-        "comment": "<span class=grey>已有</span>765<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140126022-1130597282",
-        "name": "联想（Lenovo）ideacentre720商用台式电脑整机（英特尔八代酷睿i5-8400 4G 1T GT730 2G独显 键鼠）23英寸",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1frEvBCYv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1Z4JQB4Zv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1zJJXB_xT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3999.00",
-        "prom_text": "八代酷睿 1T大存储 商务办公 轻松应对",
-        "comment": "<span class=grey>已有</span>3289<span class=grey>人评价</span>",
-        "shop_name": "联想官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140112305-1130662265",
-        "name": "联想（Lenovo）天逸310S商用台式办公电脑整机（A4-9125 4G 1T 1G独显 WiFi 蓝牙 win10）23英寸",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1RMZsBX_T1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1niC_Bs_T1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3199.00",
-        "prom_text": "23英寸大屏  小巧机身，不占空间，独立显卡，办公娱乐兼顾！",
-        "comment": "<span class=grey>已有</span>1937<span class=grey>人评价</span>",
-        "shop_name": "联想官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-A0004855235-pop8012997156",
-        "name": "联想（Lenovo）天逸510Pro个人商务台式机电脑整机【英特尔酷睿i5-9400F 2G独显 WiFi 蓝牙】(单主机不含显示器 8g内存/512g固态/标配)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1yODXB7VT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1xJEXBCxv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1tdJXBsLT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1FdJXBQET1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4299.00",
-        "prom_text": "【九代酷睿，真“芯”实意】三年上门服务，内置WiFi，蓝牙，享受无线高端办公，win10",
-        "comment": "<span class=grey>已有</span>333<span class=grey>人评价</span>",
-        "shop_name": "嘉和电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满2000-20",
-            "券1999-160"
-        ]
-    },
-    {
-        "code": "gm-A0006462528-pop8012999505",
-        "name": "联想(Lenovo)天逸510 Pro 个人家用商用办公台式机电脑（锐龙Ryzen R3 2200 四核 WIFI）(单主机 8g内存/1T机械盘/标配)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1Z.DXB4Dv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1A.YXBjZT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1WodXB4Dv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1d5bXBCxT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥2349.00",
-        "prom_text": "【双“芯”合璧,性能爆表】“锐”不可挡，超有”V”力！AMD锐龙四核四线程“锐龙”处理器，火力全开；“Vega”显示核心，下单送鼠标垫，",
-        "comment": "<span class=grey>已有</span>88<span class=grey>人评价</span>",
-        "shop_name": "嘉和电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满2000-20",
-            "券1999-160"
-        ]
-    },
-    {
-        "code": "gm-A0006608335-pop8012994603",
-        "name": "惠普HP小欧 390-050rcn 商务办公台式电脑主机 注册升级五年上门服务九代i5-9400处理器(1 1)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1YWbXBgZT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥2999.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "北京联拓电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满1500-10"
-        ]
-    },
-    {
-        "code": "gm-A0005294676-pop8012996796",
-        "name": "联想(Lenovo)天逸510Pro 个人商务台式机电脑整机【英特尔酷睿八核i7-9700 2G独显 WiFi 】(单主机 8g内存/512g固态/标配)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1J6WXBsA_1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1w0VXBTAv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T100VXBThv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1gAJXBCVT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1bAJXBCVT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5599.00",
-        "prom_text": "【九代酷睿，真“芯”实意】三年上门服务，内置WiFi，蓝牙，享受无线高端办公，win10",
-        "comment": "<span class=grey>已有</span>128<span class=grey>人评价</span>",
-        "shop_name": "嘉和电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满2000-20",
-            "券1999-160"
-        ]
-    },
-    {
-        "code": "gm-A0006033703-pop8012991395",
-        "name": "惠普HP小欧 390-050rcn 商务办公台式电脑主机 注册升级五年服务九代i5-9400处理器(单主机 4G/128G固态+1T机械/定制)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1SYYXBKAv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3499.00",
-        "prom_text": "惠普280G2商用台式电脑，3年硬件故障上门服务！H110芯片组，标配1PCI/1PCIeX1/1PCIeX16, PS2和1个串口，VGA+DVI视频接口，8个USB接口，满足办公需求！下单送鼠标垫及无线网卡接收器1个。",
-        "comment": "<span class=grey>已有</span>136<span class=grey>人评价</span>",
-        "shop_name": "嘉和电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满2000-20",
-            "券1999-160"
-        ]
-    },
-    {
-        "code": "gm-A0006486712-pop8012991402",
-        "name": "联想（Lenovo） 天逸510pro 台式机电脑家用商用办【酷睿九代i3-9100 集显 Win10 WIFI】(单主机 无显示器 4G内存/256固态/标配)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1YAhXBKhv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T18dYXB4Cv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1VJCXBgZT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1yJJXBsVv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1AJKXB4CT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥2799.00",
-        "prom_text": "【九代酷睿，真“芯”实意】三年上门服务，内置WiFi，蓝牙，享受无线高端办公，win10",
-        "comment": "<span class=grey>已有</span>101<span class=grey>人评价</span>",
-        "shop_name": "嘉和电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满2000-20",
-            "券1999-160"
-        ]
-    },
-    {
-        "code": "gm-A0006491729-pop8012999568",
-        "name": "联想（Lenovo）天逸510Pro英特尔酷睿i5个人商务台式机电脑整机【i5-9400F 2G独显 WiFi 蓝牙】(单主机 8g内存/1T机械/标配)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1HGLXBCxT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1wILXBTDT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1QIWXBmZT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1WTEXB4VT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1dIAXBQZT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1ywJXBy_T1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3849.00",
-        "prom_text": "【九代酷睿，真“芯”实意】三年上门服务，内置WiFi，蓝牙，享受无线高端办公，win10",
-        "comment": "<span class=grey>已有</span>169<span class=grey>人评价</span>",
-        "shop_name": "嘉和电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满2000-20",
-            "券1999-160"
-        ]
-    },
-    {
-        "code": "gm-9140160074-1130684031",
-        "name": "联想台式电脑启天M420",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1MqZXBgxv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4199.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140163442-1130724391",
-        "name": "联想电脑启天M415",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1FrAXBQJ_1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3999.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140160078-1130684141",
-        "name": "联想台式机启天M425",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1ZrZXBgDv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥6999.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140163441-1130704874",
-        "name": "联想台式电脑启天M425",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1yrAXBjE_1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5789.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140158212-1130724268",
-        "name": "联想台式启天M420",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1MsDXBKdT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5299.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-A0006529898-pop8012672477",
-        "name": "联想(Lenovo)启天M415办公娱乐台式机电脑i5-7500(单主机+23英寸显示器 8G内存/1T+128G/2G/定制)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1bJW_B4D_1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1C2d_BKd_1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1wUdTB__v1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5000.00",
-        "prom_text": "提供释放或安装系统和常用软件及硬盘分区服务,可以咨询在线客服或下单备注即可;店铺定制版,在不影响整机保修的情况下,升级了内存硬盘显卡,升级的配件为店铺保修3年。",
-        "comment": "<span class=grey>已有</span>1<span class=grey>人评价</span>",
-        "shop_name": "北京联拓电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满1500-10"
-        ]
-    },
-    {
-        "code": "gm-A0005066977-pop8012981496",
-        "name": "戴尔DELL成就5000（5090）高能强扩展商用办公台式电脑（英特尔酷睿九代 WIFI蓝牙 4年服务 460W电源）(单主机 i7-9700/8G/256GSSD)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1nBxXBj_T1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1q3ZXBTVT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1q3ZXBTVT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1q3ZXBTVT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5099.00",
-        "prom_text": "配备英特尔第 9 代酷睿处理器，充分利用企业级台式机的强大性能。存储空间充足，功能强劲，经久耐用， 稳定可靠。",
-        "comment": "<span class=grey>已有</span>368<span class=grey>人评价</span>",
-        "shop_name": "永兴电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140127139-1130648215",
-        "name": "戴尔(DELL)OptiPlex 7050台式电脑(I7-7700 8G 1TB+256G 2G独显 DVDRW DOS 23.8英寸 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1AeEbB_bT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥9299.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140140576-1130675308",
-        "name": "宏碁（ACER）23.8英寸IPS窄边框液晶显示器",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1hwKsBCKv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥899.00",
-        "comment": "<span class=grey>已有</span>14<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138807-1130650591",
-        "name": "戴尔(DELL)OptiPlex 3060 Tower 240350台式电脑(G5400 4G 1TB DVDRW 集显 19.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1MoVgBTLv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3899.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140126022-1130684708",
-        "name": "联想（Lenovo）天逸510Pro英特尔酷睿i3个人商务台式机电脑整机（I3-9100 8G 1T+256G SSD ）23英寸",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1zJJXB_xT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1frEvBCYv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1Z4JQB4Zv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3999.00",
-        "comment": "<span class=grey>已有</span>3289<span class=grey>人评价</span>",
-        "shop_name": "联想官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140067614-1130572985",
-        "name": "联想(Lenovo)启天M415-D003台式电脑(I5-6500 4G 1T机械硬盘 集显 DVDRW Win7Pro 19.5英寸显示器)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T19PhgBm_T1RCvBVdK_30.jpg"
-        ],
-        "price": "¥6199.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "联想官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-A0004780063-pop8012552070",
-        "name": "联想（Lenovo）天逸310S 办公娱乐台式电脑 【AMD A4-9125  一年上门 Win10 支持WiFi 】(19.5英寸 标配/4G内存/1T机械)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T13WWsB5dT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T13bbsBgCv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1euxsBKE_1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1dYDsBj__1RCvBVdK_30.jpg"
-        ],
-        "price": "¥2299.00",
-        "prom_text": "【天逸310S办公家用台式电脑】8.4L小巧机箱，AMD A4处理器，4GB运行内存，支持VGA/HDMI输出，下单即送鼠标垫一个！",
-        "comment": "<span class=grey>已有</span>90<span class=grey>人评价</span>",
-        "shop_name": "嘉和电脑专营店",
-        "shop_zy_tag": false,
-        "promotion": [
-            "满2000-20",
-            "券1999-160"
-        ]
-    },
-    {
-        "code": "gm-9140152608-1130664556",
-        "name": "宏碁(Acer)商祺N4670商用台式办公电脑主机 i3-8100 4G 1T 主机+21.5英寸显示器",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T13kJbBbCv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3099.00团购价",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140152607-1130640227",
-        "name": "宏碁(Acer)商祺SQV4270-1401商用台式办公电脑主机 G4900 4G 1T 主机+21.5英寸显示器",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1gLCsB_ZT1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1t9WsBXKv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥2899.00团购价",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138802-1130612992",
-        "name": "戴尔(DELL)OptiPlex 7050台式电脑(I7-7700 4G 1TB 2G独显 DVDRW DOS 23.8英寸 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1iqKvBQVv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥7699.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138003-1130650357",
-        "name": "戴尔(DELL)OptiPlex 3060 Tower 230650台式电脑(I3-8100 4GB 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1NexjBmKv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4949.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140135745-1130645770",
-        "name": "戴尔(DELL)OptiPlex 3050 Tower 003128台式电脑(I5-7500 4GB 1TB DVDRW 集显 23.8英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T13MVQBXhv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5699.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140127136-1130641886",
-        "name": "戴尔(DELL)OptiPlex 3050台式电脑(I5-7500 8G 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1QRAsBm_v1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5699.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140145264-1130684077",
-        "name": "宏碁(acer) SQV4270-1401-G4900-1 电脑 主机+21.5英寸显示器",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1CrZbB7Yv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3109.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140131625-1130645899",
-        "name": "戴尔(DELL)OptiPlex 3060 Tower 230830台式电脑(I5-8500 4GB 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1utVbBCdv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5899.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140131624-1130642019",
-        "name": "戴尔(DELL)OptiPlex 3060 Tower 230830台式电脑(I5-8500 4GB 1TB DVDRW 集显 19.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1p7xbBgbT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5599.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138339-1130649998",
-        "name": "戴尔(DELL)OptiPlex 3050 Tower 001088台式电脑(I3-7100 4GB 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1lrLgBjJv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4699.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140135758-1130648562",
-        "name": "戴尔(DELL)OptiPlex 3060台式电脑(I5-8500 4GB 1TB+128G SSD DVDRW 集显 23.8英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1g3hvB7xv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥6899.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140143443-1130645759",
-        "name": "华硕(ASUS) D320MT-G39A14003-1 电脑台式 19.5英寸 G3900 4G 1TB 集成 无驱 DOS",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1pbDsBC__1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3940.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "华硕国美自营官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140127130-1130645763",
-        "name": "戴尔(DELL)OptiPlex 3050 Tower 001088台式电脑(I3-7100 4GB 1TB DVDRW DOS 集显 19.5英寸 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1vcDbBsAT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4099.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140131389-1130641766",
-        "name": "戴尔(DELL)OptiPlex 3050 Tower 003838台式电脑(G4560 4G 500G DOS 集显 DVDRW 19.5英寸 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1dUCQBCdv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3799.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140137761-1130648094",
-        "name": "戴尔(DELL)OptiPlex 3050 Tower 003128台式电脑(I5-7500 4GB 1TB DVDRW 集显 19.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1mRdsBsWT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5049.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138926-1130650592",
-        "name": "戴尔(DELL)OptiPlex 3060 Tower 230650台式电脑(I3-8100 4GB 1TB DVDRW 集显 19.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T11cxTB4L_1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4699.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140152607-1130680590",
-        "name": "宏碁(Acer)商祺SQV4270-3401商用台式办公电脑主机 G5400 4G 1T 主机+21.5英寸显示器",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1t9WsBXKv1RCvBVdK_30.jpg",
-            "http://gfs17.gomein.net.cn/T1gLCsB_ZT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥3799.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138002-1130642015",
-        "name": "戴尔(DELL)OptiPlex 3060 Tower 240350台式电脑(G5400 4GB 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1QdWbBQCT1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4099.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138340-1130641774",
-        "name": "戴尔(DELL)OptiPlex 3050台式电脑(I3-7100 4GB 1TB+256G DVDRW 集显 21.5英寸 DOS 原厂固态硬盘 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T17yZsB_Kv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5699.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140152609-1130640231",
-        "name": "宏碁(Acer)商祺ATC885-700商用台式办公电脑主机 i3-8100 4G 1T 主机+21.5英寸显示器",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1WLVsBCAv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4399.00团购价",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": null,
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140135866-1130641768",
-        "name": "戴尔(DELL)OptiPlex 3050 Tower 003838台式电脑(G4560 4G 500G 集显 DVDRW 21.5英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1A__QBjh_1RCvBVdK_30.jpg"
-        ],
-        "price": "¥4199.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138927-1130645895",
-        "name": "戴尔(DELL)OptiPlex 3060 Tower 230650台式电脑(I3-8100 4GB 1TB DVDRW 集显 23.8英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T16vVQBbKv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥5449.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    },
-    {
-        "code": "gm-9140138812-1130648561",
-        "name": "戴尔(DELL)OptiPlex 3060 Tower 230830台式电脑(I5-8500 4GB 1TB DVDRW 集显 23.8英寸 DOS 三年保修)",
-        "small_pics": [
-            "http://gfs17.gomein.net.cn/T1YGD_BvJv1RCvBVdK_30.jpg"
-        ],
-        "price": "¥6399.00",
-        "comment": "<span class=grey>已有</span>0<span class=grey>人评价</span>",
-        "shop_name": "戴尔官方旗舰店",
-        "shop_zy_tag": true,
-        "promotion": []
-    }
-]
+    "code": "gm-A0004958764-pop8010690303",
+    "name": "联想（Lenovo）天逸510S 第八代英特尔酷睿i3-8100 个人商务台式电脑 （集成显卡 Win10 ）(21.5英寸 显示器 4G内存/1T机械盘/标配)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1pChQB5dj1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1IjCjB4Vj1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1vCCgBgAg1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1ZibgB7Dv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1zdZ_BQxv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1dS__BTxg1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1S1__Bvx_1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1e9h_BXCj1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1EGA_BjW_1RCvBVdK_30.jpg"],
+    "price": "3249.00",
+    "prom_text": "下单即送鼠标垫！【定制】是指：店铺在不影响整机保修的情况下，仅升级了内存或者固态，仅此内存或者固态为店铺保修3年！",
+    "comment": 728,
+    "shop_name": "嘉和电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满2000-20", "券1999-160"]
+}, {
+    "code": "gm-A0005003447-pop8012228952",
+    "name": "联想ThinkCentre E74 商务办公家用台式机电脑 G4400 4G 500G 集显 Win10 串并口(21.5英寸显示器)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1KALQBm_v1RCvBVdK_30.jpg"],
+    "price": "3099.00",
+    "prom_text": "Think？思路来源于想象！Think超你想象！精致小黑，主机标配扬声器，E73系列升级款Windows10系统丨兼容Windows7丨全国联保 全新行货 顺丰包邮！！！",
+    "comment": 163,
+    "shop_name": "永兴电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["券2000-160"]
+}, {
+    "code": "gm-9140106020-1130575179",
+    "name": "戴尔（DELL） S2319H 23英寸高清窄边框显示器",
+    "small_pics": ["http://gfs17.gomein.net.cn/T13vLjBKLT1RCvBVdK_30.jpg"],
+    "price": "1000.00",
+    "prom_text": "【9.20-9.26戴尔约惠金秋】戴尔灵越5000轻薄本3899元限量抢》更多精彩请戳这里》",
+    "comment": 765,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140126022-1130597282",
+    "name": "联想（Lenovo）ideacentre720商用台式电脑整机（英特尔八代酷睿i5-8400 4G 1T GT730 2G独显 键鼠）23英寸",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1frEvBCYv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1Z4JQB4Zv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1zJJXB_xT1RCvBVdK_30.jpg"],
+    "price": "4999.00",
+    "prom_text": "八代酷睿 1T大存储 商务办公 轻松应对",
+    "comment": 3290,
+    "shop_name": "联想官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-A0004855235-pop8012997156",
+    "name": "联想（Lenovo）天逸510Pro个人商务台式机电脑整机【英特尔酷睿i5-9400F 2G独显 WiFi 蓝牙】(单主机不含显示器 8g内存/512g固态/标配)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1yODXB7VT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1xJEXBCxv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1tdJXBsLT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1FdJXBQET1RCvBVdK_30.jpg"],
+    "price": "4299.00",
+    "prom_text": "【九代酷睿，真“芯”实意】三年上门服务，内置WiFi，蓝牙，享受无线高端办公，win10",
+    "comment": 333,
+    "shop_name": "嘉和电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满2000-20", "券1999-160"]
+}, {
+    "code": "gm-A0006462528-pop8012999505",
+    "name": "联想(Lenovo)天逸510 Pro 个人家用商用办公台式机电脑（锐龙Ryzen R3 2200 四核 WIFI）(单主机 8g内存/1T机械盘/标配)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1Z.DXB4Dv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1A.YXBjZT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1WodXB4Dv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1d5bXBCxT1RCvBVdK_30.jpg"],
+    "price": "2349.00",
+    "prom_text": "【双“芯”合璧,性能爆表】“锐”不可挡，超有”V”力！AMD锐龙四核四线程“锐龙”处理器，火力全开；“Vega”显示核心，下单送鼠标垫，",
+    "comment": 88,
+    "shop_name": "嘉和电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满2000-20", "券1999-160"]
+}, {
+    "code": "gm-A0006608335-pop8012994603",
+    "name": "惠普HP小欧 390-050rcn 商务办公台式电脑主机 注册升级五年上门服务九代i5-9400处理器(1 1)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1YWbXBgZT1RCvBVdK_30.jpg"],
+    "price": "2999.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "北京联拓电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满1500-10"]
+}, {
+    "code": "gm-A0005294676-pop8012996796",
+    "name": "联想(Lenovo)天逸510Pro 个人商务台式机电脑整机【英特尔酷睿八核i7-9700 2G独显 WiFi 】(单主机 8g内存/512g固态/标配)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1J6WXBsA_1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1w0VXBTAv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T100VXBThv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1gAJXBCVT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1bAJXBCVT1RCvBVdK_30.jpg"],
+    "price": "5599.00",
+    "prom_text": "【九代酷睿，真“芯”实意】三年上门服务，内置WiFi，蓝牙，享受无线高端办公，win10",
+    "comment": 128,
+    "shop_name": "嘉和电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满2000-20", "券1999-160"]
+}, {
+    "code": "gm-A0006033703-pop8012991395",
+    "name": "惠普HP小欧 390-050rcn 商务办公台式电脑主机 注册升级五年服务九代i5-9400处理器(单主机 4G/128G固态+1T机械/定制)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1SYYXBKAv1RCvBVdK_30.jpg"],
+    "price": "3499.00",
+    "prom_text": "惠普280G2商用台式电脑，3年硬件故障上门服务！H110芯片组，标配1PCI/1PCIeX1/1PCIeX16, PS2和1个串口，VGA+DVI视频接口，8个USB接口，满足办公需求！下单送鼠标垫及无线网卡接收器1个。",
+    "comment": 136,
+    "shop_name": "嘉和电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满2000-20", "券1999-160"]
+}, {
+    "code": "gm-A0006486712-pop8012991402",
+    "name": "联想（Lenovo） 天逸510pro 台式机电脑家用商用办【酷睿九代i3-9100 集显 Win10 WIFI】(单主机 无显示器 4G内存/256固态/标配)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1YAhXBKhv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T18dYXB4Cv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1VJCXBgZT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1yJJXBsVv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1AJKXB4CT1RCvBVdK_30.jpg"],
+    "price": "2799.00",
+    "prom_text": "【九代酷睿，真“芯”实意】三年上门服务，内置WiFi，蓝牙，享受无线高端办公，win10",
+    "comment": 101,
+    "shop_name": "嘉和电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满2000-20", "券1999-160"]
+}, {
+    "code": "gm-A0006491729-pop8012999568",
+    "name": "联想（Lenovo）天逸510Pro英特尔酷睿i5个人商务台式机电脑整机【i5-9400F 2G独显 WiFi 蓝牙】(单主机 8g内存/1T机械/标配)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1HGLXBCxT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1wILXBTDT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1QIWXBmZT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1WTEXB4VT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1dIAXBQZT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1ywJXBy_T1RCvBVdK_30.jpg"],
+    "price": "3849.00",
+    "prom_text": "【九代酷睿，真“芯”实意】三年上门服务，内置WiFi，蓝牙，享受无线高端办公，win10",
+    "comment": 169,
+    "shop_name": "嘉和电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满2000-20", "券1999-160"]
+}, {
+    "code": "gm-9140160074-1130684031",
+    "name": "联想台式电脑启天M420",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1MqZXBgxv1RCvBVdK_30.jpg"],
+    "price": "4199.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140160078-1130684141",
+    "name": "联想台式机启天M425",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1ZrZXBgDv1RCvBVdK_30.jpg"],
+    "price": "6999.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140158212-1130724268",
+    "name": "联想台式启天M420",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1MsDXBKdT1RCvBVdK_30.jpg"],
+    "price": "5299.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140163441-1130704874",
+    "name": "联想台式电脑启天M425",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1yrAXBjE_1RCvBVdK_30.jpg"],
+    "price": "5789.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140163442-1130724391",
+    "name": "联想电脑启天M415",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1FrAXBQJ_1RCvBVdK_30.jpg"],
+    "price": "3999.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-A0006529898-pop8012672477",
+    "name": "联想(Lenovo)启天M415办公娱乐台式机电脑i5-7500(单主机+23英寸显示器 8G内存/1T+128G/2G/定制)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1bJW_B4D_1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1C2d_BKd_1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1wUdTB__v1RCvBVdK_30.jpg"],
+    "price": "5000.00",
+    "prom_text": "提供释放或安装系统和常用软件及硬盘分区服务,可以咨询在线客服或下单备注即可;店铺定制版,在不影响整机保修的情况下,升级了内存硬盘显卡,升级的配件为店铺保修3年。",
+    "comment": 1,
+    "shop_name": "北京联拓电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满1500-10"]
+}, {
+    "code": "gm-A0005066977-pop8012981496",
+    "name": "戴尔DELL成就5000（5090）高能强扩展商用办公台式电脑（英特尔酷睿九代 WIFI蓝牙 4年服务 460W电源）(单主机 i7-9700/8G/256GSSD)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1nBxXBj_T1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1q3ZXBTVT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1q3ZXBTVT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1q3ZXBTVT1RCvBVdK_30.jpg"],
+    "price": "5099.00",
+    "prom_text": "配备英特尔第 9 代酷睿处理器，充分利用企业级台式机的强大性能。存储空间充足，功能强劲，经久耐用， 稳定可靠。",
+    "comment": 368,
+    "shop_name": "永兴电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": []
+}, {
+    "code": "gm-9140127139-1130648215",
+    "name": "戴尔(DELL)OptiPlex 7050台式电脑(I7-7700 8G 1TB+256G 2G独显 DVDRW DOS 23.8英寸 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1AeEbB_bT1RCvBVdK_30.jpg"],
+    "price": "9299.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140140576-1130675308",
+    "name": "宏碁（ACER）23.8英寸IPS窄边框液晶显示器",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1hwKsBCKv1RCvBVdK_30.jpg"],
+    "price": "899.00",
+    "prom_text": "",
+    "comment": 14,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138807-1130650591",
+    "name": "戴尔(DELL)OptiPlex 3060 Tower 240350台式电脑(G5400 4G 1TB DVDRW 集显 19.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1MoVgBTLv1RCvBVdK_30.jpg"],
+    "price": "3899.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140126022-1130684708",
+    "name": "联想（Lenovo）天逸510Pro英特尔酷睿i3个人商务台式机电脑整机（I3-9100 8G 1T+256G SSD ）23英寸",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1zJJXB_xT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1frEvBCYv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1Z4JQB4Zv1RCvBVdK_30.jpg"],
+    "price": "3999.00",
+    "prom_text": "",
+    "comment": 3290,
+    "shop_name": "联想官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140067614-1130572985",
+    "name": "联想(Lenovo)启天M415-D003台式电脑(I5-6500 4G 1T机械硬盘 集显 DVDRW Win7Pro 19.5英寸显示器)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T19PhgBm_T1RCvBVdK_30.jpg"],
+    "price": "6199.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "联想官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-A0004780063-pop8012552070",
+    "name": "联想（Lenovo）天逸310S 办公娱乐台式电脑 【AMD A4-9125  一年上门 Win10 支持WiFi 】(19.5英寸 标配/4G内存/1T机械)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T13WWsB5dT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T13bbsBgCv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1euxsBKE_1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1dYDsBj__1RCvBVdK_30.jpg"],
+    "price": "2299.00",
+    "prom_text": "【天逸310S办公家用台式电脑】8.4L小巧机箱，AMD A4处理器，4GB运行内存，支持VGA/HDMI输出，下单即送鼠标垫一个！",
+    "comment": 90,
+    "shop_name": "嘉和电脑专营店",
+    "shop_zy_tag": false,
+    "promotion": ["满2000-20", "券1999-160"]
+}, {
+    "code": "gm-9140152608-1130664556",
+    "name": "宏碁(Acer)商祺N4670商用台式办公电脑主机 i3-8100 4G 1T 主机+21.5英寸显示器",
+    "small_pics": ["http://gfs17.gomein.net.cn/T13kJbBbCv1RCvBVdK_30.jpg"],
+    "price": "3099.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140152607-1130640227",
+    "name": "宏碁(Acer)商祺SQV4270-1401商用台式办公电脑主机 G4900 4G 1T 主机+21.5英寸显示器",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1gLCsB_ZT1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1t9WsBXKv1RCvBVdK_30.jpg"],
+    "price": "2899.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138802-1130612992",
+    "name": "戴尔(DELL)OptiPlex 7050台式电脑(I7-7700 4G 1TB 2G独显 DVDRW DOS 23.8英寸 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1iqKvBQVv1RCvBVdK_30.jpg"],
+    "price": "7699.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138003-1130650357",
+    "name": "戴尔(DELL)OptiPlex 3060 Tower 230650台式电脑(I3-8100 4GB 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1NexjBmKv1RCvBVdK_30.jpg"],
+    "price": "4949.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140135745-1130645770",
+    "name": "戴尔(DELL)OptiPlex 3050 Tower 003128台式电脑(I5-7500 4GB 1TB DVDRW 集显 23.8英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T13MVQBXhv1RCvBVdK_30.jpg"],
+    "price": "5699.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140127136-1130641886",
+    "name": "戴尔(DELL)OptiPlex 3050台式电脑(I5-7500 8G 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1QRAsBm_v1RCvBVdK_30.jpg"],
+    "price": "5699.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140145264-1130684077",
+    "name": "宏碁(acer) SQV4270-1401-G4900-1 电脑 主机+21.5英寸显示器",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1CrZbB7Yv1RCvBVdK_30.jpg"],
+    "price": "3109.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138339-1130649998",
+    "name": "戴尔(DELL)OptiPlex 3050 Tower 001088台式电脑(I3-7100 4GB 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1lrLgBjJv1RCvBVdK_30.jpg"],
+    "price": "4699.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140131624-1130642019",
+    "name": "戴尔(DELL)OptiPlex 3060 Tower 230830台式电脑(I5-8500 4GB 1TB DVDRW 集显 19.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1p7xbBgbT1RCvBVdK_30.jpg"],
+    "price": "5599.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140131625-1130645899",
+    "name": "戴尔(DELL)OptiPlex 3060 Tower 230830台式电脑(I5-8500 4GB 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1utVbBCdv1RCvBVdK_30.jpg"],
+    "price": "5899.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140143443-1130645759",
+    "name": "华硕(ASUS) D320MT-G39A14003-1 电脑台式 19.5英寸 G3900 4G 1TB 集成 无驱 DOS",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1pbDsBC__1RCvBVdK_30.jpg"],
+    "price": "3940.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "华硕国美自营官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140152609-1130640231",
+    "name": "宏碁(Acer)商祺ATC885-700商用台式办公电脑主机 i3-8100 4G 1T 主机+21.5英寸显示器",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1WLVsBCAv1RCvBVdK_30.jpg"],
+    "price": "4399.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138927-1130645895",
+    "name": "戴尔(DELL)OptiPlex 3060 Tower 230650台式电脑(I3-8100 4GB 1TB DVDRW 集显 23.8英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T16vVQBbKv1RCvBVdK_30.jpg"],
+    "price": "5449.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140137761-1130648094",
+    "name": "戴尔(DELL)OptiPlex 3050 Tower 003128台式电脑(I5-7500 4GB 1TB DVDRW 集显 19.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1mRdsBsWT1RCvBVdK_30.jpg"],
+    "price": "5049.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138002-1130642015",
+    "name": "戴尔(DELL)OptiPlex 3060 Tower 240350台式电脑(G5400 4GB 1TB DVDRW 集显 21.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1QdWbBQCT1RCvBVdK_30.jpg"],
+    "price": "4099.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140131389-1130641766",
+    "name": "戴尔(DELL)OptiPlex 3050 Tower 003838台式电脑(G4560 4G 500G DOS 集显 DVDRW 19.5英寸 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1dUCQBCdv1RCvBVdK_30.jpg"],
+    "price": "3799.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140135758-1130648562",
+    "name": "戴尔(DELL)OptiPlex 3060台式电脑(I5-8500 4GB 1TB+128G SSD DVDRW 集显 23.8英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1g3hvB7xv1RCvBVdK_30.jpg"],
+    "price": "6899.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138340-1130641774",
+    "name": "戴尔(DELL)OptiPlex 3050台式电脑(I3-7100 4GB 1TB+256G DVDRW 集显 21.5英寸 DOS 原厂固态硬盘 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T17yZsB_Kv1RCvBVdK_30.jpg"],
+    "price": "5699.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140135866-1130641768",
+    "name": "戴尔(DELL)OptiPlex 3050 Tower 003838台式电脑(G4560 4G 500G 集显 DVDRW 21.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1A__QBjh_1RCvBVdK_30.jpg"],
+    "price": "4199.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140152607-1130680590",
+    "name": "宏碁(Acer)商祺SQV4270-3401商用台式办公电脑主机 G5400 4G 1T 主机+21.5英寸显示器",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1t9WsBXKv1RCvBVdK_30.jpg", "http://gfs17.gomein.net.cn/T1gLCsB_ZT1RCvBVdK_30.jpg"],
+    "price": "3799.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": null,
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140127130-1130645763",
+    "name": "戴尔(DELL)OptiPlex 3050 Tower 001088台式电脑(I3-7100 4GB 1TB DVDRW DOS 集显 19.5英寸 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1vcDbBsAT1RCvBVdK_30.jpg"],
+    "price": "4099.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138926-1130650592",
+    "name": "戴尔(DELL)OptiPlex 3060 Tower 230650台式电脑(I3-8100 4GB 1TB DVDRW 集显 19.5英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T11cxTB4L_1RCvBVdK_30.jpg"],
+    "price": "4699.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140148807-1130665764",
+    "name": "华硕(ASUS) D540MC-I3D00006-1 电脑 I3-8100 4G 1TB DOS 19.5’屏",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1RaLbBQVv1RCvBVdK_30.jpg"],
+    "price": "4859.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "华硕国美自营官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}, {
+    "code": "gm-9140138812-1130648561",
+    "name": "戴尔(DELL)OptiPlex 3060 Tower 230830台式电脑(I5-8500 4GB 1TB DVDRW 集显 23.8英寸 DOS 三年保修)",
+    "small_pics": ["http://gfs17.gomein.net.cn/T1YGD_BvJv1RCvBVdK_30.jpg"],
+    "price": "6399.00",
+    "prom_text": "",
+    "comment": 0,
+    "shop_name": "戴尔官方旗舰店",
+    "shop_zy_tag": true,
+    "promotion": []
+}]

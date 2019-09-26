@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/kkpager.min.js"></script>
+    <script src="./js/cat.js?version=1"></script>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/footer.css?version=1">
-    <link rel="stylesheet" href="./css/cat.css?version=2.1">
+    <link rel="stylesheet" href="./css/kkpager.css?version=1">
+    <link rel="stylesheet" href="./css/cat.css?version=5.1">
 </head>
 
 <body>
@@ -190,86 +193,83 @@
                     </script>
                 </div>
                 <div class="product-left-list" id="product-left">
-                    <!-- <div style="height:74px">
-                        <div id="filter-box" modelid="9000000600" class="">
-                            <div id="filter-top" class="filter-top clearfix">
-                                <ul class="filter-order-box" id="filter-order-box">
-                                    <li id="sort-general" class="cur" data-sort="00"><a href="/cat10000097-00-0-48-1-0-0-0-1-0-0-0-10-0-0-0-0-0.html">综合</a></li>
-                                    <li class="" data-sort="10"><a href="/cat10000097-10-0-48-1-0-0-0-1-0-0-0-10-0-0-0-0-0.html">销量</a></li>
-                                    <li class="" data-sort="30"><a href="/cat10000097-30-0-48-1-0-0-0-1-0-0-0-10-0-0-0-0-0.html">新品</a></li>
-                                    <li class="" data-sort="50"><a href="/cat10000097-50-0-48-1-0-0-0-1-0-0-0-10-0-0-0-0-0.html">评价</a></li>
-                                    <li id="sort-price"><a href="/cat10000097-21-0-48-1-0-0-0-1-0-0-0-10-0-0-0-0-0.html">价格</a><i class="icon-up-down"></i></li>
-                                </ul>
-                                <ul class="filter-priceRange-box clearfix">
-                                    <li class="priceRange-input"><input id="fc-lowPrice" maxlength="6" type="text" value="¥"></li>
-                                    <li class="priceRange-link">-</li>
-                                    <li class="priceRange-input"><input id="fc-highPrice" type="text" maxlength="6" value="¥"></li>
-                                    <li class="priceRange-btn"><a id="fc-btn-cancel" class="fc-btn-cancel" href="javascript:void(0)">清除</a></li>
-                                    <li class="priceRange-btn"><a id="fc-btn-ok" class="fc-btn-ok" href="javascript:void(0)">确定</a></li>
-                                </ul>
-                                <div class="filter-resultSearch-box">
-                                    <input type="text" value="" class="filter-resultSearch-input">
-                                    <a data-code="9000000600-0" href="javascript:void(0)" class="filter-resultSearch-btn">确定</a>
-                                </div>
-                                <div class="min-pager-box">
-                                    <a href="javascript:void(0)" class="min-pager-next " id="mp-next">&gt;</a>
-                                    <a href="javascript:void(0)" class="min-pager-prev mp-disable" id="mp-prev">&lt;</a>
-                                    <span class="min-pager-number" id="min-pager-number">1/14</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- 111 -->
+                    <div class="filter-box">
+                        <ul class="filter-order-box">
+                            <li id="sort-general" class="cur"><a href="javascript:;">综合</a></li>
+                            <li id="sort-comment"><a href="javascript:;">评价</a></li>
+                            <li id="sort-price">
+                                <a href="javascript:;">价格</a>
+                                <i class="icon-up-down"></i>
+                            </li>
+                        </ul>
+                        <ul class="filter-priceRange-box clearfix">
+                            <li class="priceRange-input"><input id="fc-lowPrice" maxlength="6" type="text" value="¥"></li>
+                            <li class="priceRange-link">-</li>
+                            <li class="priceRange-input"><input id="fc-highPrice" type="text" maxlength="6" value="¥"></li>
+                            <li class="priceRange-btn"><a id="fc-btn-cancel" class="fc-btn-cancel" href="javascript:void(0)">清除</a></li>
+                            <li class="priceRange-btn"><a id="fc-btn-ok" class="fc-btn-ok" href="javascript:void(0)">确定</a></li>
+                        </ul>
+                    </div>
                     <div class="product-box"></div>
                     <script>
-                        $.getJSON('./server/cat/main_product.json?version=2', (res) => {
-                            $('<ul class="product-lists clearfix" id="product-box">').html(() => {
-
-                                return res.map((ele) => {
-                                    let li_html = ele.small_pics.map((e) => {
-                                        return `<li class="icon-li current already"><img src=${e}></li>`
-                                    }).join('');
-                                    prom_text = ele.prom_text == undefined ? '' : `<p class=item-promotional-language>${ele.prom_text}</p>`;
-
-                                    let promotion_normal = ele.promotion.map((e) => {
-                                        return `<span class=promotion-normal>${e}</span>`
-                                    }).join('');
-                                    let shop_tag = ele.shop_zy_tag ? '<span class=nnamezy>自营</span>' : '';
-                                    let option = `<p class="item-option clearfix">	            <span class="add-contrast" cid="A0004958764/pop8010690303" title="对比"><i class="icon"></i></span>	            <span class="add-collection" pid="A0004958764" skuid="pop8007961586" pname=${ele.name} title="收藏"><i class="icon"></i></span>	            	            <a class="add-cart addTo-cart" href="javascript:void(0);" ismcard="" shopflag="0" ishyg="0" pid="A0004958764" skuid="pop8007961586" taotype="0" taoskuid="" data-code="list-9000000700-1_1_3" title="加入购物车"><i class="icon"></i></a>	            	            	                	                <span title="在线客服" class="gomekf online-server" customer-entry="product" shopid="80005619" skuid="pop8010690303" productid="A0004958764" categoryid="cat10000001_cat10000015_cat10000097" brandid="147L" orgi="80005619"><i class="icon"></i></span>	            	        </p>`;
-                                    return `<li class=product-item id=${ele.code}>
-                                        <div class=item-tab>
-                                            <p class="item-pic"><a href=javascript:; title=${ele.name}><img src=${ele.small_pics[0].replace('_30','_210')} alt=${ele.name}></a></p>
-                                            <div class=item-pic-small-box>
-                                                <a href=javascript:void(0); class="icon-prev disable">
-                                                <a href=javascript:void(0); class="icon-next  disable"></a>
-                                                <div class=item-pic-small-wrap>
-                                                    <ul class=imgList>${li_html}</ul>
-                                               </div>
-                                            </div>
-                                            <p class=item-price><span class=price>${ele.price}</span></p>
-                                            <p class="item-name"><a class="item-link" href="//item.gome.com.cn/A0004958764-pop8007961586.html" target="_blank" title=${ele.name}>${ele.name}</a></p>
-                                            ${prom_text}
-                                            <p class=item-comment-dispatching>
-                                                <span class=dispatching></span>
-                                                <a class=comment href=javascript:;>${ele.comment}</a>
-                                            </p>
-                                            <p class=item-shop>${shop_tag}${ele.shop_name}</p>
-                                            <p class=item-promotion>${promotion_normal}</p>
-                                            ${option}
-                                        </div>
-                                    </li>`;
-                                })
-                            }).appendTo($('.product-box').eq(0));
-                            $('.imgList').on('mouseenter', 'img', (e) => {
-                                let cur_small_pic = $(e.currentTarget).attr('src');
-                                let cur_big_pic = $(e.currentTarget).parents('.product-item').find('.item-pic img');
-                                cur_big_pic.attr('src', cur_small_pic.replace('_30', '_210'));
-
-                            })
-                        })
+                        $.ajax({
+                            type: "get",
+                            url: "./server/getProductData.php?version=2",
+                            data: {
+                                page: 0,
+                                type: 0
+                            },
+                            dataType: "json",
+                            success(response) {
+                                render(response.data);
+                            }
+                        });
                     </script>
+                    <div id="product-pager">
+                        <div id="kkpager"></div>
+                        <!-- 分页 -->
+                        <script>
+                            $.ajax({
+                                type: "get",
+                                url: "./server/getPageCount.php",
+                                // data: "",
+                                dataType: "json",
+                                success: function(response) {
+                                    console.log('page', response);
+                                    kkpager.generPageHtml({
+                                        pno: 1,
+                                        total: response[1],
+                                        totalRecords: response[0],
+                                        hrefFormer: 'cat',
+                                        //链接尾部
+                                        hrefLatter: '.html',
+                                        mode: 'click',
+                                        click(n) {
+                                            this.selectPage(n);
+                                            $('.product-box').eq(0).html('');
+                                            $.ajax({
+                                                type: "get",
+                                                url: "./server/getProductData.php",
+                                                data: {
+                                                    page: n - 1,
+                                                    type: getType(),
+                                                },
+                                                dataType: "json",
+                                                success: function(response) {
 
+                                                    if (response.status == 'success') {
+                                                        render(response.data);
+                                                    }
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        </script>
+                    </div>
                 </div>
+
             </div>
         </div>
         <script>

@@ -511,7 +511,11 @@ a {
     width: 100%;
     _width: 992px;
 }
+.product-box {
+    height: 5892px;
+}
 .product-lists {
+    
     margin-top: 10px;
     .product-item {
         float: left;
@@ -789,4 +793,135 @@ a {
     margin-top: 3px;
     height: 15px;
     font: 11px/15px microsoft yahei;
+}
+
+.filter-box {
+    height: 38px;
+    background-color: #f3f3f3;
+    padding: 6px 10px;
+    line-height: 24px;
+}
+.filter-order-box {
+    float: left;
+    height: 24px;
+    border: 1px solid #ccc;
+    background: #fff;
+        li {
+            float: left;
+            height: 24px;
+            cursor: pointer;
+            &.cur {
+                background-color: #e3101e;
+                border: 1px solid #e3101e;
+                margin: -1px;
+                a {
+                    color: #fff;
+                }
+                &:hover {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            &:hover {
+                border: 1px solid #e3101e;
+                 margin: -1px;
+                 a {
+                     color: #e3101e;
+                 }
+            }
+        }
+        a {
+            padding: 6px 20px;
+            text-decoration: none;
+            outline: none;
+        }
+}
+.filter-priceRange-box {
+    float: left;
+    width: 124px;
+    height: 37px;
+    overflow: hidden;
+    padding: 5px 10px 8px;
+    margin: -6px 0;
+    border: 1px solid #f3f3f3;
+    white-space: nowrap;
+    text-align: center;
+    li {
+        float: left;
+    }
+    .priceRange-input input {
+        float: left;
+        height: 26px;
+        width: 44px;
+        line-height: 24px;
+        border: 1px solid #ccc;
+        text-indent: 5px;
+        color: #a5a5a5;
+        text-align: left;
+        font-family: arial;
+    }
+    .priceRange-link {
+        float: left;
+        padding: 0 3px;
+        width: 12px;
+        overflow: hidden;
+    }
+    .priceRange-btn {
+        // float: none;
+        display: inline-block;
+        width: 42px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        margin: 5px 5px 0 3px;
+    }
+    .fc-btn-cancel {
+        display: inline-block;
+        vertical-align: middle;
+        width: 42px;
+        height: 22px;
+        line-height: 22px;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        color: #333;
+        background: #fff;
+    }
+    .fc-btn-ok {
+        display: inline-block;
+        vertical-align: middle;
+        width: 41px;
+        height: 22px;
+        line-height: 22px;
+        overflow: hidden;
+        color: #fff;
+        background: #e3101e;
+    }
+}
+.filter-priceRange-click {
+    height: 72px;
+    margin: -6px -1px -50px;
+    _margin-right: 50px;
+    padding: 5px 11px 7px;
+    border-color: #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.icon-up-down {
+    position: absolute;
+    width: 11px;
+    height: 12px;
+    margin: 6px -35px 0 -22px;
+    line-height: 0;
+    overflow: hidden;
+}
+.price-up .icon-up-down {
+    background: url(../img/search.png) no-repeat -20px -250px;
+}
+.price-down .icon-up-down {
+    background: url(../img/search.png) no-repeat 0 -250px;
+}
+.filter-order-box .cur.price-down a, .filter-order-box .cur.price-up a {
+    padding: 6px 26px 6px 14px;
 }

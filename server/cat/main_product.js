@@ -1,3 +1,21 @@
+function toDecimal2(x) {
+    var f = parseFloat(x);
+    if (isNaN(f)) {
+        return false;
+    }
+    var f = Math.round(x * 100) / 100;
+    var s = f.toString();
+    var rs = s.indexOf('.');
+    if (rs < 0) {
+        rs = s.length;
+        s += '.';
+    }
+    while (s.length <= rs + 2) {
+        s += '0';
+    }
+    return s;
+}
+
 var items = $('.product-lists .product-item');
 var oArr = [];
 
@@ -14,12 +32,14 @@ for (let i = 0; i < items.length; i++) {
         o.small_pics.push('http:' + img_list.eq(j).attr('src'));
         // o.big_pics.push(o.small_pics[j].replace('_30', '_210'));
     }
-    o.price = item.find('.item-price').text().trim();
+    o.price = item.find('.item-price .price').text().trim().slice(1);
     let prom = item.find('.item-promotional-language');
     if (prom.length) {
         o.prom_text = prom.eq(0).text().trim();
+    } else {
+        o.prom_text = '';
     }
-    o.comment = item.find('.comment').html().replace(/"/g, '');
+    o.comment = +item.find('.comment').html().match(/(\d{1,})/)[0];
     o.shop_name = item.find('.item-shop .nname').html();
     o.shop_zy_tag = item.find('.nnamezy').length ? true : false;
 
