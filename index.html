@@ -5,17 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>国美(GOME)-综合网购商城，正品低价、品质保障、快速送达、安心服务！</title>
     <script src="./js/jquery-1.12.4.js"></script>
-    <script src="./js/carousel.js"></script>
+    <script src="./js/carousel.js? version=2"></script>
     <script src="./js/e5-do.js"></script>
     <script src="./js/index.js" data-code="007"></script>
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/carousel.css? version=1">
+    <link rel="stylesheet" href="./css/help.css? version=1">
+    <link rel="stylesheet" href="./css/footer.css? version=1">
     <link rel="stylesheet" href="./css/index.css? version=1">
 </head>
 
 <body>
+    <!-- 
+    滚动条事件待完善
+ -->
+    <script>
+        let timer = null;
+
+        function elevatorScroll(height, step = 10) {
+            timer && clearInterval(timer);
+            timer = setInterval(() => {
+                if ($(window).scrollTop() < height + 1) {
+                    window.scrollBy(0, step);
+                } else if ($(window).scrollTop() > height + step + 1) {
+                    window.scrollBy(0, -step)
+                } else {
+                    console.log('clear---');
+                    clearInterval(timer);
+                }
+            }, 1000 / 60);
+        }
+    </script>
     <div class=" container">
         <div class="stick-nav clearfix ">
             <div class="w1200-bg">
@@ -194,13 +216,13 @@
                         <div class="lisbg "></div>
                         <script>
                             let navFirst = $('.nav-first');
-                            $.getJSON('./server/nav.json', function(res) {
+                            $.getJSON('./server/nav.json?version=1', function(res) {
                                 //一级菜单
                                 let html = res.map(function(ele, index) {
                                     let ahtml = ele.l_titles.map(
-                                        (e, index) => {
+                                        (e) => {
                                             return `
-                                                        <a href="# ">${e}</a>
+                                                        <a href="./html">${e}</a>
                                                     `;
                                         }
                                     ).join('');
@@ -210,7 +232,7 @@
                                     //标签
                                     let tag_html = ele.r_l_tags.map((e, index) => {
                                         return `
-                                                    <a href="# " class="sec-tag ">${e}</a>
+                                                    <a href="#" class="sec-tag ">${e}</a>
                                                 `;
                                     }).join('');
                                     let tagHTML = `<div class="sec-tags clearfix ">${tag_html}</div>`
@@ -218,17 +240,19 @@
                                     let list_html = ele.r_l_navs.map(
                                         (e, index) => {
                                             let title = `
-                                                        <div class="title ">${e.r_l_title}</div>
+                                                        <div class="title">${e.n_l_title}</div>
                                                     `;
                                             let list = e.r_l_contents.map(
                                                 (ee, index) => {
-                                                    if (typeof ee == 'object') {
+                                                    console.log(ee);
+
+                                                    if (ee.className) {
                                                         return `
-                                                                <a class="hot ">${ee.text}</a>
+                                                                <a class="hot " href="./cat.html?intcmp=${ee.code}" code=${ee.code}>${ee.text}</a>
                                                                 `
                                                     } else {
                                                         return `
-                                                                <a>${ee}</a>
+                                                                <a href="./cat.html?intcmp=${ee.code}" code=${ee.code}>${ee.text}</a>
                                                                 `;
                                                     }
                                                 }
@@ -282,7 +306,7 @@
 
 
 
-                    <div id="slide" class="w1200-bg ">
+                    <div id="slide" class="w1200-bg">
                         <ul class="list ">
                             <li>
                                 <a href="javascript:; "><img src="./img/banner1.jpg " alt=" "></a>
@@ -317,7 +341,7 @@
                             _height: 450,
                             nextText: '>',
                             prevText: '<',
-                            fade: 2000,
+                            fade: 1000,
                             time: 3000,
                             pagelocat: true
                         });
@@ -426,7 +450,7 @@
 
 
         </div>
-        <div id="content " class="w1200 ">
+        <div id="content" class="w1200">
             <div class="w1200-bg ">
                 <div class="mrbq clearfix ">
                     <div class="mrbq_left fl ">
@@ -841,35 +865,67 @@
 
                         //滚动条事件
                         let elevator = $('#elevator');
+                        let handler = $('.handler');
+                        let stickNav = $('.stick-nav');
+
+                        //获取楼层
+                        let floor_scrollTop = Array.from(floor.map((index, ele) => {
+                            return $(ele).offset().top;
+                        }));
+                        //[1877, 2418, 2959, 3500, 4041, 4582, 5123]
+
 
                         function scrollFn() {
-
-                            if ($(window).scrollTop() >= 1400) {
+                            // console.log(floor.eq(0).offset().top);
+                            let w_top = $(window).scrollTop();
+                            if (w_top >= 1400) {
                                 elevator.css('display', 'block');
-                            } else if ($(window).scrollTop() >= 700) {
-                                $('.stick-nav').css('display', 'block');
-                            } else {
-                                $('.stick-nav').css('display', 'none');
+                                if (window.innerWidth < 800) {
+                                    elevator.css('display', 'none');
+                                }
+
+                                let index = floor_scrollTop.findIndex((ele, index) => floor_scrollTop[index + 1] >= w_top);
+                                handler.eq(index).addClass('current').siblings().removeClass('current');
+
+                            } else if (w_top >= 700) {
+                                stickNav.css('display', 'block');
+                                elevator.css('display', 'none');
+                            } else if (w_top < 700) {
+                                stickNav.css('display', 'none');
+                                elevator.css('display', 'none');
                             }
+
+
                         }
-                        $(window).scroll(e5.throttle(scrollFn, 500));
+                        $(window).scroll(e5.throttle(scrollFn, 100));
                         $(window).resize(e5.throttle(() => {
                             if (window.innerWidth < 1200) {
                                 elevator.css('display', 'none');
                             }
                         }, 500));
 
+
+                        handler.on('click', 'a', (e) => {
+                            e.preventDefault();
+                            let index = $(e.currentTarget).parent().index();
+
+                            elevatorScroll(floor_scrollTop[index], 30);
+
+                        })
+
                     });
                 </script>
-
-
+                <script>
+                    $('<div id="gomo-help"></div>').load('./html/help.html .gomo-help').appendTo($('#content .w1200-bg'));
+                </script>
             </div>
 
         </div>
+        <script>
+            $('<div id="gomo-foot"></div>').load('./html/footer.html .gomo-foot').appendTo($('.container'));
+        </script>
+
     </div>
-    </div>
-    <script>
-    </script>
 </body>
 
 </html>

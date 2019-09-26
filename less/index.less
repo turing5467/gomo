@@ -34,6 +34,7 @@
         padding-left: 10px;
         &:hover {
             background-color: #fff;
+            opacity: 1;
             a {
                 color: #666;
                 &:hover {
@@ -42,6 +43,7 @@
             }
             .nav-second {
                 display: block;
+            
             }
         }
     }
@@ -339,18 +341,17 @@
         li {
             position: relative;
             height: 43px;
-            line-height: 5px;
+            // line-height: 5px;
             border-top: none;
             cursor: pointer;
+            text-align: center;
             &:hover {
                 a,a span {
                     color: #f5004b;
                 }
             }
             b {
-                float: left;
-                overflow: hidden;
-                margin-left: -1px;
+                position: absolute;left: 0;top: 0;
                 margin-top: -1px;
                 width: 10px;
                 height: 10px;
@@ -360,9 +361,6 @@
             }
             a {
                 overflow: hidden;
-                display: inline-block;
-                width: 64px;
-                height: 43px;
                 font-size: 12px;
                 color: #5e5e5e;
                 span {
@@ -380,9 +378,7 @@
                     line-height: 16px;
                     overflow: hidden;
                     cursor: pointer;
-                    width: 48px;
-                    margin-left: 8px;
-                    margin-top: 5px;
+                    // margin-top: 5px;
                 }
             }
         }
@@ -1857,4 +1853,8 @@
     .page_slider .page_down,.page_slider a.slider_next,.slider_page .slider_down,.slider_page a.slider_next {
         right: 0;
     }
+}
+#gm-help {
+    margin-top: 30px;
+    overflow: hidden;
 }

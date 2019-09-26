@@ -1,0 +1,61 @@
+{
+    "brands": [{
+        "style": "background-image:url(http://gfs3.gomein.net.cn/T11oKTB4h_1RCvBVdK.png);",
+        "title": "联想(lenovo)"
+    }, {
+        "style": "background-image:url(http://gfs3.gomein.net.cn/T1wkETB7d_1RCvBVdK.png);",
+        "title": "戴尔(DELL)"
+    }, {
+        "style": "background-image:url(http://gfs1.gomein.net.cn/T1rUbTBvbT1RCvBVdK.png);",
+        "title": "联想(ThinkPad)"
+    }, {
+        "style": "background-image:url(http://gfs13.gomein.net.cn/T1GcWvBTKg1RCvBVdK.jpg);",
+        "title": "创想国度"
+    }, {
+        "style": "background-image:url(http://gfs12.gomein.net.cn/T1QGCTBsDj1RCvBVdK.png);",
+        "title": "华硕(ASUS)"
+    }, {
+        "style": "background-image:url(http://gfs1.gomein.net.cn/T1OUWTByKT1RCvBVdK.png);",
+        "title": "宏碁(ACER)"
+    }, {
+        "style": "background-image:url(http://gfs.gomein.net.cn/T1QkYTBTEv1RCvBVdK.png);",
+        "title": "惠普(HP)"
+    }, {
+        "style": "background-image:url(http://gfs3.gomein.net.cn/T1uc_TB_CT1RCvBVdK.png);",
+        "title": "达客"
+    }, {
+        "style": "background-image:url(http://gfs3.gomein.net.cn/T1zCATBsVv1RCvBVdK.png);",
+        "title": "惠思买"
+    }],
+    "commonFacets": [{
+        "key": "价格",
+        "contents": ["0-2499", "2500-3499", "3500-4499", "4500-5999", "6000-7999", "8000-9999", "10000以上"]
+    }, {
+        "key": "场景功能",
+        "contents": ["商用电脑", "家用电脑", "游戏电脑", "一体机", "电脑主机", "迷你机"]
+    }, {
+        "key": "处理器描述",
+        "contents": ["Intel i7", "Intel i5", "Intel i3", "Intel奔腾", "Intel赛扬", "AMD系列", "Intel其它"]
+    }, {
+        "key": "处理器",
+        "contents": ["Intel酷睿M", "Intel i3", "Intel i5低功耗版", "Intel i5标准电压版", "Intel i7低功耗版", "Intel i7标准电压", "Intel其它", "AMD系列", "其他"]
+    }, {
+        "key": "屏幕规格",
+        "contents": ["27英寸以上", "23-24英寸", "20-20.6英寸", "18.5-19.5英寸", "无显示器", "其他"]
+    }, {
+        "key": "显卡类型",
+        "contents": ["集成显卡", "1G独立显卡", "2G独立显卡", "其他"]
+    }, {
+        "key": "硬盘容量",
+        "contents": ["500G", "1T", "2T", "含128GSSD", "含256GSSD", "含512GSSD", "其他"]
+    }, {
+        "key": "内存容量",
+        "contents": ["2G", "4G", "8G", "16G", "其他"]
+    }, {
+        "key": "操作系统",
+        "contents": ["Windows7", "Windows8/8.1", "Windows10", "DOS/Linux", "其他"]
+    }, {
+        "key": "Game+游戏装备",
+        "contents": ["入门级", "发烧级", "骨灰级"]
+    }]
+}

@@ -1,5 +1,5 @@
 <?php
-$json = file_get_contents("data.json");
+$json = file_get_contents("./cat/main_product.json");
 # 002-把JSON数据转换为PHP数组
 $arrData = json_decode($json,true);
 

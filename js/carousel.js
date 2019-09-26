@@ -25,7 +25,7 @@
                     var init = this.init;
                     //slide
                     this.$ele.css({
-                        position: 'relative',
+                        // position: 'relative',
                         width: init._width + 'px',
                         height: init._height + 'px',
                         margin: '0 auto'

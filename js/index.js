@@ -27,15 +27,15 @@ $(document).ready(() => {
 
     $('.flTop').click((e) => {
         e.preventDefault();
-
-        $(window).delay(500).scrollTop(0);
+        elevatorScroll(0, 30);
     });
-    $('.fl_bottom').click(() => {
+    // $('.fl_bottom').click((e) => {
+    //     e.preventDefault();
+    //     elevatorScroll($(document).height() - window.innerHeight, 30);
+    //     // elevatorScroll($(document).height() - window.innerHeight, 30);
+    // })
 
-        $(window).delay(500).scrollTop(document.documentElement.scrollHeight);
-    })
 
-    //floor区按钮
 
     const prev = (ele, indexs, index) => {
         let len = ele.length;

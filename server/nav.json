@@ -2,692 +2,2736 @@
     "l_titles": ["手机", "充值"],
     "r_l_tags": ["潮3C<i></i>", "手机<i></i>", "数码<i></i>", "以旧换新<i></i>", "手机充值<i></i>", "延保服务<i></i>", "智享生活<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 手机通讯 ",
-        "r_l_contents": ["手机", "对讲机", {
+        "n_l_title": " 手机通讯 ",
+        "r_l_contents": [{
+            "text": "手机",
+            "code": "1000051971-0"
+        }, {
+            "text": "对讲机",
+            "code": "1000051971-1"
+        }, {
             "className": "hot",
-            "text": "iPhone"
-        }, "华为", "小米", "荣耀", "三星", "OPPO", "vivo"]
+            "text": "iPhone",
+            "code": "1000051971-2"
+        }, {
+            "text": "华为",
+            "code": "1000051971-3"
+        }, {
+            "text": "小米",
+            "code": "1000051971-4"
+        }, {
+            "text": "荣耀",
+            "code": "1000051971-5"
+        }, {
+            "text": "三星",
+            "code": "1000051971-6"
+        }, {
+            "text": "OPPO",
+            "code": "1000051971-7"
+        }, {
+            "text": "vivo",
+            "code": "1000051971-8"
+        }]
     }, {
-        "r_l_title": " 运营商 ",
-        "r_l_contents": ["中国移动", "中国联通"]
+        "n_l_title": " 运营商 ",
+        "r_l_contents": [{
+            "text": "中国移动",
+            "code": "1000051973-0"
+        }, {
+            "text": "中国联通",
+            "code": "1000051973-1"
+        }]
     }, {
-        "r_l_title": " 手机配件 ",
-        "r_l_contents": ["手机壳", "贴膜", "手机存储卡", {
+        "n_l_title": " 手机配件 ",
+        "r_l_contents": [{
+            "text": "手机壳",
+            "code": "1000051975-0"
+        }, {
+            "text": "贴膜",
+            "code": "1000051975-1"
+        }, {
+            "text": "手机存储卡",
+            "code": "1000051975-2"
+        }, {
             "className": "hot",
-            "text": "数据线"
-        }, "充电器", "手机耳机", {
+            "text": "数据线",
+            "code": "1000051975-3"
+        }, {
+            "text": "充电器",
+            "code": "1000051975-4"
+        }, {
+            "text": "手机耳机",
+            "code": "1000051975-5"
+        }, {
             "className": "hot",
-            "text": "移动电源"
-        }, "蓝牙耳机", "手机电池", "苹果周边", "车载配件"]
+            "text": "移动电源",
+            "code": "1000051975-6"
+        }, {
+            "text": "蓝牙耳机",
+            "code": "1000051975-7"
+        }, {
+            "text": "手机电池",
+            "code": "1000051975-8"
+        }, {
+            "text": "苹果周边",
+            "code": "1000051975-9"
+        }, {
+            "text": "车载配件",
+            "code": "1000051975-10"
+        }]
     }, {
-        "r_l_title": " 充话费 ",
-        "r_l_contents": ["移动/联通/电信/极信"]
+        "n_l_title": " 充话费 ",
+        "r_l_contents": [{
+            "text": "移动/联通/电信/极信",
+            "code": "1000051983-0"
+        }]
     }, {
-        "r_l_title": " 充流量 ",
-        "r_l_contents": ["移动/联通/电信"]
+        "n_l_title": " 充流量 ",
+        "r_l_contents": [{
+            "text": "移动/联通/电信",
+            "code": "1000051985-0"
+        }]
     }],
-    "r_r_brand_imgs": ["https://img12.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%8D%8E%E4%B8%BA-%E6%89%8B%E6%9C%BA.jpg", "https://img13.gomein.net.cn/image/prodimg/topics/qiaolu/201607/5/20160705155524.jpg", "https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E4%B8%89%E6%98%9F%E6%89%8B%E6%9C%BA.jpg", "https://img10.gomein.net.cn/image/prodimg/topics/qiaolu/201607/5/20160705155529.jpg", "https://img11.gomein.net.cn/image/prodimg/topics/qiaolu/201607/11/20160711182201.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/11/20160711182202.jpg"],
+    "r_r_brand_imgs": ["https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%8D%8E%E4%B8%BA-%E6%89%8B%E6%9C%BA.jpg", "https://img10.gomein.net.cn/image/prodimg/topics/qiaolu/201607/5/20160705155524.jpg", "https://img11.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E4%B8%89%E6%98%9F%E6%89%8B%E6%9C%BA.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/5/20160705155529.jpg", "https://img13.gomein.net.cn/image/prodimg/topics/qiaolu/201607/11/20160711182201.jpg", "https://img14.gomein.net.cn/image/prodimg/topics/qiaolu/201607/11/20160711182202.jpg"],
     "r_r_big_img": "https://gfs13.gomein.net.cn/T1mr_XBvJT1RCvBVdK.jpg"
 }, {
     "l_titles": ["相机", "智能数码"],
     "r_l_tags": ["潮3C<i></i>", "数码<i></i>", "以旧换新<i></i>", "延保服务<i></i>", "智享生活<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 摄影摄像 ",
-        "r_l_contents": ["数码相机", {
-            "className": "hot",
-            "text": "单反相机"
-        }, "单电/微单相机", "摄像机", "拍立得"]
-    }, {
-        "r_l_title": " 数码配件 ",
+        "n_l_title": " 摄影摄像 ",
         "r_l_contents": [{
-            "className": "hot",
-            "text": "存储卡"
-        }, "三脚架/云台", "相机包", "滤镜", "相机清洁/贴膜", "单反镜头", "单反配件", "电池/充电器"]
-    }, {
-        "r_l_title": " 智能设备 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "智能手表"
-        }, "智能手环", "VR眼镜", {
-            "className": "hot",
-            "text": "智能家居"
-        }, "健康监测", "无人机", "智能配饰", "智享生活"]
-    }, {
-        "r_l_title": " 视听娱乐 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "耳机/耳麦"
+            "text": "数码相机",
+            "code": "1000052897-0"
         }, {
             "className": "hot",
-            "text": "音箱/音响"
-        }, "MP3/MP4", "收/录音机"]
+            "text": "单反相机",
+            "code": "1000052897-1"
+        }, {
+            "text": "单电/微单相机",
+            "code": "1000052897-2"
+        }, {
+            "text": "摄像机",
+            "code": "1000052897-3"
+        }, {
+            "text": "拍立得",
+            "code": "1000052897-4"
+        }]
     }, {
-        "r_l_title": " 电子教育 ",
-        "r_l_contents": ["电子书", "电子词典", "录音笔", "学生平板", "点读机/复读机"]
+        "n_l_title": " 数码配件 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "存储卡",
+            "code": "1000052901-0"
+        }, {
+            "text": "三脚架/云台",
+            "code": "1000052901-1"
+        }, {
+            "text": "相机包",
+            "code": "1000052901-2"
+        }, {
+            "text": "滤镜",
+            "code": "1000052901-3"
+        }, {
+            "text": "相机清洁/贴膜",
+            "code": "1000052901-4"
+        }, {
+            "text": "单反镜头",
+            "code": "1000052901-5"
+        }, {
+            "text": "单反配件",
+            "code": "1000052901-6"
+        }, {
+            "text": "电池/充电器",
+            "code": "1000052901-7"
+        }]
+    }, {
+        "n_l_title": " 智能设备 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "智能手表",
+            "code": "1000052911-0"
+        }, {
+            "text": "智能手环",
+            "code": "1000052911-1"
+        }, {
+            "text": "VR眼镜",
+            "code": "1000052911-2"
+        }, {
+            "className": "hot",
+            "text": "智能家居",
+            "code": "1000052911-3"
+        }, {
+            "text": "健康监测",
+            "code": "1000052911-4"
+        }, {
+            "text": "无人机",
+            "code": "1000052911-5"
+        }, {
+            "text": "智能配饰",
+            "code": "1000052911-6"
+        }, {
+            "text": "智享生活",
+            "code": "1000052911-7"
+        }]
+    }, {
+        "n_l_title": " 视听娱乐 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "耳机/耳麦",
+            "code": "1000052913-0"
+        }, {
+            "className": "hot",
+            "text": "音箱/音响",
+            "code": "1000052913-1"
+        }, {
+            "text": "MP3/MP4",
+            "code": "1000052913-2"
+        }, {
+            "text": "收/录音机",
+            "code": "1000052913-3"
+        }]
+    }, {
+        "n_l_title": " 电子教育 ",
+        "r_l_contents": [{
+            "text": "电子书",
+            "code": "1000052915-0"
+        }, {
+            "text": "电子词典",
+            "code": "1000052915-1"
+        }, {
+            "text": "录音笔",
+            "code": "1000052915-2"
+        }, {
+            "text": "学生平板",
+            "code": "1000052915-3"
+        }, {
+            "text": "点读机/复读机",
+            "code": "1000052915-4"
+        }]
     }],
-    "r_r_brand_imgs": ["https://img13.gomein.net.cn/image/prodimg/topics/qiaolu/201607/8/20160708122040.jpg", "https://gfs10.gomein.net.cn/T1pdA_B7Av1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1LGYvBTEb1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1kLCvB4bQ1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1GPJjB_J_1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T10pKsByEv1RCvBVdK.jpg"],
-    "r_r_big_img": "https://gfs11.gomein.net.cn/T16Q_XBQZv1RCvBVdK.jpg"
+    "r_r_brand_imgs": ["https://img10.gomein.net.cn/image/prodimg/topics/qiaolu/201607/8/20160708122040.jpg", "https://gfs10.gomein.net.cn/T1pdA_B7Av1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1LGYvBTEb1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1kLCvB4bQ1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1GPJjB_J_1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T10pKsByEv1RCvBVdK.jpg"],
+    "r_r_big_img": "https://gfs10.gomein.net.cn/T1IWhXBXE_1RCvBVdK.jpg"
 }, {
     "l_titles": ["电脑", "办公配件"],
     "r_l_tags": ["潮3C<i></i>", "电脑办公<i></i>", "精品配件<i></i>", "以旧换新<i></i>", "美通卡<i></i>", "延保服务<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 电脑整机 ",
+        "n_l_title": " 电脑整机 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "【爆品直降1000元】"
+            "text": "【领800元优惠券】",
+            "code": "1000052080-0"
         }, {
             "className": "hot",
-            "text": "笔记本"
-        }, "游戏本", "平板电脑", "台式电脑", "一体机", "笔记本配件", "服务器"]
+            "text": "笔记本",
+            "code": "1000052080-1"
+        }, {
+            "text": "游戏本",
+            "code": "1000052080-2"
+        }, {
+            "text": "平板电脑",
+            "code": "1000052080-3"
+        }, {
+            "text": "台式电脑",
+            "code": "1000052080-4"
+        }, {
+            "text": "一体机",
+            "code": "1000052080-5"
+        }, {
+            "text": "笔记本配件",
+            "code": "1000052080-6"
+        }, {
+            "text": "服务器",
+            "code": "1000052080-7"
+        }]
     }, {
-        "r_l_title": " 外设产品 ",
+        "n_l_title": " 外设产品 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "鼠标"
-        }, "键盘", "电脑包", "电脑音箱", "U盘", {
+            "text": "鼠标",
+            "code": "1000052082-0"
+        }, {
+            "text": "键盘",
+            "code": "1000052082-1"
+        }, {
+            "text": "电脑包",
+            "code": "1000052082-2"
+        }, {
+            "text": "电脑音箱",
+            "code": "1000052082-3"
+        }, {
+            "text": "U盘",
+            "code": "1000052082-4"
+        }, {
             "className": "hot",
-            "text": "移动硬盘"
-        }, "鼠标垫", "摄像头/监控摄像", "线缆", "耳机", "UPS电源"]
+            "text": "移动硬盘",
+            "code": "1000052082-5"
+        }, {
+            "text": "鼠标垫",
+            "code": "1000052082-6"
+        }, {
+            "text": "摄像头/监控摄像",
+            "code": "1000052082-7"
+        }, {
+            "text": "线缆",
+            "code": "1000052082-8"
+        }, {
+            "text": "耳机",
+            "code": "1000052082-9"
+        }, {
+            "text": "UPS电源",
+            "code": "1000052082-10"
+        }]
     }, {
-        "r_l_title": " 网络产品 ",
+        "n_l_title": " 网络产品 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "路由器"
-        }, "网络机顶盒", "交换机", "网卡", "5G/4G/3G上网"]
+            "text": "路由器",
+            "code": "1000052084-0"
+        }, {
+            "text": "网络机顶盒",
+            "code": "1000052084-1"
+        }, {
+            "text": "交换机",
+            "code": "1000052084-2"
+        }, {
+            "text": "网卡",
+            "code": "1000052084-3"
+        }, {
+            "text": "5G/4G/3G上网",
+            "code": "1000052084-4"
+        }]
     }, {
-        "r_l_title": " 办公设备 ",
+        "n_l_title": " 办公设备 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "投影机"
-        }, "投影配件", "多功能一体机", {
+            "text": "投影机",
+            "code": "1000052086-0"
+        }, {
+            "text": "投影配件",
+            "code": "1000052086-1"
+        }, {
+            "text": "多功能一体机",
+            "code": "1000052086-2"
+        }, {
             "className": "hot",
-            "text": "打印机"
-        }, "传真设备", "验钞/点钞机", "扫描设备", "收银机", "电话机", "保险柜", "白板/封装机"]
+            "text": "打印机",
+            "code": "1000052086-3"
+        }, {
+            "text": "传真设备",
+            "code": "1000052086-4"
+        }, {
+            "text": "验钞/点钞机",
+            "code": "1000052086-5"
+        }, {
+            "text": "扫描设备",
+            "code": "1000052086-6"
+        }, {
+            "text": "收银机",
+            "code": "1000052086-7"
+        }, {
+            "text": "电话机",
+            "code": "1000052086-8"
+        }, {
+            "text": "保险柜",
+            "code": "1000052086-9"
+        }, {
+            "text": "白板/封装机",
+            "code": "1000052086-10"
+        }]
     }, {
-        "r_l_title": " 文具/耗材 ",
+        "n_l_title": " 文具/耗材 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "笔类"
-        }, "激光笔", "办公文具", "文件收纳", "学生文具", "计算器", "考勤设备", {
+            "text": "笔类",
+            "code": "1000052088-0"
+        }, {
+            "text": "激光笔",
+            "code": "1000052088-1"
+        }, {
+            "text": "办公文具",
+            "code": "1000052088-2"
+        }, {
+            "text": "文件收纳",
+            "code": "1000052088-3"
+        }, {
+            "text": "学生文具",
+            "code": "1000052088-4"
+        }, {
+            "text": "计算器",
+            "code": "1000052088-5"
+        }, {
+            "text": "考勤设备",
+            "code": "1000052088-6"
+        }, {
             "className": "hot",
-            "text": "硒鼓"
-        }, "墨盒/墨粉", "色带", "纸类"]
+            "text": "硒鼓",
+            "code": "1000052088-7"
+        }, {
+            "text": "墨盒/墨粉",
+            "code": "1000052088-8"
+        }, {
+            "text": "色带",
+            "code": "1000052088-9"
+        }, {
+            "text": "纸类",
+            "code": "1000052088-10"
+        }]
     }, {
-        "r_l_title": " 平板配件 ",
-        "r_l_contents": ["保护套/壳", "保护膜", "iPad配件", "苹果耳机", "连接线", "底座/支架", "触控笔"]
+        "n_l_title": " 平板配件 ",
+        "r_l_contents": [{
+            "text": "保护套/壳",
+            "code": "1000052090-0"
+        }, {
+            "text": "保护膜",
+            "code": "1000052090-1"
+        }, {
+            "text": "iPad配件",
+            "code": "1000052090-2"
+        }, {
+            "text": "苹果耳机",
+            "code": "1000052090-3"
+        }, {
+            "text": "连接线",
+            "code": "1000052090-4"
+        }, {
+            "text": "底座/支架",
+            "code": "1000052090-5"
+        }, {
+            "text": "触控笔",
+            "code": "1000052090-6"
+        }]
     }, {
-        "r_l_title": " 电脑配件 ",
+        "n_l_title": " 电脑配件 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "显示器"
-        }, "CPU", "主板", "显卡", "硬盘", "内存", "机箱", "电源", "刻录机/光驱", "DIY整机", "装机配件"]
+            "text": "显示器",
+            "code": "1000052092-0"
+        }, {
+            "text": "CPU",
+            "code": "1000052092-1"
+        }, {
+            "text": "主板",
+            "code": "1000052092-2"
+        }, {
+            "text": "显卡",
+            "code": "1000052092-3"
+        }, {
+            "text": "硬盘",
+            "code": "1000052092-4"
+        }, {
+            "text": "内存",
+            "code": "1000052092-5"
+        }, {
+            "text": "机箱",
+            "code": "1000052092-6"
+        }, {
+            "text": "电源",
+            "code": "1000052092-7"
+        }, {
+            "text": "刻录机/光驱",
+            "code": "1000052092-8"
+        }, {
+            "text": "DIY整机",
+            "code": "1000052092-9"
+        }, {
+            "text": "装机配件",
+            "code": "1000052092-10"
+        }]
     }, {
-        "r_l_title": " 增值产品 ",
-        "r_l_contents": ["电脑远程服务"]
+        "n_l_title": " 增值产品 ",
+        "r_l_contents": [{
+            "text": "电脑远程服务",
+            "code": "1000052094-0"
+        }]
     }],
     "r_r_brand_imgs": ["https://gfs12.gomein.net.cn/T1EnKvB5hT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T11TWvB4Zj1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T17eLvByEj1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1vgKvB5hT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1igKvBKbT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1VgKvBKVT1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1_MbgBKYv1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1fEhjB7E_1RCvBVdK.jpg"],
-    "r_r_big_img": "https://gfs12.gomein.net.cn/T1N1AXBQA_1RCvBVdK.jpg"
+    "r_r_big_img": "https://gfs11.gomein.net.cn/T173AXB_Z_1RCvBVdK.jpg"
 }, {
     "l_titles": ["电视 影音", "智能"],
     "r_l_tags": ["电视影音<i></i>", "美通卡<i></i>", "以旧换新<i></i>", "延保服务<i></i>", "智享生活<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 电视 ",
+        "n_l_title": " 电视 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "55英寸"
-        }, "65英寸", "32英寸", "42-43英寸", "海信", "创维", "长虹", "TCL", "康佳", "小米", "索尼", {
+            "text": "55英寸",
+            "code": "1000051753-0"
+        }, {
+            "text": "65英寸",
+            "code": "1000051753-1"
+        }, {
+            "text": "32英寸",
+            "code": "1000051753-2"
+        }, {
+            "text": "42-43英寸",
+            "code": "1000051753-3"
+        }, {
+            "text": "海信",
+            "code": "1000051753-4"
+        }, {
+            "text": "创维",
+            "code": "1000051753-5"
+        }, {
+            "text": "长虹",
+            "code": "1000051753-6"
+        }, {
+            "text": "TCL",
+            "code": "1000051753-7"
+        }, {
+            "text": "康佳",
+            "code": "1000051753-8"
+        }, {
+            "text": "小米",
+            "code": "1000051753-9"
+        }, {
+            "text": "索尼",
+            "code": "1000051753-10"
+        }, {
             "className": "hot",
-            "text": "4K超高清"
-        }, "智能电视", "曲面电视", "超薄电视", "全部电视"]
-    }, {
-        "r_l_title": " 电视配件 ",
-        "r_l_contents": ["3D电视配件", "保养配件", "插线板", {
-            "className": "hot",
-            "text": "智能电视盒"
-        }, "电视挂架"]
-    }, {
-        "r_l_title": " 音响/DVD ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "影院"
-        }, "播放器", {
-            "className": "hot",
-            "text": "音响"
+            "text": "4K超高清",
+            "code": "1000051753-11"
+        }, {
+            "text": "智能电视",
+            "code": "1000051753-12"
+        }, {
+            "text": "曲面电视",
+            "code": "1000051753-13"
+        }, {
+            "text": "超薄电视",
+            "code": "1000051753-14"
+        }, {
+            "text": "全部电视",
+            "code": "1000051753-15"
         }]
     }, {
-        "r_l_title": " 影音配件 ",
-        "r_l_contents": ["其他配件", "影音线材", "线材转换器"]
+        "n_l_title": " 电视配件 ",
+        "r_l_contents": [{
+            "text": "3D电视配件",
+            "code": "1000051755-0"
+        }, {
+            "text": "保养配件",
+            "code": "1000051755-1"
+        }, {
+            "text": "插线板",
+            "code": "1000051755-2"
+        }, {
+            "className": "hot",
+            "text": "智能电视盒",
+            "code": "1000051755-3"
+        }, {
+            "text": "电视挂架",
+            "code": "1000051755-4"
+        }]
     }, {
-        "r_l_title": " 智能设备 ",
-        "r_l_contents": ["智能手环", "智能手表", "智能眼镜", "智能家居", "航拍设备", "智能配饰", "智享生活"]
+        "n_l_title": " 音响/DVD ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "影院",
+            "code": "1000051757-0"
+        }, {
+            "text": "播放器",
+            "code": "1000051757-1"
+        }, {
+            "className": "hot",
+            "text": "音响",
+            "code": "1000051757-2"
+        }]
+    }, {
+        "n_l_title": " 影音配件 ",
+        "r_l_contents": [{
+            "text": "其他配件",
+            "code": "1000051759-0"
+        }, {
+            "text": "影音线材",
+            "code": "1000051759-1"
+        }, {
+            "text": "线材转换器",
+            "code": "1000051759-2"
+        }]
+    }, {
+        "n_l_title": " 智能设备 ",
+        "r_l_contents": [{
+            "text": "智能手环",
+            "code": "1000051761-0"
+        }, {
+            "text": "智能手表",
+            "code": "1000051761-1"
+        }, {
+            "text": "智能眼镜",
+            "code": "1000051761-2"
+        }, {
+            "text": "智能家居",
+            "code": "1000051761-3"
+        }, {
+            "text": "航拍设备",
+            "code": "1000051761-4"
+        }, {
+            "text": "智能配饰",
+            "code": "1000051761-5"
+        }, {
+            "text": "智享生活",
+            "code": "1000051761-6"
+        }]
     }],
-    "r_r_brand_imgs": ["https://gfs13.gomein.net.cn/T1YkKTBmJT1RCvBVdK.jpeg", "https://gfs10.gomein.net.cn/T1aoKTBg_v1RCvBVdK.jpeg", "https://gfs12.gomein.net.cn/T1sCbTB7CT1RCvBVdK.jpeg", "https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E7%94%B5%E8%A7%86%E5%BA%B7%E4%BD%B3.jpg", "https://gfs14.gomein.net.cn/T1YoKTBChv1RCvBVdK.jpeg", "https://gfs13.gomein.net.cn/T1Z_WvBKVg1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T12QZvBgCT1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1MQhvBvAv1RCvBVdK.jpg"],
-    "r_r_big_img": "https://gfs10.gomein.net.cn/T141EXBTZv1RCvBVdK.jpg"
+    "r_r_brand_imgs": ["https://gfs13.gomein.net.cn/T1YkKTBmJT1RCvBVdK.jpeg", "https://gfs10.gomein.net.cn/T1aoKTBg_v1RCvBVdK.jpeg", "https://gfs12.gomein.net.cn/T1sCbTB7CT1RCvBVdK.jpeg", "https://img11.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E7%94%B5%E8%A7%86%E5%BA%B7%E4%BD%B3.jpg", "https://gfs14.gomein.net.cn/T1YoKTBChv1RCvBVdK.jpeg", "https://gfs13.gomein.net.cn/T1Z_WvBKVg1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T12QZvBgCT1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1MQhvBvAv1RCvBVdK.jpg"],
+    "r_r_big_img": "https://gfs13.gomein.net.cn/T1xqZXBjJv1RCvBVdK.jpg"
 }, {
     "l_titles": ["空调", "冰箱", "洗衣机"],
     "r_l_tags": ["空调<i></i>", "冰箱<i></i>", "洗衣机<i></i>", "家电节能专区<i></i>", "美通卡<i></i>", "以旧换新<i></i>", "延保服务<i></i>", "家电清洗服务<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 空调/商用 ",
+        "n_l_title": " 空调/商用 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "家用空调"
-        }, "商用空调", "中央空调", "壁挂式空调", "柜式空调", "移动空调", "定频", "变频", "单冷空调", {
+            "text": "家用空调",
+            "code": "1000051866-0"
+        }, {
+            "text": "商用空调",
+            "code": "1000051866-1"
+        }, {
+            "text": "中央空调",
+            "code": "1000051866-2"
+        }, {
+            "text": "壁挂式空调",
+            "code": "1000051866-3"
+        }, {
+            "text": "柜式空调",
+            "code": "1000051866-4"
+        }, {
+            "text": "移动空调",
+            "code": "1000051866-5"
+        }, {
+            "text": "定频",
+            "code": "1000051866-6"
+        }, {
+            "text": "变频",
+            "code": "1000051866-7"
+        }, {
+            "text": "单冷空调",
+            "code": "1000051866-8"
+        }, {
             "className": "hot",
-            "text": "冷暖空调"
-        }, "冷暖电辅", "小1匹", "1匹", "1.5匹", "2匹", "3匹", "wifi操控", "圆柱型柜机"]
+            "text": "冷暖空调",
+            "code": "1000051866-9"
+        }, {
+            "text": "冷暖电辅",
+            "code": "1000051866-10"
+        }, {
+            "text": "小1匹",
+            "code": "1000051866-11"
+        }, {
+            "text": "1匹",
+            "code": "1000051866-12"
+        }, {
+            "text": "1.5匹",
+            "code": "1000051866-13"
+        }, {
+            "text": "2匹",
+            "code": "1000051866-14"
+        }, {
+            "text": "3匹",
+            "code": "1000051866-15"
+        }, {
+            "text": "wifi操控",
+            "code": "1000051866-16"
+        }, {
+            "text": "圆柱型柜机",
+            "code": "1000051866-17"
+        }]
     }, {
-        "r_l_title": " 冰箱/冷柜 ",
+        "n_l_title": " 冰箱/冷柜 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "冰箱"
-        }, "冰柜", "酒柜", "对开门", "三门", "双门", "多门", "单门", "迷你冰箱", "电脑式", "机械式", "冰箱配件"]
+            "text": "冰箱",
+            "code": "1000051862-0"
+        }, {
+            "text": "冰柜",
+            "code": "1000051862-1"
+        }, {
+            "text": "酒柜",
+            "code": "1000051862-2"
+        }, {
+            "text": "对开门",
+            "code": "1000051862-3"
+        }, {
+            "text": "三门",
+            "code": "1000051862-4"
+        }, {
+            "text": "双门",
+            "code": "1000051862-5"
+        }, {
+            "text": "多门",
+            "code": "1000051862-6"
+        }, {
+            "text": "单门",
+            "code": "1000051862-7"
+        }, {
+            "text": "迷你冰箱",
+            "code": "1000051862-8"
+        }, {
+            "text": "电脑式",
+            "code": "1000051862-9"
+        }, {
+            "text": "机械式",
+            "code": "1000051862-10"
+        }, {
+            "text": "冰箱配件",
+            "code": "1000051862-11"
+        }]
     }, {
-        "r_l_title": " 洗衣机/干衣机 ",
+        "n_l_title": " 洗衣机/干衣机 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "滚筒洗衣机"
-        }, "波轮洗衣机", "洗烘一体机", "迷你洗衣机", "双缸洗衣机", "干衣机", "洗衣机配件"]
+            "text": "滚筒洗衣机",
+            "code": "1000051864-0"
+        }, {
+            "text": "波轮洗衣机",
+            "code": "1000051864-1"
+        }, {
+            "text": "洗烘一体机",
+            "code": "1000051864-2"
+        }, {
+            "text": "迷你洗衣机",
+            "code": "1000051864-3"
+        }, {
+            "text": "双缸洗衣机",
+            "code": "1000051864-4"
+        }, {
+            "text": "干衣机",
+            "code": "1000051864-5"
+        }, {
+            "text": "洗衣机配件",
+            "code": "1000051864-6"
+        }]
     }],
-    "r_r_brand_imgs": ["https://img10.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%86%B0%E6%B4%97%E6%B5%B7%E5%B0%94.jpg", "https://gfs12.gomein.net.cn/T1dLWbBsxv1RCvBVdK.jpg", "https://img11.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%86%B0%E6%B4%97%E7%BE%8E%E7%9A%84.jpg", "https://gfs13.gomein.net.cn/T1sWhgB5Jv1RCvBVdK.jpeg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214321.jpg", "https://gfs10.gomein.net.cn/T12khbB7Vv1RCvBVdK.jpeg", "https://gfs12.gomein.net.cn/T15kD_BsCT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1f3L_BCJv1RCvBVdK.jpeg"],
-    "r_r_big_img": "https://gfs12.gomein.net.cn/T1biWXB7Yv1RCvBVdK.jpg"
+    "r_r_brand_imgs": ["https://img12.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%86%B0%E6%B4%97%E6%B5%B7%E5%B0%94.jpg", "https://gfs12.gomein.net.cn/T1dLWbBsxv1RCvBVdK.jpg", "https://img13.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%86%B0%E6%B4%97%E7%BE%8E%E7%9A%84.jpg", "https://gfs13.gomein.net.cn/T1sWhgB5Jv1RCvBVdK.jpeg", "https://img14.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214321.jpg", "https://gfs10.gomein.net.cn/T12khbB7Vv1RCvBVdK.jpeg", "https://gfs12.gomein.net.cn/T15kD_BsCT1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1f3L_BCJv1RCvBVdK.jpeg"],
+    "r_r_big_img": "https://gfs12.gomein.net.cn/T1IqCXBQdT1RCvBVdK.jpg"
 }, {
     "l_titles": ["厨房卫浴", "生活电器", "环境"],
     "r_l_tags": ["烟灶卫浴馆<i></i>", "厨卫新活馆<i></i>", "净化器<i></i>", "小家电<i></i>", "取暖器<i></i>", "美通卡<i></i>", "延保服务<i></i>", "家电清洗服务<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 厨卫大电 ",
+        "n_l_title": " 厨卫大电 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "油烟机"
-        }, "燃气灶", "消毒柜/商用大柜", {
-            "className": "hot",
-            "text": "燃气热水器"
-        }, "电热水器", "即热热水器", "浴霸/换气扇", "洗碗机", "嵌入式厨电", "壁挂炉", "太阳能热水器", "烟灶套餐", "厨卫配件"]
-    }, {
-        "r_l_title": " 厨房小电 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "微波炉"
-        }, "豆浆机", {
-            "className": "hot",
-            "text": "电饭煲"
-        }, "电磁炉/电陶炉", "电压力锅", "炊具", "原汁机/榨汁机", "破壁机/料理机", "电烤箱", "面包机/多士炉", "咖啡机", "电火锅", "电水壶", "电饼铛/烤饼机", "电蒸锅", "酸奶机/冰淇淋机", "煮蛋器", "电炖锅/炖盅", "多用途锅", "养生壶"]
-    }, {
-        "r_l_title": " 环境电器 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "电风扇"
-        }, "空调扇", {
-            "className": "hot",
-            "text": "空气净化器"
-        }, "除湿机", "加湿器", "净化器滤网", "取暖器"]
-    }, {
-        "r_l_title": " 个人护理 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "剃须刀"
+            "text": "油烟机",
+            "code": "1000053149-0"
+        }, {
+            "text": "燃气灶",
+            "code": "1000053149-1"
+        }, {
+            "text": "消毒柜/商用大柜",
+            "code": "1000053149-2"
         }, {
             "className": "hot",
-            "text": "电吹风"
-        }, "理发器", "剃/脱毛器", "鼻毛修剪器", "美发器", "美容仪", "电动牙刷", "冲牙器"]
+            "text": "燃气热水器",
+            "code": "1000053149-3"
+        }, {
+            "text": "电热水器",
+            "code": "1000053149-4"
+        }, {
+            "text": "即热热水器",
+            "code": "1000053149-5"
+        }, {
+            "text": "浴霸/换气扇",
+            "code": "1000053149-6"
+        }, {
+            "text": "洗碗机",
+            "code": "1000053149-7"
+        }, {
+            "text": "嵌入式厨电",
+            "code": "1000053149-8"
+        }, {
+            "text": "壁挂炉",
+            "code": "1000053149-9"
+        }, {
+            "text": "太阳能热水器",
+            "code": "1000053149-10"
+        }, {
+            "text": "烟灶套餐",
+            "code": "1000053149-11"
+        }, {
+            "text": "厨卫配件",
+            "code": "1000053149-12"
+        }]
     }, {
-        "r_l_title": " 水家电 ",
+        "n_l_title": " 厨房小电 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "净水器/设备"
-        }, "饮水机", "滤水壶", "净水龙头", "净水桶", "滤料", "净饮机/智饮机"]
+            "text": "微波炉",
+            "code": "1000053151-0"
+        }, {
+            "text": "豆浆机",
+            "code": "1000053151-1"
+        }, {
+            "className": "hot",
+            "text": "电饭煲",
+            "code": "1000053151-2"
+        }, {
+            "text": "电磁炉/电陶炉",
+            "code": "1000053151-3"
+        }, {
+            "text": "电压力锅",
+            "code": "1000053151-4"
+        }, {
+            "text": "炊具",
+            "code": "1000053151-5"
+        }, {
+            "text": "原汁机/榨汁机",
+            "code": "1000053151-6"
+        }, {
+            "text": "破壁机/料理机",
+            "code": "1000053151-7"
+        }, {
+            "text": "电烤箱",
+            "code": "1000053151-8"
+        }, {
+            "text": "面包机/多士炉",
+            "code": "1000053151-9"
+        }, {
+            "text": "咖啡机",
+            "code": "1000053151-10"
+        }, {
+            "text": "电火锅",
+            "code": "1000053151-11"
+        }, {
+            "text": "电水壶",
+            "code": "1000053151-12"
+        }, {
+            "text": "电饼铛/烤饼机",
+            "code": "1000053151-13"
+        }, {
+            "text": "电蒸锅",
+            "code": "1000053151-14"
+        }, {
+            "text": "酸奶机/冰淇淋机",
+            "code": "1000053151-15"
+        }, {
+            "text": "煮蛋器",
+            "code": "1000053151-16"
+        }, {
+            "text": "电炖锅/炖盅",
+            "code": "1000053151-17"
+        }, {
+            "text": "多用途锅",
+            "code": "1000053151-18"
+        }, {
+            "text": "养生壶",
+            "code": "1000053151-19"
+        }]
     }, {
-        "r_l_title": " 家居电器 ",
+        "n_l_title": " 环境电器 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "吸尘器/除螨仪"
-        }, "挂烫机", "扫地机器人", "干衣机/干鞋器", "毛球修剪器", "电熨斗"]
+            "text": "取暖器",
+            "code": "1000053153-0"
+        }, {
+            "text": "空调扇",
+            "code": "1000053153-1"
+        }, {
+            "className": "hot",
+            "text": "空气净化器",
+            "code": "1000053153-2"
+        }, {
+            "text": "除湿机",
+            "code": "1000053153-3"
+        }, {
+            "text": "加湿器",
+            "code": "1000053153-4"
+        }, {
+            "text": "净化器滤网",
+            "code": "1000053153-5"
+        }, {
+            "text": "电风扇",
+            "code": "1000053153-6"
+        }]
     }, {
-        "r_l_title": " 健康电器 ",
-        "r_l_contents": ["甩脂瘦身", "足浴盆", "其他按摩器", "电子秤", "按摩椅", "眼部按摩机", "足疗机", "按摩椅垫"]
+        "n_l_title": " 个人护理 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "剃须刀",
+            "code": "1000053155-0"
+        }, {
+            "className": "hot",
+            "text": "电吹风",
+            "code": "1000053155-1"
+        }, {
+            "text": "理发器",
+            "code": "1000053155-2"
+        }, {
+            "text": "剃/脱毛器",
+            "code": "1000053155-3"
+        }, {
+            "text": "鼻毛修剪器",
+            "code": "1000053155-4"
+        }, {
+            "text": "美发器",
+            "code": "1000053155-5"
+        }, {
+            "text": "美容仪",
+            "code": "1000053155-6"
+        }, {
+            "text": "电动牙刷",
+            "code": "1000053155-7"
+        }, {
+            "text": "冲牙器",
+            "code": "1000053155-8"
+        }]
+    }, {
+        "n_l_title": " 水家电 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "净水器/设备",
+            "code": "1000053157-0"
+        }, {
+            "text": "饮水机",
+            "code": "1000053157-1"
+        }, {
+            "text": "滤水壶",
+            "code": "1000053157-2"
+        }, {
+            "text": "净水龙头",
+            "code": "1000053157-3"
+        }, {
+            "text": "净水桶",
+            "code": "1000053157-4"
+        }, {
+            "text": "滤料",
+            "code": "1000053157-5"
+        }, {
+            "text": "净饮机/智饮机",
+            "code": "1000053157-6"
+        }]
+    }, {
+        "n_l_title": " 家居电器 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "吸尘器/除螨仪",
+            "code": "1000053159-0"
+        }, {
+            "text": "挂烫机",
+            "code": "1000053159-1"
+        }, {
+            "text": "扫地机器人",
+            "code": "1000053159-2"
+        }, {
+            "text": "干衣机/干鞋器",
+            "code": "1000053159-3"
+        }, {
+            "text": "毛球修剪器",
+            "code": "1000053159-4"
+        }, {
+            "text": "电熨斗",
+            "code": "1000053159-5"
+        }]
+    }, {
+        "n_l_title": " 健康电器 ",
+        "r_l_contents": [{
+            "text": "甩脂瘦身",
+            "code": "1000053161-0"
+        }, {
+            "text": "足浴盆",
+            "code": "1000053161-1"
+        }, {
+            "text": "其他按摩器",
+            "code": "1000053161-2"
+        }, {
+            "text": "电子秤",
+            "code": "1000053161-3"
+        }, {
+            "text": "按摩椅",
+            "code": "1000053161-4"
+        }, {
+            "text": "眼部按摩机",
+            "code": "1000053161-5"
+        }, {
+            "text": "足疗机",
+            "code": "1000053161-6"
+        }, {
+            "text": "按摩椅垫",
+            "code": "1000053161-7"
+        }]
     }],
-    "r_r_brand_imgs": ["https://img13.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%8E%A8%E5%8D%AB%E6%B5%B7%E5%B0%94.jpg", "https://gfs10.gomein.net.cn/T1_1hjBjhv1RCvBVdK.jpg", "https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%8E%A8%E5%8D%AB%E5%8D%8E%E5%B8%9D.jpg", "https://gfs10.gomein.net.cn/T1D0dgB7b_1RCvBVdK.jpg", "https://img10.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214658.jpg", "https://gfs10.gomein.net.cn/T1q5bTBg_v1RCvBVdK.jpeg", "https://img11.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704215156.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214702.jpg"],
-    "r_r_big_img": "https://gfs10.gomein.net.cn/T1gQCXBbDv1RCvBVdK.jpg"
+    "r_r_brand_imgs": ["https://img10.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%8E%A8%E5%8D%AB%E6%B5%B7%E5%B0%94.jpg", "https://gfs10.gomein.net.cn/T1_1hjBjhv1RCvBVdK.jpg", "https://img11.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150925/%E5%8E%A8%E5%8D%AB%E5%8D%8E%E5%B8%9D.jpg", "https://gfs10.gomein.net.cn/T1D0dgB7b_1RCvBVdK.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214658.jpg", "https://gfs10.gomein.net.cn/T1q5bTBg_v1RCvBVdK.jpeg", "https://img13.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704215156.jpg", "https://img14.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704214702.jpg"],
+    "r_r_big_img": "https://gfs13.gomein.net.cn/T1IqbXBvdv1RCvBVdK.jpg"
 }, {
     "l_titles": ["家具", "建材", "欧洲厨房"],
     "r_l_tags": ["住宅家具<i></i>", "家装建材<i></i>", "家装馆<i></i>", "精品家具<i></i>", "家装服务<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 客厅家具 ",
+        "n_l_title": " 客厅家具 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "沙发"
-        }, "茶几", "电视柜", "鞋柜", "衣帽架"]
+            "text": "沙发",
+            "code": "1000052189-0"
+        }, {
+            "text": "茶几",
+            "code": "1000052189-1"
+        }, {
+            "text": "电视柜",
+            "code": "1000052189-2"
+        }, {
+            "text": "鞋柜",
+            "code": "1000052189-3"
+        }, {
+            "text": "衣帽架",
+            "code": "1000052189-4"
+        }]
     }, {
-        "r_l_title": " 卧室家具 ",
-        "r_l_contents": ["床头柜", "床", {
-            "className": "hot",
-            "text": "床垫"
-        }, "梳妆台", "衣柜", "镜类"]
-    }, {
-        "r_l_title": " 餐厅家具 ",
-        "r_l_contents": ["餐桌", "餐椅", {
-            "className": "hot",
-            "text": "餐桌椅套装"
-        }, "餐边柜"]
-    }, {
-        "r_l_title": " 儿童办公 ",
-        "r_l_contents": ["儿童桌椅", "儿童床类", "儿童衣柜", "儿童套装", "休闲躺椅", "班台桌", "办公椅", "文件柜"]
-    }, {
-        "r_l_title": " 书房家具 ",
+        "n_l_title": " 卧室家具 ",
         "r_l_contents": [{
-            "className": "hot",
-            "text": "书桌/电脑桌"
-        }, "电脑椅", "书柜"]
-    }, {
-        "r_l_title": " 储物户外 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "置物架"
-        }, "层架", "晾衣架", "户外桌椅"]
-    }, {
-        "r_l_title": " 厨房卫浴 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "马桶"
-        }, "智能盖板", "淋浴花洒", "浴室柜", "水槽", "水龙头", "浴缸", "卫浴挂件", "厨房挂件", {
-            "className": "hot",
-            "text": "浴霸"
-        }, "吊顶", "换气扇", "地漏/角阀"]
-    }, {
-        "r_l_title": " 灯具光源 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "吸顶灯"
-        }, "吊灯", {
-            "className": "hot",
-            "text": "LED灯"
-        }, "台灯", "筒射灯", "厨卫照明", "应急/手电", "户外灯", "节能灯", "落地灯"]
-    }, {
-        "r_l_title": " 电工电料 ",
-        "r_l_contents": ["插座", {
-            "className": "hot",
-            "text": "开关"
+            "text": "床头柜",
+            "code": "1000052191-0"
+        }, {
+            "text": "床",
+            "code": "1000052191-1"
         }, {
             "className": "hot",
-            "text": "接线板/排插"
-        }, "安防监控", "电线", "断路器", "电工配件"]
+            "text": "床垫",
+            "code": "1000052191-2"
+        }, {
+            "text": "梳妆台",
+            "code": "1000052191-3"
+        }, {
+            "text": "衣柜",
+            "code": "1000052191-4"
+        }, {
+            "text": "镜类",
+            "code": "1000052191-5"
+        }]
     }, {
-        "r_l_title": " 装饰材料 ",
-        "r_l_contents": ["瓷砖", "油漆涂料", "散热器", "净化除味", "涂刷辅料", "门窗定制"]
+        "n_l_title": " 餐厅家具 ",
+        "r_l_contents": [{
+            "text": "餐桌",
+            "code": "1000052193-0"
+        }, {
+            "text": "餐椅",
+            "code": "1000052193-1"
+        }, {
+            "className": "hot",
+            "text": "餐桌椅套装",
+            "code": "1000052193-2"
+        }, {
+            "text": "餐边柜",
+            "code": "1000052193-3"
+        }]
     }, {
-        "r_l_title": " 五金工具 ",
-        "r_l_contents": ["电/气动工具", "手动工具", "智能居家", "锁具", "仪器仪表", "指纹密码锁", "拉手", "家具五金"]
+        "n_l_title": " 儿童办公 ",
+        "r_l_contents": [{
+            "text": "儿童桌椅",
+            "code": "1000052195-0"
+        }, {
+            "text": "儿童床类",
+            "code": "1000052195-1"
+        }, {
+            "text": "儿童衣柜",
+            "code": "1000052195-2"
+        }, {
+            "text": "儿童套装",
+            "code": "1000052195-3"
+        }, {
+            "text": "休闲躺椅",
+            "code": "1000052195-4"
+        }, {
+            "text": "班台桌",
+            "code": "1000052195-5"
+        }, {
+            "text": "办公椅",
+            "code": "1000052195-6"
+        }, {
+            "text": "文件柜",
+            "code": "1000052195-7"
+        }]
     }, {
-        "r_l_title": " 装修服务 ",
-        "r_l_contents": ["家装设计", "家装定金"]
+        "n_l_title": " 书房家具 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "书桌/电脑桌",
+            "code": "1000052197-0"
+        }, {
+            "text": "电脑椅",
+            "code": "1000052197-1"
+        }, {
+            "text": "书柜",
+            "code": "1000052197-2"
+        }]
+    }, {
+        "n_l_title": " 储物户外 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "置物架",
+            "code": "1000052199-0"
+        }, {
+            "text": "层架",
+            "code": "1000052199-1"
+        }, {
+            "text": "晾衣架",
+            "code": "1000052199-2"
+        }, {
+            "text": "户外桌椅",
+            "code": "1000052199-3"
+        }]
+    }, {
+        "n_l_title": " 厨房卫浴 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "马桶",
+            "code": "1000052201-0"
+        }, {
+            "text": "智能盖板",
+            "code": "1000052201-1"
+        }, {
+            "text": "淋浴花洒",
+            "code": "1000052201-2"
+        }, {
+            "text": "浴室柜",
+            "code": "1000052201-3"
+        }, {
+            "text": "水槽",
+            "code": "1000052201-4"
+        }, {
+            "text": "水龙头",
+            "code": "1000052201-5"
+        }, {
+            "text": "浴缸",
+            "code": "1000052201-6"
+        }, {
+            "text": "卫浴挂件",
+            "code": "1000052201-7"
+        }, {
+            "text": "厨房挂件",
+            "code": "1000052201-8"
+        }, {
+            "className": "hot",
+            "text": "浴霸",
+            "code": "1000052201-9"
+        }, {
+            "text": "吊顶",
+            "code": "1000052201-10"
+        }, {
+            "text": "换气扇",
+            "code": "1000052201-11"
+        }, {
+            "text": "地漏/角阀",
+            "code": "1000052201-12"
+        }]
+    }, {
+        "n_l_title": " 灯具光源 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "吸顶灯",
+            "code": "1000052203-0"
+        }, {
+            "text": "吊灯",
+            "code": "1000052203-1"
+        }, {
+            "className": "hot",
+            "text": "LED灯",
+            "code": "1000052203-2"
+        }, {
+            "text": "台灯",
+            "code": "1000052203-3"
+        }, {
+            "text": "筒射灯",
+            "code": "1000052203-4"
+        }, {
+            "text": "厨卫照明",
+            "code": "1000052203-5"
+        }, {
+            "text": "应急/手电",
+            "code": "1000052203-6"
+        }, {
+            "text": "户外灯",
+            "code": "1000052203-7"
+        }, {
+            "text": "节能灯",
+            "code": "1000052203-8"
+        }, {
+            "text": "落地灯",
+            "code": "1000052203-9"
+        }]
+    }, {
+        "n_l_title": " 电工电料 ",
+        "r_l_contents": [{
+            "text": "插座",
+            "code": "1000052205-0"
+        }, {
+            "className": "hot",
+            "text": "开关",
+            "code": "1000052205-1"
+        }, {
+            "className": "hot",
+            "text": "接线板/排插",
+            "code": "1000052205-2"
+        }, {
+            "text": "安防监控",
+            "code": "1000052205-3"
+        }, {
+            "text": "电线",
+            "code": "1000052205-4"
+        }, {
+            "text": "断路器",
+            "code": "1000052205-5"
+        }, {
+            "text": "电工配件",
+            "code": "1000052205-6"
+        }]
+    }, {
+        "n_l_title": " 装饰材料 ",
+        "r_l_contents": [{
+            "text": "瓷砖",
+            "code": "1000052207-0"
+        }, {
+            "text": "油漆涂料",
+            "code": "1000052207-1"
+        }, {
+            "text": "散热器",
+            "code": "1000052207-2"
+        }, {
+            "text": "净化除味",
+            "code": "1000052207-3"
+        }, {
+            "text": "涂刷辅料",
+            "code": "1000052207-4"
+        }, {
+            "text": "门窗定制",
+            "code": "1000052207-5"
+        }]
+    }, {
+        "n_l_title": " 五金工具 ",
+        "r_l_contents": [{
+            "text": "电/气动工具",
+            "code": "1000052211-0"
+        }, {
+            "text": "手动工具",
+            "code": "1000052211-1"
+        }, {
+            "text": "智能居家",
+            "code": "1000052211-2"
+        }, {
+            "text": "锁具",
+            "code": "1000052211-3"
+        }, {
+            "text": "仪器仪表",
+            "code": "1000052211-4"
+        }, {
+            "text": "指纹密码锁",
+            "code": "1000052211-5"
+        }, {
+            "text": "拉手",
+            "code": "1000052211-6"
+        }, {
+            "text": "家具五金",
+            "code": "1000052211-7"
+        }]
+    }, {
+        "n_l_title": " 装修服务 ",
+        "r_l_contents": [{
+            "text": "家装设计",
+            "code": "1000052209-0"
+        }, {
+            "text": "家装定金",
+            "code": "1000052209-1"
+        }]
     }],
-    "r_r_brand_imgs": ["https://gfs10.gomein.net.cn/T1UGDbBbKT1RCvBVdK.png", "https://gfs10.gomein.net.cn/T1axCjBgVT1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1cdJvBTZj1RCvBVdK.jpg", "https://img13.gomein.net.cn/image/prodimg/promotion_image/promoImg/201606/20160601/%E5%BB%BA%E6%9D%90-%E9%9B%B7%E5%A3%ABWW.jpg", "https://gfs13.gomein.net.cn/T1wdYvB4by1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T13U_vB7Jj1RCvBVdK.png"]
+    "r_r_brand_imgs": ["https://gfs10.gomein.net.cn/T1UGDbBbKT1RCvBVdK.png", "https://gfs10.gomein.net.cn/T1axCjBgVT1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1cdJvBTZj1RCvBVdK.jpg", "https://img10.gomein.net.cn/image/prodimg/promotion_image/promoImg/201606/20160601/%E5%BB%BA%E6%9D%90-%E9%9B%B7%E5%A3%ABWW.jpg", "https://gfs13.gomein.net.cn/T1wdYvB4by1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T13U_vB7Jj1RCvBVdK.png"]
 }, {
     "l_titles": ["家居家纺", "家居家装"],
     "r_l_tags": ["家居日用<i></i>", "家居特卖惠<i></i>", "美家致选<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 清洁用品 ",
-        "r_l_contents": ["居室清洁", {
-            "className": "hot",
-            "text": "清洁工具"
-        }, "驱虫除害", {
-            "className": "hot",
-            "text": "纸品湿巾"
-        }, "垃圾收纳", "防护用品", "衣物清洁"]
-    }, {
-        "r_l_title": " 生活日用 ",
-        "r_l_contents": ["缝纫用品", {
-            "className": "hot",
-            "text": "收纳用品"
-        }, "洗晒用品", "浴室用品", "净化除味", "雨伞雨具", "衣橱衣架"]
-    }, {
-        "r_l_title": " 厨具 ",
+        "n_l_title": " 清洁用品 ",
         "r_l_contents": [{
-            "className": "hot",
-            "text": "烹饪锅具"
+            "text": "居室清洁",
+            "code": "1000052316-0"
         }, {
             "className": "hot",
-            "text": "刀剪砧板"
-        }, "保鲜收纳", "厨房小件", "精美餐具"]
-    }, {
-        "r_l_title": " 水具茶具 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "保温杯"
-        }, "保温壶/桶", "塑料杯", "茶具", "紫砂杯/陶瓷杯", "玻璃杯", "酒具"]
-    }, {
-        "r_l_title": " 床品件套 ",
-        "r_l_contents": ["三件套", {
-            "className": "hot",
-            "text": "四件套"
+            "text": "清洁工具",
+            "code": "1000052316-1"
+        }, {
+            "text": "驱虫除害",
+            "code": "1000052316-2"
         }, {
             "className": "hot",
-            "text": "床单被罩"
-        }, "多件套", "婚庆件套", "六件套"]
+            "text": "纸品湿巾",
+            "code": "1000052316-3"
+        }, {
+            "text": "垃圾收纳",
+            "code": "1000052316-4"
+        }, {
+            "text": "防护用品",
+            "code": "1000052316-5"
+        }, {
+            "text": "衣物清洁",
+            "code": "1000052316-6"
+        }]
     }, {
-        "r_l_title": " 芯类 ",
+        "n_l_title": " 生活日用 ",
         "r_l_contents": [{
-            "className": "hot",
-            "text": "被子"
+            "text": "缝纫用品",
+            "code": "1000052314-0"
         }, {
             "className": "hot",
-            "text": "电热毯"
-        }, "枕芯枕套", "床垫/床褥", "抱枕靠垫", "毛巾被/毯"]
+            "text": "收纳用品",
+            "code": "1000052314-1"
+        }, {
+            "text": "洗晒用品",
+            "code": "1000052314-2"
+        }, {
+            "text": "浴室用品",
+            "code": "1000052314-3"
+        }, {
+            "text": "净化除味",
+            "code": "1000052314-4"
+        }, {
+            "text": "雨伞雨具",
+            "code": "1000052314-5"
+        }, {
+            "text": "衣橱衣架",
+            "code": "1000052314-6"
+        }]
     }, {
-        "r_l_title": " 毛巾家纺 ",
-        "r_l_contents": ["面巾", "浴巾", "方巾", "毛巾套装", "童巾", "浴衣/浴袍", "运动巾"]
+        "n_l_title": " 厨具 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "烹饪锅具",
+            "code": "1000052308-0"
+        }, {
+            "className": "hot",
+            "text": "刀剪砧板",
+            "code": "1000052308-1"
+        }, {
+            "text": "保鲜收纳",
+            "code": "1000052308-2"
+        }, {
+            "text": "厨房小件",
+            "code": "1000052308-3"
+        }, {
+            "text": "精美餐具",
+            "code": "1000052308-4"
+        }]
     }, {
-        "r_l_title": " 夏凉用品 ",
-        "r_l_contents": ["凉席", "夏凉被", "蚊帐", "凉枕", "凉品套装"]
+        "n_l_title": " 水具茶具 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "保温杯",
+            "code": "1000052310-0"
+        }, {
+            "text": "保温壶/桶",
+            "code": "1000052310-1"
+        }, {
+            "text": "塑料杯",
+            "code": "1000052310-2"
+        }, {
+            "text": "茶具",
+            "code": "1000052310-3"
+        }, {
+            "text": "紫砂杯/陶瓷杯",
+            "code": "1000052310-4"
+        }, {
+            "text": "玻璃杯",
+            "code": "1000052310-5"
+        }, {
+            "text": "酒具",
+            "code": "1000052310-6"
+        }]
     }, {
-        "r_l_title": " 保健健康 ",
-        "r_l_contents": ["保健器械", "骨骼健康", "免疫调节", "肠胃养护"]
+        "n_l_title": " 床品件套 ",
+        "r_l_contents": [{
+            "text": "三件套",
+            "code": "1000052300-0"
+        }, {
+            "className": "hot",
+            "text": "四件套",
+            "code": "1000052300-1"
+        }, {
+            "className": "hot",
+            "text": "床单被罩",
+            "code": "1000052300-2"
+        }, {
+            "text": "多件套",
+            "code": "1000052300-3"
+        }, {
+            "text": "婚庆件套",
+            "code": "1000052300-4"
+        }, {
+            "text": "六件套",
+            "code": "1000052300-5"
+        }]
     }, {
-        "r_l_title": " 家装软饰 ",
-        "r_l_contents": ["居家软饰", "工艺摆件", "创意小件", "家用保健", "家居鞋"]
+        "n_l_title": " 芯类 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "被子",
+            "code": "1000052302-0"
+        }, {
+            "className": "hot",
+            "text": "电热毯",
+            "code": "1000052302-1"
+        }, {
+            "text": "枕芯枕套",
+            "code": "1000052302-2"
+        }, {
+            "text": "床垫/床褥",
+            "code": "1000052302-3"
+        }, {
+            "text": "抱枕靠垫",
+            "code": "1000052302-4"
+        }, {
+            "text": "毛巾被/毯",
+            "code": "1000052302-5"
+        }]
     }, {
-        "r_l_title": " 宠物用品 ",
-        "r_l_contents": ["宠物主粮", "宠物零食", "医护美容"]
+        "n_l_title": " 毛巾家纺 ",
+        "r_l_contents": [{
+            "text": "面巾",
+            "code": "1000052304-0"
+        }, {
+            "text": "浴巾",
+            "code": "1000052304-1"
+        }, {
+            "text": "方巾",
+            "code": "1000052304-2"
+        }, {
+            "text": "毛巾套装",
+            "code": "1000052304-3"
+        }, {
+            "text": "童巾",
+            "code": "1000052304-4"
+        }, {
+            "text": "浴衣/浴袍",
+            "code": "1000052304-5"
+        }, {
+            "text": "运动巾",
+            "code": "1000052304-6"
+        }]
+    }, {
+        "n_l_title": " 夏凉用品 ",
+        "r_l_contents": [{
+            "text": "凉席",
+            "code": "1000052298-0"
+        }, {
+            "text": "夏凉被",
+            "code": "1000052298-1"
+        }, {
+            "text": "蚊帐",
+            "code": "1000052298-2"
+        }, {
+            "text": "凉枕",
+            "code": "1000052298-3"
+        }, {
+            "text": "凉品套装",
+            "code": "1000052298-4"
+        }]
+    }, {
+        "n_l_title": " 保健健康 ",
+        "r_l_contents": [{
+            "text": "保健器械",
+            "code": "1000081964-0"
+        }, {
+            "text": "骨骼健康",
+            "code": "1000081964-1"
+        }, {
+            "text": "免疫调节",
+            "code": "1000081964-2"
+        }, {
+            "text": "肠胃养护",
+            "code": "1000081964-3"
+        }]
+    }, {
+        "n_l_title": " 家装软饰 ",
+        "r_l_contents": [{
+            "text": "居家软饰",
+            "code": "1000052312-0"
+        }, {
+            "text": "工艺摆件",
+            "code": "1000052312-1"
+        }, {
+            "text": "创意小件",
+            "code": "1000052312-2"
+        }, {
+            "text": "家用保健",
+            "code": "1000052312-3"
+        }, {
+            "text": "家居鞋",
+            "code": "1000052312-4"
+        }]
+    }, {
+        "n_l_title": " 宠物用品 ",
+        "r_l_contents": [{
+            "text": "宠物主粮",
+            "code": "1000052318-0"
+        }, {
+            "text": "宠物零食",
+            "code": "1000052318-1"
+        }, {
+            "text": "医护美容",
+            "code": "1000052318-2"
+        }]
     }],
-    "r_r_brand_imgs": ["https://img14.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%AE%B6%E5%B1%85-%E8%8B%8F%E6%B3%8A%E5%B0%94logo.jpg", "https://gfs10.gomein.net.cn/T13wdbBK_v1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T18eCgBshv1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1ytdQBKCv1RCvBVdK.jpg", "https://img10.gomein.net.cn/image/prodimg/topics/qiaolu/201607/6/20160706142151.png"],
+    "r_r_brand_imgs": ["https://img11.gomein.net.cn/image/prodimg/promotion_image/promoImg/201509/20150923/%E5%AE%B6%E5%B1%85-%E8%8B%8F%E6%B3%8A%E5%B0%94logo.jpg", "https://gfs10.gomein.net.cn/T13wdbBK_v1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T18eCgBshv1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1ytdQBKCv1RCvBVdK.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/6/20160706142151.png"],
     "r_r_big_img": "https://gfs12.gomein.net.cn/T1oAVjBQWT1RCvBVdK.jpg"
 }, {
     "l_titles": ["食品酒水"],
     "r_l_tags": ["食品酒水<i></i>", "食品酒水盛宴<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 休闲零食 ",
+        "n_l_title": " 休闲零食 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "坚果炒货"
-        }, "糖果巧克力", "肉干肉脯", "饼干糕点", "休闲零食", "膨化薯片"]
+            "text": "坚果炒货",
+            "code": "1000052352-0"
+        }, {
+            "text": "糖果巧克力",
+            "code": "1000052352-1"
+        }, {
+            "text": "肉干肉脯",
+            "code": "1000052352-2"
+        }, {
+            "text": "饼干糕点",
+            "code": "1000052352-3"
+        }, {
+            "text": "休闲零食",
+            "code": "1000052352-4"
+        }, {
+            "text": "膨化薯片",
+            "code": "1000052352-5"
+        }]
     }, {
-        "r_l_title": " 粮油生鲜 ",
+        "n_l_title": " 粮油生鲜 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "食用油"
-        }, "大米", "南北干货", "方便速食", "厨房调料", {
+            "text": "食用油",
+            "code": "1000052354-0"
+        }, {
+            "text": "大米",
+            "code": "1000052354-1"
+        }, {
+            "text": "南北干货",
+            "code": "1000052354-2"
+        }, {
+            "text": "方便速食",
+            "code": "1000052354-3"
+        }, {
+            "text": "厨房调料",
+            "code": "1000052354-4"
+        }, {
             "className": "hot",
-            "text": "水果蔬菜"
-        }, "猪牛羊肉", "海鲜水产", "熟食腊味"]
+            "text": "水果蔬菜",
+            "code": "1000052354-5"
+        }, {
+            "text": "猪牛羊肉",
+            "code": "1000052354-6"
+        }, {
+            "text": "海鲜水产",
+            "code": "1000052354-7"
+        }, {
+            "text": "熟食腊味",
+            "code": "1000052354-8"
+        }]
     }, {
-        "r_l_title": " 进口食品 ",
-        "r_l_contents": ["牛奶", {
+        "n_l_title": " 进口食品 ",
+        "r_l_contents": [{
+            "text": "牛奶",
+            "code": "1000052356-0"
+        }, {
             "className": "hot",
-            "text": "冲调饮品"
-        }, "饼干糕点", {
+            "text": "冲调饮品",
+            "code": "1000052356-1"
+        }, {
+            "text": "饼干糕点",
+            "code": "1000052356-2"
+        }, {
             "className": "hot",
-            "text": "糖/巧克力"
-        }, "米面粮油", "休闲零食"]
+            "text": "糖/巧克力",
+            "code": "1000052356-3"
+        }, {
+            "text": "米面粮油",
+            "code": "1000052356-4"
+        }, {
+            "text": "休闲零食",
+            "code": "1000052356-5"
+        }]
     }, {
-        "r_l_title": " 酒水 ",
+        "n_l_title": " 酒水 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "白酒"
-        }, "洋酒", {
+            "text": "白酒",
+            "code": "1000052358-0"
+        }, {
+            "text": "洋酒",
+            "code": "1000052358-1"
+        }, {
             "className": "hot",
-            "text": "葡萄酒"
-        }, "黄酒", "啤酒", "保健酒", "收藏酒/老酒"]
+            "text": "葡萄酒",
+            "code": "1000052358-2"
+        }, {
+            "text": "黄酒",
+            "code": "1000052358-3"
+        }, {
+            "text": "啤酒",
+            "code": "1000052358-4"
+        }, {
+            "text": "保健酒",
+            "code": "1000052358-5"
+        }, {
+            "text": "收藏酒/老酒",
+            "code": "1000052358-6"
+        }]
     }, {
-        "r_l_title": " 礼卡特产 ",
-        "r_l_contents": ["东北", "西北", "华北", "西南", "华东", "月饼卡", "大闸蟹", "礼品城", "美通卡"]
+        "n_l_title": " 礼卡特产 ",
+        "r_l_contents": [{
+            "text": "东北",
+            "code": "1000052360-0"
+        }, {
+            "text": "西北",
+            "code": "1000052360-1"
+        }, {
+            "text": "华北",
+            "code": "1000052360-2"
+        }, {
+            "text": "西南",
+            "code": "1000052360-3"
+        }, {
+            "text": "华东",
+            "code": "1000052360-4"
+        }, {
+            "text": "月饼卡",
+            "code": "1000052360-5"
+        }, {
+            "text": "大闸蟹",
+            "code": "1000052360-6"
+        }, {
+            "text": "礼品城",
+            "code": "1000052360-7"
+        }, {
+            "text": "美通卡",
+            "code": "1000052360-8"
+        }]
     }, {
-        "r_l_title": " 冲调饮品 ",
+        "n_l_title": " 冲调饮品 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "牛奶"
-        }, "咖啡", "谷物冲调", "饮料/蔬果汁/水", "奶茶"]
+            "text": "牛奶",
+            "code": "1000052362-0"
+        }, {
+            "text": "咖啡",
+            "code": "1000052362-1"
+        }, {
+            "text": "谷物冲调",
+            "code": "1000052362-2"
+        }, {
+            "text": "饮料/蔬果汁/水",
+            "code": "1000052362-3"
+        }, {
+            "text": "奶茶",
+            "code": "1000052362-4"
+        }]
     }, {
-        "r_l_title": " 茶叶 ",
-        "r_l_contents": ["绿茶", "铁观音", "普洱茶", "红茶", "金骏眉", "花茶", "草本花果茶"]
+        "n_l_title": " 茶叶 ",
+        "r_l_contents": [{
+            "text": "绿茶",
+            "code": "1000052364-0"
+        }, {
+            "text": "铁观音",
+            "code": "1000052364-1"
+        }, {
+            "text": "普洱茶",
+            "code": "1000052364-2"
+        }, {
+            "text": "红茶",
+            "code": "1000052364-3"
+        }, {
+            "text": "金骏眉",
+            "code": "1000052364-4"
+        }, {
+            "text": "花茶",
+            "code": "1000052364-5"
+        }, {
+            "text": "草本花果茶",
+            "code": "1000052364-6"
+        }]
     }],
-    "r_r_brand_imgs": ["https://img11.gomein.net.cn/image/prodimg/ad_image/SI_1/201606/20160615/20160615173047.jpg"]
+    "r_r_brand_imgs": ["https://img13.gomein.net.cn/image/prodimg/ad_image/SI_1/201606/20160615/20160615173047.jpg"]
 }, {
     "l_titles": ["母婴玩具"],
     "r_l_tags": ["母婴玩具<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 奶粉 ",
-        "r_l_contents": ["1段奶粉", "2段奶粉", {
+        "n_l_title": " 奶粉 ",
+        "r_l_contents": [{
+            "text": "1段奶粉",
+            "code": "1000081949-0"
+        }, {
+            "text": "2段奶粉",
+            "code": "1000081949-1"
+        }, {
             "className": "hot",
-            "text": "3段奶粉"
-        }, "4段奶粉", "妈妈奶粉", "学前奶粉"]
+            "text": "3段奶粉",
+            "code": "1000081949-2"
+        }, {
+            "text": "4段奶粉",
+            "code": "1000081949-3"
+        }, {
+            "text": "妈妈奶粉",
+            "code": "1000081949-4"
+        }, {
+            "text": "学前奶粉",
+            "code": "1000081949-5"
+        }]
     }, {
-        "r_l_title": " 童车童床 ",
-        "r_l_contents": ["婴儿推车", "安全座椅", "餐椅摇椅", "婴儿床", "自行车", "电动车"]
+        "n_l_title": " 童车童床 ",
+        "r_l_contents": [{
+            "text": "婴儿推车",
+            "code": "1000081951-0"
+        }, {
+            "text": "安全座椅",
+            "code": "1000081951-1"
+        }, {
+            "text": "餐椅摇椅",
+            "code": "1000081951-2"
+        }, {
+            "text": "婴儿床",
+            "code": "1000081951-3"
+        }, {
+            "text": "自行车",
+            "code": "1000081951-4"
+        }, {
+            "text": "电动车",
+            "code": "1000081951-5"
+        }]
     }, {
-        "r_l_title": " 尿裤湿巾 ",
+        "n_l_title": " 尿裤湿巾 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "品牌尿裤"
-        }, "NB码", "S码", "M码", "L码", "拉拉裤"]
+            "text": "品牌尿裤",
+            "code": "1000081953-0"
+        }, {
+            "text": "NB码",
+            "code": "1000081953-1"
+        }, {
+            "text": "S码",
+            "code": "1000081953-2"
+        }, {
+            "text": "M码",
+            "code": "1000081953-3"
+        }, {
+            "text": "L码",
+            "code": "1000081953-4"
+        }, {
+            "text": "拉拉裤",
+            "code": "1000081953-5"
+        }]
     }, {
-        "r_l_title": " 喂养洗护 ",
-        "r_l_contents": ["奶瓶奶嘴", "餐具饮具", "暖奶/消毒", "吸奶器", "洗发沐浴", "清洁用品"]
+        "n_l_title": " 喂养洗护 ",
+        "r_l_contents": [{
+            "text": "奶瓶奶嘴",
+            "code": "1000081955-0"
+        }, {
+            "text": "餐具饮具",
+            "code": "1000081955-1"
+        }, {
+            "text": "暖奶/消毒",
+            "code": "1000081955-2"
+        }, {
+            "text": "吸奶器",
+            "code": "1000081955-3"
+        }, {
+            "text": "洗发沐浴",
+            "code": "1000081955-4"
+        }, {
+            "text": "清洁用品",
+            "code": "1000081955-5"
+        }]
     }, {
-        "r_l_title": " 营养辅食 ",
-        "r_l_contents": ["米粉/菜粉", "肉松/面类", "DHA", "钙铁锌硒", "宝宝零食", "清火开胃"]
+        "n_l_title": " 营养辅食 ",
+        "r_l_contents": [{
+            "text": "米粉/菜粉",
+            "code": "1000081957-0"
+        }, {
+            "text": "肉松/面类",
+            "code": "1000081957-1"
+        }, {
+            "text": "DHA",
+            "code": "1000081957-2"
+        }, {
+            "text": "钙铁锌硒",
+            "code": "1000081957-3"
+        }, {
+            "text": "宝宝零食",
+            "code": "1000081957-4"
+        }, {
+            "text": "清火开胃",
+            "code": "1000081957-5"
+        }]
     }, {
-        "r_l_title": " 服饰用品 ",
-        "r_l_contents": ["妈妈服饰", "外出用品", "妈妈护肤", "防辐射服"]
+        "n_l_title": " 服饰用品 ",
+        "r_l_contents": [{
+            "text": "妈妈服饰",
+            "code": "1000081959-0"
+        }, {
+            "text": "外出用品",
+            "code": "1000081959-1"
+        }, {
+            "text": "妈妈护肤",
+            "code": "1000081959-2"
+        }, {
+            "text": "防辐射服",
+            "code": "1000081959-3"
+        }]
     }, {
-        "r_l_title": " 玩具/动漫/乐器 ",
-        "r_l_contents": ["益智玩具", "电动遥控", "毛绒/布艺", "模型玩具", "文体用品", "动漫二次元"]
+        "n_l_title": " 玩具/动漫/乐器 ",
+        "r_l_contents": [{
+            "text": "益智玩具",
+            "code": "1000081961-0"
+        }, {
+            "text": "电动遥控",
+            "code": "1000081961-1"
+        }, {
+            "text": "毛绒/布艺",
+            "code": "1000081961-2"
+        }, {
+            "text": "模型玩具",
+            "code": "1000081961-3"
+        }, {
+            "text": "文体用品",
+            "code": "1000081961-4"
+        }, {
+            "text": "动漫二次元",
+            "code": "1000081961-5"
+        }]
     }],
     "r_r_brand_imgs": ["https://gfs12.gomein.net.cn/T1pu_vB4K_1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T13yLsBbJv1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1e5WbBgVv1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T17jCbB5d_1RCvBVdK.jpg"]
 }, {
     "l_titles": ["美妆个护"],
     "r_l_tags": ["美妆个护<i></i>", "名品个护<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 面部护理 ",
+        "n_l_title": " 面部护理 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "洁面"
-        }, "化妆水", "乳液面霜", {
+            "text": "洁面",
+            "code": "1000052471-0"
+        }, {
+            "text": "化妆水",
+            "code": "1000052471-1"
+        }, {
+            "text": "乳液面霜",
+            "code": "1000052471-2"
+        }, {
             "className": "hot",
-            "text": "面膜"
-        }, "防晒隔离", "套装礼盒", "眼部护理", "美容仪器"]
+            "text": "面膜",
+            "code": "1000052471-3"
+        }, {
+            "text": "防晒隔离",
+            "code": "1000052471-4"
+        }, {
+            "text": "套装礼盒",
+            "code": "1000052471-5"
+        }, {
+            "text": "眼部护理",
+            "code": "1000052471-6"
+        }, {
+            "text": "美容仪器",
+            "code": "1000052471-7"
+        }]
     }, {
-        "r_l_title": " 身体护理 ",
+        "n_l_title": " 身体护理 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "洗发护发"
-        }, "沐浴", "脱毛膏", "纤体瘦身"]
+            "text": "洗发护发",
+            "code": "1000052473-0"
+        }, {
+            "text": "沐浴",
+            "code": "1000052473-1"
+        }, {
+            "text": "脱毛膏",
+            "code": "1000052473-2"
+        }, {
+            "text": "纤体瘦身",
+            "code": "1000052473-3"
+        }]
     }, {
-        "r_l_title": " 个护清洁 ",
-        "r_l_contents": ["纸品湿巾", "口腔护理", {
+        "n_l_title": " 个护清洁 ",
+        "r_l_contents": [{
+            "text": "纸品湿巾",
+            "code": "1000052475-0"
+        }, {
+            "text": "口腔护理",
+            "code": "1000052475-1"
+        }, {
             "className": "hot",
-            "text": "女性护理"
-        }, "家庭清洁"]
+            "text": "女性护理",
+            "code": "1000052475-2"
+        }, {
+            "text": "家庭清洁",
+            "code": "1000052475-3"
+        }]
     }, {
-        "r_l_title": " 魅力彩妆 ",
+        "n_l_title": " 魅力彩妆 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "粉底遮瑕"
-        }, "卸妆", "睫毛膏", "唇彩", "化妆工具", "彩妆组合", "美甲"]
+            "text": "粉底遮瑕",
+            "code": "1000052477-0"
+        }, {
+            "text": "卸妆",
+            "code": "1000052477-1"
+        }, {
+            "text": "睫毛膏",
+            "code": "1000052477-2"
+        }, {
+            "text": "唇彩",
+            "code": "1000052477-3"
+        }, {
+            "text": "化妆工具",
+            "code": "1000052477-4"
+        }, {
+            "text": "彩妆组合",
+            "code": "1000052477-5"
+        }, {
+            "text": "美甲",
+            "code": "1000052477-6"
+        }]
     }, {
-        "r_l_title": " 香水香氛 ",
-        "r_l_contents": ["女士香水", "男士香水", "香水套装", "迷你香水", "香体走珠"]
+        "n_l_title": " 香水香氛 ",
+        "r_l_contents": [{
+            "text": "女士香水",
+            "code": "1000052479-0"
+        }, {
+            "text": "男士香水",
+            "code": "1000052479-1"
+        }, {
+            "text": "香水套装",
+            "code": "1000052479-2"
+        }, {
+            "text": "迷你香水",
+            "code": "1000052479-3"
+        }, {
+            "text": "香体走珠",
+            "code": "1000052479-4"
+        }]
     }, {
-        "r_l_title": " 男士护理 ",
-        "r_l_contents": ["剃须护理", "防脱洗护", "脸部护理", "眼部护理", "男士唇膏"]
+        "n_l_title": " 男士护理 ",
+        "r_l_contents": [{
+            "text": "剃须护理",
+            "code": "1000052481-0"
+        }, {
+            "text": "防脱洗护",
+            "code": "1000052481-1"
+        }, {
+            "text": "脸部护理",
+            "code": "1000052481-2"
+        }, {
+            "text": "眼部护理",
+            "code": "1000052481-3"
+        }, {
+            "text": "男士唇膏",
+            "code": "1000052481-4"
+        }]
     }],
     "r_r_brand_imgs": ["https://gfs13.gomein.net.cn/T1J8_sBmCv1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1KaC_BTAv1RCvBVdK.jpg"]
 }, {
     "l_titles": ["服饰鞋帽", "箱包奢品"],
     "r_l_tags": ["服饰鞋帽<i></i>", "箱包奢品<i></i>", "服装城<i></i>", "潮流服饰<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 品质男装 ",
+        "n_l_title": " 品质男装 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "卫衣"
+            "text": "卫衣",
+            "code": "1000052570-0"
         }, {
             "className": "hot",
-            "text": "休闲裤"
-        }, "牛仔裤", "夹克", "T恤", "polo衫", "衬衫", "针织衫", "西装", "西裤"]
+            "text": "休闲裤",
+            "code": "1000052570-1"
+        }, {
+            "text": "牛仔裤",
+            "code": "1000052570-2"
+        }, {
+            "text": "夹克",
+            "code": "1000052570-3"
+        }, {
+            "text": "T恤",
+            "code": "1000052570-4"
+        }, {
+            "text": "polo衫",
+            "code": "1000052570-5"
+        }, {
+            "text": "衬衫",
+            "code": "1000052570-6"
+        }, {
+            "text": "针织衫",
+            "code": "1000052570-7"
+        }, {
+            "text": "西装",
+            "code": "1000052570-8"
+        }, {
+            "text": "西裤",
+            "code": "1000052570-9"
+        }]
     }, {
-        "r_l_title": " 时尚女装 ",
-        "r_l_contents": ["羽绒服", "毛呢外套", "棉服", "毛衣", {
-            "className": "hot",
-            "text": "连衣裙"
+        "n_l_title": " 时尚女装 ",
+        "r_l_contents": [{
+            "text": "羽绒服",
+            "code": "1000052572-0"
+        }, {
+            "text": "毛呢外套",
+            "code": "1000052572-1"
+        }, {
+            "text": "棉服",
+            "code": "1000052572-2"
+        }, {
+            "text": "毛衣",
+            "code": "1000052572-3"
         }, {
             "className": "hot",
-            "text": "风衣"
-        }, "打底裤", "卫衣/绒衫", "牛仔裤", "休闲裤", "T恤", "衬衫", "西装", "针织衫"]
-    }, {
-        "r_l_title": " 童装童鞋 ",
-        "r_l_contents": ["男童装", "女童装", "男童鞋", "女童鞋"]
-    }, {
-        "r_l_title": " 家居内衣 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "保暖内衣"
+            "text": "连衣裙",
+            "code": "1000052572-4"
         }, {
             "className": "hot",
-            "text": "男袜"
-        }, "男士内裤", "抹胸/背心", "家居服", "女士内裤", "打底裤/丝袜", "女袜", "文胸", "泳装", "睡裙/睡袍", "儿童系列"]
+            "text": "风衣",
+            "code": "1000052572-5"
+        }, {
+            "text": "打底裤",
+            "code": "1000052572-6"
+        }, {
+            "text": "卫衣/绒衫",
+            "code": "1000052572-7"
+        }, {
+            "text": "牛仔裤",
+            "code": "1000052572-8"
+        }, {
+            "text": "休闲裤",
+            "code": "1000052572-9"
+        }, {
+            "text": "T恤",
+            "code": "1000052572-10"
+        }, {
+            "text": "衬衫",
+            "code": "1000052572-11"
+        }, {
+            "text": "西装",
+            "code": "1000052572-12"
+        }, {
+            "text": "针织衫",
+            "code": "1000052572-13"
+        }]
     }, {
-        "r_l_title": " 精品男鞋 ",
+        "n_l_title": " 童装童鞋 ",
+        "r_l_contents": [{
+            "text": "男童装",
+            "code": "1000052588-0"
+        }, {
+            "text": "女童装",
+            "code": "1000052588-1"
+        }, {
+            "text": "男童鞋",
+            "code": "1000052588-2"
+        }, {
+            "text": "女童鞋",
+            "code": "1000052588-3"
+        }]
+    }, {
+        "n_l_title": " 家居内衣 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "商务鞋"
+            "text": "保暖内衣",
+            "code": "1000052574-0"
         }, {
             "className": "hot",
-            "text": "休闲鞋"
-        }, "板鞋", "帆布鞋", "凉鞋/沙滩鞋", "家居拖鞋", "男靴"]
+            "text": "男袜",
+            "code": "1000052574-1"
+        }, {
+            "text": "男士内裤",
+            "code": "1000052574-2"
+        }, {
+            "text": "抹胸/背心",
+            "code": "1000052574-3"
+        }, {
+            "text": "家居服",
+            "code": "1000052574-4"
+        }, {
+            "text": "女士内裤",
+            "code": "1000052574-5"
+        }, {
+            "text": "打底裤/丝袜",
+            "code": "1000052574-6"
+        }, {
+            "text": "女袜",
+            "code": "1000052574-7"
+        }, {
+            "text": "文胸",
+            "code": "1000052574-8"
+        }, {
+            "text": "泳装",
+            "code": "1000052574-9"
+        }, {
+            "text": "睡裙/睡袍",
+            "code": "1000052574-10"
+        }, {
+            "text": "儿童系列",
+            "code": "1000052574-11"
+        }]
     }, {
-        "r_l_title": " 潮流女鞋 ",
-        "r_l_contents": ["单鞋", {
-            "className": "hot",
-            "text": "休闲鞋"
-        }, "凉鞋", "高跟鞋", "平底鞋", "帆布鞋", "家居拖鞋", "女靴"]
-    }, {
-        "r_l_title": " 服饰配件 ",
+        "n_l_title": " 精品男鞋 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "太阳镜/眼镜"
-        }, "遮阳伞", "丝巾/披肩", {
-            "className": "hot",
-            "text": "男式皮带"
-        }, "鞋配件", "手套", "帽子", "围巾"]
-    }, {
-        "r_l_title": " 奢侈品 ",
-        "r_l_contents": ["单肩包", {
-            "className": "hot",
-            "text": "手提包"
-        }, "钱包/卡包", "斜挎包"]
-    }, {
-        "r_l_title": " 精品男包 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "斜挎包"
-        }, "钱包/卡包", "商务手提包", "皮带/礼盒", "手包"]
-    }, {
-        "r_l_title": " 箱包 ",
-        "r_l_contents": ["登山包", "学生包", "休闲运动包", "电脑包", "数码/摄影包", {
-            "className": "hot",
-            "text": "登机箱"
-        }, "旅行包", "拖运箱", "旅行配件"]
-    }, {
-        "r_l_title": " 时尚女包 ",
-        "r_l_contents": [{
-            "className": "hot",
-            "text": "单肩包"
+            "text": "商务鞋",
+            "code": "1000052576-0"
         }, {
             "className": "hot",
-            "text": "钱包/卡包"
-        }, "手拿包", "手提包", "双肩包", "斜挎包"]
+            "text": "休闲鞋",
+            "code": "1000052576-1"
+        }, {
+            "text": "板鞋",
+            "code": "1000052576-2"
+        }, {
+            "text": "帆布鞋",
+            "code": "1000052576-3"
+        }, {
+            "text": "凉鞋/沙滩鞋",
+            "code": "1000052576-4"
+        }, {
+            "text": "家居拖鞋",
+            "code": "1000052576-5"
+        }, {
+            "text": "男靴",
+            "code": "1000052576-6"
+        }]
+    }, {
+        "n_l_title": " 潮流女鞋 ",
+        "r_l_contents": [{
+            "text": "单鞋",
+            "code": "1000052578-0"
+        }, {
+            "className": "hot",
+            "text": "休闲鞋",
+            "code": "1000052578-1"
+        }, {
+            "text": "凉鞋",
+            "code": "1000052578-2"
+        }, {
+            "text": "高跟鞋",
+            "code": "1000052578-3"
+        }, {
+            "text": "平底鞋",
+            "code": "1000052578-4"
+        }, {
+            "text": "帆布鞋",
+            "code": "1000052578-5"
+        }, {
+            "text": "家居拖鞋",
+            "code": "1000052578-6"
+        }, {
+            "text": "女靴",
+            "code": "1000052578-7"
+        }]
+    }, {
+        "n_l_title": " 服饰配件 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "太阳镜/眼镜",
+            "code": "1000052580-0"
+        }, {
+            "text": "遮阳伞",
+            "code": "1000052580-1"
+        }, {
+            "text": "丝巾/披肩",
+            "code": "1000052580-2"
+        }, {
+            "className": "hot",
+            "text": "男式皮带",
+            "code": "1000052580-3"
+        }, {
+            "text": "鞋配件",
+            "code": "1000052580-4"
+        }, {
+            "text": "手套",
+            "code": "1000052580-5"
+        }, {
+            "text": "帽子",
+            "code": "1000052580-6"
+        }, {
+            "text": "围巾",
+            "code": "1000052580-7"
+        }]
+    }, {
+        "n_l_title": " 奢侈品 ",
+        "r_l_contents": [{
+            "text": "单肩包",
+            "code": "1000052582-0"
+        }, {
+            "className": "hot",
+            "text": "手提包",
+            "code": "1000052582-1"
+        }, {
+            "text": "钱包/卡包",
+            "code": "1000052582-2"
+        }, {
+            "text": "斜挎包",
+            "code": "1000052582-3"
+        }]
+    }, {
+        "n_l_title": " 精品男包 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "斜挎包",
+            "code": "1000052584-0"
+        }, {
+            "text": "钱包/卡包",
+            "code": "1000052584-1"
+        }, {
+            "text": "商务手提包",
+            "code": "1000052584-2"
+        }, {
+            "text": "皮带/礼盒",
+            "code": "1000052584-3"
+        }, {
+            "text": "手包",
+            "code": "1000052584-4"
+        }]
+    }, {
+        "n_l_title": " 箱包 ",
+        "r_l_contents": [{
+            "text": "登山包",
+            "code": "1000052586-0"
+        }, {
+            "text": "学生包",
+            "code": "1000052586-1"
+        }, {
+            "text": "休闲运动包",
+            "code": "1000052586-2"
+        }, {
+            "text": "电脑包",
+            "code": "1000052586-3"
+        }, {
+            "text": "数码/摄影包",
+            "code": "1000052586-4"
+        }, {
+            "className": "hot",
+            "text": "登机箱",
+            "code": "1000052586-5"
+        }, {
+            "text": "旅行包",
+            "code": "1000052586-6"
+        }, {
+            "text": "拖运箱",
+            "code": "1000052586-7"
+        }, {
+            "text": "旅行配件",
+            "code": "1000052586-8"
+        }]
+    }, {
+        "n_l_title": " 时尚女包 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "单肩包",
+            "code": "1000052590-0"
+        }, {
+            "className": "hot",
+            "text": "钱包/卡包",
+            "code": "1000052590-1"
+        }, {
+            "text": "手拿包",
+            "code": "1000052590-2"
+        }, {
+            "text": "手提包",
+            "code": "1000052590-3"
+        }, {
+            "text": "双肩包",
+            "code": "1000052590-4"
+        }, {
+            "text": "斜挎包",
+            "code": "1000052590-5"
+        }]
     }],
     "r_r_brand_imgs": ["https://gfs13.gomein.net.cn/T1wrWjBCLQ1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1fCdgBjCT1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1QqKvB5Cv1RCvBVdK.jpg", "https://gfs13.gomein.net.cn/T1uLhQBydv1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1_rYjBKKv1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1G2LgBQAv1RCvBVdK.jpg"]
 }, {
     "l_titles": ["运动户外", "钟表首饰"],
     "r_l_tags": ["运动户外<i></i>", "钟表首饰<i></i>", "大牌便宜购<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 运动鞋服 ",
+        "n_l_title": " 运动鞋服 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "跑步鞋"
-        }, "休闲鞋/板鞋", "帆布鞋", "篮球鞋", "足球鞋", "训练鞋", "凉鞋/拖鞋", "运动T恤", "运动短裤", "运动套装", "卫衣", "夹克", "运动长裤", "棉服", "羽绒服", "瑜伽"]
+            "text": "跑步鞋",
+            "code": "1000052679-0"
+        }, {
+            "text": "休闲鞋/板鞋",
+            "code": "1000052679-1"
+        }, {
+            "text": "帆布鞋",
+            "code": "1000052679-2"
+        }, {
+            "text": "篮球鞋",
+            "code": "1000052679-3"
+        }, {
+            "text": "足球鞋",
+            "code": "1000052679-4"
+        }, {
+            "text": "训练鞋",
+            "code": "1000052679-5"
+        }, {
+            "text": "凉鞋/拖鞋",
+            "code": "1000052679-6"
+        }, {
+            "text": "运动T恤",
+            "code": "1000052679-7"
+        }, {
+            "text": "运动短裤",
+            "code": "1000052679-8"
+        }, {
+            "text": "运动套装",
+            "code": "1000052679-9"
+        }, {
+            "text": "卫衣",
+            "code": "1000052679-10"
+        }, {
+            "text": "夹克",
+            "code": "1000052679-11"
+        }, {
+            "text": "运动长裤",
+            "code": "1000052679-12"
+        }, {
+            "text": "棉服",
+            "code": "1000052679-13"
+        }, {
+            "text": "羽绒服",
+            "code": "1000052679-14"
+        }, {
+            "text": "瑜伽",
+            "code": "1000052679-15"
+        }]
     }, {
-        "r_l_title": " 运动器械 ",
-        "r_l_contents": ["自行车", "羽毛球", "篮球", {
-            "className": "hot",
-            "text": "器械/跑步机"
-        }, "运动器材", "瑜伽垫", "护具", "极限轮滑", "乒乓球", "网球", "足球", "电子琴", "运动健康", "其他健身"]
-    }, {
-        "r_l_title": " 户外装备 ",
-        "r_l_contents": ["帐篷", "背包", "桌椅床", "望远镜", "照明", "垫子", "工具", "炊具", "垂钓", "烧烤", "军迷用品", "其他"]
-    }, {
-        "r_l_title": " 户外鞋服 ",
-        "r_l_contents": ["户外T恤", "户外衬衣", "速干衣/裤", "沙滩鞋/拖鞋", "溯溪鞋", "休闲鞋", "徒步鞋", "越野鞋", "登山鞋", {
-            "className": "hot",
-            "text": "冲锋衣/裤"
-        }, "软壳", "夹克", "卫衣", "户外配饰"]
-    }, {
-        "r_l_title": " 钟表 ",
+        "n_l_title": " 运动器械 ",
         "r_l_contents": [{
-            "className": "hot",
-            "text": "瑞士品牌表"
-        }, "国产品牌表", "日韩品牌表", "时尚品牌表", "儿童手表", "挂钟闹钟"]
-    }, {
-        "r_l_title": " 珠宝首饰 ",
-        "r_l_contents": ["纯金K金饰品", {
-            "className": "hot",
-            "text": "金银投资"
+            "text": "自行车",
+            "code": "1000052681-0"
+        }, {
+            "text": "羽毛球",
+            "code": "1000052681-1"
+        }, {
+            "text": "篮球",
+            "code": "1000052681-2"
         }, {
             "className": "hot",
-            "text": "银饰品"
-        }, "钻石饰品", "翡翠玉石", "水晶玛瑙", "宝石珍珠", "时尚饰品", "收藏品"]
+            "text": "器械/跑步机",
+            "code": "1000052681-3"
+        }, {
+            "text": "运动器材",
+            "code": "1000052681-4"
+        }, {
+            "text": "瑜伽垫",
+            "code": "1000052681-5"
+        }, {
+            "text": "护具",
+            "code": "1000052681-6"
+        }, {
+            "text": "极限轮滑",
+            "code": "1000052681-7"
+        }, {
+            "text": "乒乓球",
+            "code": "1000052681-8"
+        }, {
+            "text": "网球",
+            "code": "1000052681-9"
+        }, {
+            "text": "足球",
+            "code": "1000052681-10"
+        }, {
+            "text": "电子琴",
+            "code": "1000052681-11"
+        }, {
+            "text": "运动健康",
+            "code": "1000052681-12"
+        }, {
+            "text": "其他健身",
+            "code": "1000052681-13"
+        }]
+    }, {
+        "n_l_title": " 户外装备 ",
+        "r_l_contents": [{
+            "text": "帐篷",
+            "code": "1000052683-0"
+        }, {
+            "text": "背包",
+            "code": "1000052683-1"
+        }, {
+            "text": "桌椅床",
+            "code": "1000052683-2"
+        }, {
+            "text": "望远镜",
+            "code": "1000052683-3"
+        }, {
+            "text": "照明",
+            "code": "1000052683-4"
+        }, {
+            "text": "垫子",
+            "code": "1000052683-5"
+        }, {
+            "text": "工具",
+            "code": "1000052683-6"
+        }, {
+            "text": "炊具",
+            "code": "1000052683-7"
+        }, {
+            "text": "垂钓",
+            "code": "1000052683-8"
+        }, {
+            "text": "烧烤",
+            "code": "1000052683-9"
+        }, {
+            "text": "军迷用品",
+            "code": "1000052683-10"
+        }, {
+            "text": "其他",
+            "code": "1000052683-11"
+        }]
+    }, {
+        "n_l_title": " 户外鞋服 ",
+        "r_l_contents": [{
+            "text": "户外T恤",
+            "code": "1000052685-0"
+        }, {
+            "text": "户外衬衣",
+            "code": "1000052685-1"
+        }, {
+            "text": "速干衣/裤",
+            "code": "1000052685-2"
+        }, {
+            "text": "沙滩鞋/拖鞋",
+            "code": "1000052685-3"
+        }, {
+            "text": "溯溪鞋",
+            "code": "1000052685-4"
+        }, {
+            "text": "休闲鞋",
+            "code": "1000052685-5"
+        }, {
+            "text": "徒步鞋",
+            "code": "1000052685-6"
+        }, {
+            "text": "越野鞋",
+            "code": "1000052685-7"
+        }, {
+            "text": "登山鞋",
+            "code": "1000052685-8"
+        }, {
+            "className": "hot",
+            "text": "冲锋衣/裤",
+            "code": "1000052685-9"
+        }, {
+            "text": "软壳",
+            "code": "1000052685-10"
+        }, {
+            "text": "夹克",
+            "code": "1000052685-11"
+        }, {
+            "text": "卫衣",
+            "code": "1000052685-12"
+        }, {
+            "text": "户外配饰",
+            "code": "1000052685-13"
+        }]
+    }, {
+        "n_l_title": " 钟表 ",
+        "r_l_contents": [{
+            "className": "hot",
+            "text": "瑞士品牌表",
+            "code": "1000052687-0"
+        }, {
+            "text": "国产品牌表",
+            "code": "1000052687-1"
+        }, {
+            "text": "日韩品牌表",
+            "code": "1000052687-2"
+        }, {
+            "text": "时尚品牌表",
+            "code": "1000052687-3"
+        }, {
+            "text": "儿童手表",
+            "code": "1000052687-4"
+        }, {
+            "text": "挂钟闹钟",
+            "code": "1000052687-5"
+        }]
+    }, {
+        "n_l_title": " 珠宝首饰 ",
+        "r_l_contents": [{
+            "text": "纯金K金饰品",
+            "code": "1000052689-0"
+        }, {
+            "className": "hot",
+            "text": "金银投资",
+            "code": "1000052689-1"
+        }, {
+            "className": "hot",
+            "text": "银饰品",
+            "code": "1000052689-2"
+        }, {
+            "text": "钻石饰品",
+            "code": "1000052689-3"
+        }, {
+            "text": "翡翠玉石",
+            "code": "1000052689-4"
+        }, {
+            "text": "水晶玛瑙",
+            "code": "1000052689-5"
+        }, {
+            "text": "宝石珍珠",
+            "code": "1000052689-6"
+        }, {
+            "text": "时尚饰品",
+            "code": "1000052689-7"
+        }, {
+            "text": "收藏品",
+            "code": "1000052689-8"
+        }]
     }],
-    "r_r_brand_imgs": ["https://gfs10.gomein.net.cn/T1fCdgBjCT1RCvBVdK.jpg", "https://img12.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704215816.jpg", "https://gfs13.gomein.net.cn/T1bKJgBQ_v1RCvBVdK.jpg"],
+    "r_r_brand_imgs": ["https://gfs10.gomein.net.cn/T1fCdgBjCT1RCvBVdK.jpg", "https://img14.gomein.net.cn/image/prodimg/topics/qiaolu/201607/4/20160704215816.jpg", "https://gfs13.gomein.net.cn/T1bKJgBQ_v1RCvBVdK.jpg"],
     "r_r_big_img": "https://gfs13.gomein.net.cn/T1e_AbB4xT1RCvBVdK.jpg"
 }, {
     "l_titles": ["汽车整车", "汽车用品"],
     "r_l_tags": ["国美汽车<i></i>", "车品真划算<i></i>", "轮胎满千减百<i></i>", "9.9元免运费<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 整车服务 ",
-        "r_l_contents": ["新车定金", "新车全款", "维修保养", "摩托车全款"]
+        "n_l_title": " 整车服务 ",
+        "r_l_contents": [{
+            "text": "新车定金",
+            "code": "1000052788-0"
+        }, {
+            "text": "新车全款",
+            "code": "1000052788-1"
+        }, {
+            "text": "维修保养",
+            "code": "1000052788-2"
+        }, {
+            "text": "摩托车全款",
+            "code": "1000052788-3"
+        }]
     }, {
-        "r_l_title": " 车载电器 ",
+        "n_l_title": " 车载电器 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "行车记录仪"
-        }, "导航仪", "安全预警仪", "净化器", "车载冰箱", "吸尘器", "倒车雷达", "车载生活电器", "时尚影音", "蓝牙设备", "电源"]
+            "text": "行车记录仪",
+            "code": "1000052790-0"
+        }, {
+            "text": "导航仪",
+            "code": "1000052790-1"
+        }, {
+            "text": "安全预警仪",
+            "code": "1000052790-2"
+        }, {
+            "text": "净化器",
+            "code": "1000052790-3"
+        }, {
+            "text": "车载冰箱",
+            "code": "1000052790-4"
+        }, {
+            "text": "吸尘器",
+            "code": "1000052790-5"
+        }, {
+            "text": "倒车雷达",
+            "code": "1000052790-6"
+        }, {
+            "text": "车载生活电器",
+            "code": "1000052790-7"
+        }, {
+            "text": "时尚影音",
+            "code": "1000052790-8"
+        }, {
+            "text": "蓝牙设备",
+            "code": "1000052790-9"
+        }, {
+            "text": "电源",
+            "code": "1000052790-10"
+        }]
     }, {
-        "r_l_title": " 养护配件 ",
+        "n_l_title": " 养护配件 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "机油"
-        }, "添加剂", "防冻液", "空调养护", "刹车油", "底盘装甲", "水箱养护", {
+            "text": "机油",
+            "code": "1000052792-0"
+        }, {
+            "text": "添加剂",
+            "code": "1000052792-1"
+        }, {
+            "text": "防冻液",
+            "code": "1000052792-2"
+        }, {
+            "text": "空调养护",
+            "code": "1000052792-3"
+        }, {
+            "text": "刹车油",
+            "code": "1000052792-4"
+        }, {
+            "text": "底盘装甲",
+            "code": "1000052792-5"
+        }, {
+            "text": "水箱养护",
+            "code": "1000052792-6"
+        }, {
             "className": "hot",
-            "text": "轮胎"
-        }, "雨刷", "滤清器", "车衣", "刹车片", "喇叭", "火花塞", "改装配件", "贴膜"]
+            "text": "轮胎",
+            "code": "1000052792-7"
+        }, {
+            "text": "雨刷",
+            "code": "1000052792-8"
+        }, {
+            "text": "滤清器",
+            "code": "1000052792-9"
+        }, {
+            "text": "车衣",
+            "code": "1000052792-10"
+        }, {
+            "text": "刹车片",
+            "code": "1000052792-11"
+        }, {
+            "text": "喇叭",
+            "code": "1000052792-12"
+        }, {
+            "text": "火花塞",
+            "code": "1000052792-13"
+        }, {
+            "text": "改装配件",
+            "code": "1000052792-14"
+        }, {
+            "text": "贴膜",
+            "code": "1000052792-15"
+        }]
     }, {
-        "r_l_title": " 美容清洁 ",
-        "r_l_contents": ["洗车机/水枪", "车蜡", "玻璃水", "清洁剂", "汽车配件", "补漆笔"]
+        "n_l_title": " 美容清洁 ",
+        "r_l_contents": [{
+            "text": "洗车机/水枪",
+            "code": "1000052794-0"
+        }, {
+            "text": "车蜡",
+            "code": "1000052794-1"
+        }, {
+            "text": "玻璃水",
+            "code": "1000052794-2"
+        }, {
+            "text": "清洁剂",
+            "code": "1000052794-3"
+        }, {
+            "text": "汽车配件",
+            "code": "1000052794-4"
+        }, {
+            "text": "补漆笔",
+            "code": "1000052794-5"
+        }]
     }, {
-        "r_l_title": " 车饰精品 ",
-        "r_l_contents": ["专车专用系列", "四季垫", "座套", "凉垫", "香水", "颈枕腰靠", "挂饰摆件", "功能精品", "内饰精品", "整理收纳", "脚垫", "毛垫", "多功能座垫", "后备箱垫"]
+        "n_l_title": " 车饰精品 ",
+        "r_l_contents": [{
+            "text": "专车专用系列",
+            "code": "1000052796-0"
+        }, {
+            "text": "四季垫",
+            "code": "1000052796-1"
+        }, {
+            "text": "座套",
+            "code": "1000052796-2"
+        }, {
+            "text": "凉垫",
+            "code": "1000052796-3"
+        }, {
+            "text": "香水",
+            "code": "1000052796-4"
+        }, {
+            "text": "颈枕腰靠",
+            "code": "1000052796-5"
+        }, {
+            "text": "挂饰摆件",
+            "code": "1000052796-6"
+        }, {
+            "text": "功能精品",
+            "code": "1000052796-7"
+        }, {
+            "text": "内饰精品",
+            "code": "1000052796-8"
+        }, {
+            "text": "整理收纳",
+            "code": "1000052796-9"
+        }, {
+            "text": "脚垫",
+            "code": "1000052796-10"
+        }, {
+            "text": "毛垫",
+            "code": "1000052796-11"
+        }, {
+            "text": "多功能座垫",
+            "code": "1000052796-12"
+        }, {
+            "text": "后备箱垫",
+            "code": "1000052796-13"
+        }]
     }, {
-        "r_l_title": " 安全自驾 ",
+        "n_l_title": " 安全自驾 ",
         "r_l_contents": [{
             "className": "hot",
-            "text": "儿童安全座椅"
-        }, "防盗设备", "胎压监测", "应急救援", "自驾装备", "倒车雷达", "打气泵", "摩托车用品", "电动平衡车"]
+            "text": "儿童安全座椅",
+            "code": "1000052798-0"
+        }, {
+            "text": "防盗设备",
+            "code": "1000052798-1"
+        }, {
+            "text": "胎压监测",
+            "code": "1000052798-2"
+        }, {
+            "text": "应急救援",
+            "code": "1000052798-3"
+        }, {
+            "text": "自驾装备",
+            "code": "1000052798-4"
+        }, {
+            "text": "倒车雷达",
+            "code": "1000052798-5"
+        }, {
+            "text": "打气泵",
+            "code": "1000052798-6"
+        }, {
+            "text": "摩托车用品",
+            "code": "1000052798-7"
+        }, {
+            "text": "电动平衡车",
+            "code": "1000052798-8"
+        }]
     }],
     "r_r_brand_imgs": ["https://gfs10.gomein.net.cn/T18RLgBTEv1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1PPYbBQdv1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T12dJbBTDv1RCvBVdK.jpg", "https://gfs11.gomein.net.cn/T1wwxvBjJQ1RCvBVdK.jpg", "https://gfs10.gomein.net.cn/T1mmhvBsLb1RCvBVdK.jpg"]
 }, {
     "l_titles": ["国美管家"],
     "r_l_tags": ["以旧换新<i></i>", "延保服务<i></i>"],
     "r_l_navs": [{
-        "r_l_title": " 以旧换新 ",
-        "r_l_contents": ["手机回收", "家电回收", "电脑回收"]
+        "n_l_title": " 以旧换新 ",
+        "r_l_contents": [{
+            "text": "手机回收",
+            "code": "1000081596-0"
+        }, {
+            "text": "家电回收",
+            "code": "1000081596-1"
+        }, {
+            "text": "电脑回收",
+            "code": "1000081596-2"
+        }]
     }, {
-        "r_l_title": " 清洗保养 ",
-        "r_l_contents": ["家电清洗"]
+        "n_l_title": " 清洗保养 ",
+        "r_l_contents": [{
+            "text": "家电清洗",
+            "code": "1000081598-0"
+        }]
     }, {
-        "r_l_title": " 维修服务 ",
-        "r_l_contents": ["手机维修", "手机更换电池", "手机更换屏幕", "手机升级内存", "家电维修"]
+        "n_l_title": " 维修服务 ",
+        "r_l_contents": [{
+            "text": "手机维修",
+            "code": "1000081604-0"
+        }, {
+            "text": "手机更换电池",
+            "code": "1000081604-1"
+        }, {
+            "text": "手机更换屏幕",
+            "code": "1000081604-2"
+        }, {
+            "text": "手机升级内存",
+            "code": "1000081604-3"
+        }, {
+            "text": "家电维修",
+            "code": "1000081604-4"
+        }]
     }, {
-        "r_l_title": " 延长保修 ",
-        "r_l_contents": ["家电延长保修"]
+        "n_l_title": " 延长保修 ",
+        "r_l_contents": [{
+            "text": "家电延长保修",
+            "code": "1000081600-0"
+        }]
     }],
     "r_r_brand_imgs": ["https://gfs12.gomein.net.cn/T1YJEQBsVT1RCvBVdK.jpg", "https://gfs12.gomein.net.cn/T1YJEQBsVT1RCvBVdK.jpg"],
     "r_r_big_img": "https://gfs11.gomein.net.cn/T1ISbXBQbT1RCvBVdK.jpg"
