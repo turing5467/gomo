@@ -9,8 +9,17 @@ $password = $_REQUEST['password'];
 // echo $len;
 
 
-$conn = new mysqli('127.0.0.1', 'root', '', 'user');
-$sql = "select * from user_info where phone=$phone and password=$password";;
-$result = $conn->query($sql);
-echo $result->num_rows;
+$db = mysqli_connect('127.0.0.1', 'root', '', 'user');
+$sql = "SELECT `id` from `user_info` where phone='$phone' and password='$password'";;
+$result = mysqli_query($db,$sql);
+// echo mysqli_num_rows($result);
+
+$res = array("status" => "error");
+
+if(mysqli_num_rows($result) == 1){
+    $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $res["status"] = "success";
+    $res["data"] = $data;
+}
+echo json_encode($res,true);
 ?>

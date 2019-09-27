@@ -222,6 +222,12 @@
                             dataType: "json",
                             success(response) {
                                 render(response.data);
+                                let links = $('.item-link');
+
+                                links.each((i, e) => {
+                                    let href = './detail.html?code=' + $(e).parents('li').attr('id');
+                                    $(e).attr('href', href);
+                                })
                             }
                         });
                     </script>

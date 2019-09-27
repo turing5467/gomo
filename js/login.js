@@ -52,16 +52,19 @@ $(() => {
             type: "post",
             url: "../server/login.php",
             data,
-            // dataType: 'json',
+            dataType: 'json',
             success: function(response) {
                 console.log(response);
-                if (response == 1) {
+                if (response.status == "success") {
                     if (isAutoLogin) {
                         store.set('userInfo', data);
                     } else {
                         store.remove('userInfo')
                     }
-                    window.location.href = '../index.html';
+                    document.cookie = `userId=${response.data[0].id};path=/code/gomo`;
+                    console.log(document.cookie);
+
+                    // window.location.href = '../index.html';
                 } else {
                     errTip.slideDown(0).siblings('.tips').slideUp(0);
                 }
