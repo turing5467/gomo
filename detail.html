@@ -8,7 +8,8 @@
     <title>Document</title>
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/e5-do.js"></script>
-    <script src="./js/detail.js?"></script>
+    <script src="./js/Cookie.js"></script>
+    <script src="./js/detail.js"></script>
     <link rel="stylesheet" href="./css/base.css?">
     <link rel="stylesheet" href="./css/detail.css?version=1">
 </head>
@@ -20,7 +21,7 @@
         let code = o.code;
         $.ajax({
             type: "get",
-            url: "./server/getDetailData.php?version=1",
+            url: "./server/getDetailData.php",
             data: {
                 code
             },

@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>国美(GOME)-综合网购商城，正品低价、品质保障、快速送达、安心服务！</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/carousel.js? version=2"></script>
     <script src="./js/e5-do.js"></script>
-    <script src="./js/index.js" data-code="007"></script>
+    <script src="./js/Cookie.js"></script>
+    <script src="./js/index.js?version=2" data-code="007"></script>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/carousel.css? version=1">
     <link rel="stylesheet" href="./css/help.css? version=1">
     <link rel="stylesheet" href="./css/footer.css? version=1">
-    <link rel="stylesheet" href="./css/index.css? version=1">
+    <link rel="stylesheet" href="./css/index.css? version=2">
 </head>
 
 <body>
@@ -32,7 +34,6 @@
                 } else if ($(window).scrollTop() > height + step + 1) {
                     window.scrollBy(0, -step)
                 } else {
-                    console.log('clear---');
                     clearInterval(timer);
                 }
             }, 1000 / 60);
@@ -81,13 +82,33 @@
                         <div class="user hover ">
                             Hi,
                             <a href="# ">
-                                <span class="user-name ">turing5467</span>
-                                <em class="level "></em>
-                                <i></i>
+                                <span class="user-name "></span>
+                                <script>
+                                    let id = Cookie.get('userId');
+                                    $.ajax({
+                                        type: "get",
+                                        url: "./server/getUserName.php",
+                                        data: {
+                                            id
+                                        },
+                                        dataType: "json",
+                                        success: function(response) {
+                                            console.log(response);
+                                            if (response.status == 'success') {
+                                                $('.user-name').eq(0).text(response.data[0].username);
+                                            } else {
+                                                $('.logout').eq(0).remove();
+                                                $('.top-left').eq(0).append('<a href="./html/login.html">登陆</a><a class="gome-link-register" href="./html/register.html">注册有礼<i></i></a>');
+                                            }
+                                        }
+                                    });
+                                </script>
+                                <!-- <em class="level "></em> -->
+                                <!-- <i></i> -->
                             </a>
                             <div class="hide-user-box "></div>
                         </div>
-                        <span class="logout "><a href="./html/login.html ">退出</a></span>
+                        <span class="logout "><a href="html/login.html ">退出</a></span>
                     </div>
                     <div class="top-right fr ">
                         <ul>
@@ -139,7 +160,7 @@
                     </div>
                     <div class="shop-car ">
                         <span class="cartlinkbox ">
-                            <a data-code="public03004 " rel="nofollow " class="menulink cartlink " href="./html/cart.html ">
+                            <a data-code="public03004 " rel="nofollow " class="menulink cartlink " href="./cart.html ">
                                 <em class="i-cart ">
                                     <span class="shopnum ">
                                         <span id="commerceItemQuantityId ">0
@@ -244,7 +265,6 @@
                                                     `;
                                             let list = e.r_l_contents.map(
                                                 (ee, index) => {
-                                                    console.log(ee);
 
                                                     if (ee.className) {
                                                         return `
@@ -830,7 +850,6 @@
                             $(t).parents('.floor').find('.main').eq(index).css('display', 'block').siblings('.main').css('display', 'none');
 
                             arr[$(t).parents('.floor').index()] = index;
-                            // console.log(arr);
 
                         });
 
@@ -876,7 +895,6 @@
 
 
                         function scrollFn() {
-                            // console.log(floor.eq(0).offset().top);
                             let w_top = $(window).scrollTop();
                             if (w_top >= 1400) {
                                 elevator.css('display', 'block');

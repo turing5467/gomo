@@ -73,7 +73,10 @@ $(document).ready(() => {
         });
     }
 
-
-
+    $('.logout a').click((e) => {
+        e.preventDefault();
+        Cookie.remove('userId')
+        window.location.href = './html/login.html';
+    })
 
 });

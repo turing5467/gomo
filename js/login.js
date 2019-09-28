@@ -1,5 +1,7 @@
 $(() => {
 
+    document.cookie = `userId=;path=/code/gomo;max-age=0`;
+
     let oPhone = $('#phone');
     let oPassword = $('#password');
     let loginBtn = $('.loginBtn').eq(0);
@@ -64,7 +66,7 @@ $(() => {
                     document.cookie = `userId=${response.data[0].id};path=/code/gomo`;
                     console.log(document.cookie);
 
-                    // window.location.href = '../index.html';
+                    window.location.href = '../index.html';
                 } else {
                     errTip.slideDown(0).siblings('.tips').slideUp(0);
                 }
@@ -86,7 +88,6 @@ $(() => {
 
     let moreBtn = $('.more');
 
-    //
     clearTextBtn.click((e) => {
         e.preventDefault();
         $(e.target).siblings('input').val('');

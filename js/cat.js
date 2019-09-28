@@ -17,7 +17,7 @@ function render(data) {
             }).join('');
             let shop_tag = ele.shop_zy_tag == 'true' ? '<span class=nnamezy>自营</span>' : '';
 
-            let option = `<p class="item-option clearfix">	            <span class="add-contrast" cid="A0004958764/pop8010690303" title="对比"><i class="icon"></i></span>	            <span class="add-collection" pid="A0004958764" skuid="pop8007961586" pname=${ele.name} title="收藏"><i class="icon"></i></span>	            	            <a class="add-cart addTo-cart" href="javascript:void(0);" ismcard="" shopflag="0" ishyg="0" pid="A0004958764" skuid="pop8007961586" taotype="0" taoskuid="" data-code="list-9000000700-1_1_3" title="加入购物车"><i class="icon"></i></a>	            	            	                	                <span title="在线客服" class="gomekf online-server" customer-entry="product" shopid="80005619" skuid="pop8010690303" productid="A0004958764" categoryid="cat10000001_cat10000015_cat10000097" brandid="147L" orgi="80005619"><i class="icon"></i></span>	            	        </p>`;
+            let option = `<p class="item-option clearfix">	            <span class="add-contrast" cid="A0004958764/pop8010690303" title="对比"><i class="icon"></i></span>	            <span class="add-collection" pid="A0004958764" skuid="pop8007961586" pname=${ele.name} title="收藏"><i class="icon"></i></span>	            	            <a class="add-cart addTo-cart" href="javascript:void(0);" title="加入购物车"><i class="icon"></i></a>	            	            	                	     <span title="在线客服" class="gomekf online-server"><i class="icon"></i></span></p>`;
             return `<li class=product-item id=${ele.code}>
         <div class=item-tab>
             <p class="item-pic"><a class=item-link href=javascript:; title=${ele.name}><img src=${small_pics[0].replace('_30','_210')} alt=${ele.name}></a></p>
@@ -48,7 +48,36 @@ function render(data) {
         let cur_small_pic = $(e.currentTarget).attr('src');
         let cur_big_pic = $(e.currentTarget).parents('.product-item').find('.item-pic img');
         cur_big_pic.attr('src', cur_small_pic.replace('_30', '_210'));
-    })
+    });
+    $('.addTo-cart').click((e) => {
+
+        //获取当前用户id
+        let id = Cookie.get('userId');
+
+        //获取当前商品id => php:添加至数据库,数量 加 1
+        let product_code = $(e.target).parents('.product-item').attr('id');
+
+        let num = 1;
+        let type = 1;
+
+        $.ajax({
+            type: "post",
+            url: "./server/addToCart.php",
+            data: {
+                id,
+                product_code,
+                num,
+                type,
+                flag: false
+            },
+            dataType: "json",
+            success: function(response) {
+                if (response) {
+                    window.location.href = `./add_cart_succeed.html?code=${product_code}&num=${num}&type=${type}`;
+                }
+            }
+        });
+    });
 }
 
 
@@ -184,6 +213,8 @@ $(() => {
             })
         }
 
-    })
+    });
+
+
 
 })
