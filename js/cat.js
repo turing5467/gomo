@@ -68,10 +68,10 @@ function render(data) {
                 product_code,
                 num,
                 type,
-                flag: false
+                flag: 0
             },
-            dataType: "json",
             success: function(response) {
+
                 if (response) {
                     window.location.href = `./add_cart_succeed.html?code=${product_code}&num=${num}&type=${type}`;
                 }
@@ -193,11 +193,14 @@ $(() => {
     price_box.on('click', '.priceRange-input', (e) => {
         price_box.addClass('filter-priceRange-click');
     });
-
+    cancel_btn.click((e) => {
+        low_price.val('¥');
+        high_price.val('¥');
+    })
     ok_btn.click(() => {
 
-        let val1 = low_price.val().trim().replace('¥', '') * 1;
-        let val2 = high_price.val().trim().replace('¥', '') * 1;
+        let val1 = low_price.val().replace('¥', '').trim() * 1;
+        let val2 = high_price.val().replace('¥', '').trim() * 1;
         if (val1 > val2) {
             [val1, val2] = [val2, val1];
         }
@@ -215,6 +218,27 @@ $(() => {
 
     });
 
+    let priceRangeBtn = $('.facets-category-common').eq(0).find('.facet');
+    priceRangeBtn.click((e) => {
 
+        e.preventDefault();
+
+        let val1, val2;
+        if ($(e.target).text().indexOf('-') != -1) {
+            [val1, val2] = $(e.target).text().trim().split('-');
+
+        } else {
+            [val1, val2] = [10000, 1000000];
+        }
+        $('.product-box').eq(0).html('');
+        $.ajax({
+            data: {
+                page: 0,
+                type: 4,
+                'low_price': val1 * 1,
+                'high_price': val2 * 1
+            }
+        });
+    })
 
 })

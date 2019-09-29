@@ -9,7 +9,7 @@
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/e5-do.js"></script>
     <script src="./js/Cookie.js"></script>
-    <script src="./js/detail.js"></script>
+    <script src="./js/detail.js?version=5"></script>
     <link rel="stylesheet" href="./css/base.css?">
     <link rel="stylesheet" href="./css/detail.css?version=1">
 </head>
@@ -125,7 +125,7 @@
                             <label class="prd-properties-left">服　　务</label>
                             <div class="prd-properties-right">
                                 <span id="service_bable">
-                                    由<a href="//mall.gome.com.cn/80006441/" target="_blank">${data.shop_name}</a>
+                                    由<a href="//mall.gome.com.cn/80006441/" target="_blank">${data.shop_name == 'null'?'国美':data.shop_name}</a>
                                     <span id="shipingAddr"></span>发货并负责售后服务。
                                 </span>
                             </div>
@@ -136,10 +136,12 @@
                                 <a href="javascript:;" title="${ele}此商品有货" vals=${ele} >${ele}<i></i></a>
                             </div>`;
                         }).join('');
+                        console.log(data.types.split(',').length);
+
                         let property_2 = `<div id="salesProperty" class="m20">
                             <div class="prd-properties-other  banben clearfix" id="booleanMainsale" data-type="版本" data-idx="0">
-                                <label class="prdLeft">版　　本</label>
-                                <div class="prdRight clearfix">${prdmod}</div>
+                                ${data.types.split(',').length > 1 ? '<label class="prdLeft">版　　本</label>':''}
+                                <div class="prdRight clearfix">${data.types.split(',').length > 1 ?prdmod:''}</div>
                             </div>
                     </div>`;
 

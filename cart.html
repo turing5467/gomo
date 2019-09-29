@@ -9,13 +9,15 @@
     <title>Document</title>
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/Cookie.js"></script>
-    <script src="./js/cart.js?version=18"></script>
+    <script src="./js/cart.js?version=21"></script>
+
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/cart.min.css">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="./css/cart.min.css?v=1">
+
 </head>
 
 <body>
-
     <div class="cart-lists">
         <div class="container">
             <div class="cart-main-header clearfix">
@@ -37,49 +39,46 @@
                 <div class="cart-col-7"> 操作 </div>
             </div>
         </div>
-        <div class="container cart-list">
-            <div>
-                <script>
-                    let id = Cookie.get('userId');
-                    $.ajax({
-                        type: "get",
-                        url: "./server/getCart.php",
-                        data: {
-                            id
-                        },
-                        dataType: "json",
-                        async: false,
-                        success: function(response) {
-                            console.log(response);
+        <div class="container cart-list"></div>
+        <script>
+            let id = Cookie.get('userId');
+            $.ajax({
+                type: "get",
+                url: "./server/getCart.php",
+                data: {
+                    id
+                },
+                dataType: "json",
+                async: false,
+                success: function(response) {
+                    console.log(response);
 
-                            //按照店铺分类
-                            let shops = [];
-                            response.forEach((ele, index) => {
-                                //店铺名 => 商品索引
-                                let flag = shops.findIndex((e) => e.shop_name == ele[4]);
-                                if (flag != -1) {
-                                    shops[flag].products.push(ele);
-                                } else {
-                                    let o = {};
-                                    o.shop_name = ele[4];
-                                    o.products = [];
-                                    o.products.push(ele);
-                                    shops.push(o);
-                                }
-                            });
-                            console.log(shops);
-
-                            //按照名称排序,名称相同则按照单价升序
-                            shops.forEach((ele) => ele.products.sort((a, b) => a[1] == b[1] ? a[3] * 1 - b[3] * 1 : a[1] - b[1]));
-                            // console.log(shops);
-                            shops.forEach((e) => {
-                                renderOneShop(e);
-                            });
+                    //按照店铺分类
+                    let shops = [];
+                    response.forEach((ele, index) => {
+                        //店铺名 => 商品索引
+                        let flag = shops.findIndex((e) => e.shop_name == ele[4]);
+                        if (flag != -1) {
+                            shops[flag].products.push(ele);
+                        } else {
+                            let o = {};
+                            o.shop_name = ele[4];
+                            o.products = [];
+                            o.products.push(ele);
+                            shops.push(o);
                         }
                     });
-                </script>
-            </div>
-        </div>
+                    console.log(shops);
+
+                    //按照名称排序,名称相同则按照单价升序
+                    shops.forEach((ele) => ele.products.sort((a, b) => a[1] == b[1] ? a[3] * 1 - b[3] * 1 : a[1] - b[1]));
+                    // console.log(shops);
+                    shops.forEach((e) => {
+                        renderOneShop(e);
+                    });
+                }
+            });
+        </script>
         <div class="cart-bottom-wrap">
             <div class="cart-bottom-info ">
                 <div class="container" style="position:relative">

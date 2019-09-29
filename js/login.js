@@ -1,6 +1,6 @@
 $(() => {
 
-    document.cookie = `userId=;path=/code/gomo;max-age=0`;
+    document.cookie = `userId=1;max-age=0`;
 
     let oPhone = $('#phone');
     let oPassword = $('#password');

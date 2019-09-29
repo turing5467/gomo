@@ -9,7 +9,7 @@ o.big_pics = [];
 o.magnify_pics = [];
 for (let i = 0; i < pics.length; i++) {
     let src = "http:" + pics.eq(i).attr('src');
-    o.small_pics.push(src);
+    o.mini_pics.push(src);
     o.big_pics.push(src.replace('_50', '_360'));
     o.magnify_pics.push(src.replace('_50', '_800_pc'));
 }
@@ -21,5 +21,8 @@ o.types = [];
 
 var prd_box = $('.prdmod a');
 for (let i = 0; i < prd_box.length; i++) {
+    if (prd_box.eq(i).data('alt') == null) {
+        break;
+    }
     o.types.push(prd_box.eq(i).data('alt'));
 }

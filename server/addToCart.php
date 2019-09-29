@@ -19,11 +19,12 @@ if(mysqli_num_rows($result1) == 0) {
 }else {
     //否则,拿到原数量,并执行更新语句
     $pre_num = mysqli_fetch_all($result1, MYSQLI_ASSOC);
-    
-    if($flag == true) {
+    // echo $flag;
+    if($flag == 1) {
         $num = $num;
     }else {
         $num = $num + $pre_num["0"]["num"];
+
     }
     // update 表名 set 列=新值,列=新值,,where 筛选条件;
     $sql = "UPDATE `user_cart` set `num`='$num' where `id`='$id' and `product_code`='$product_code' and `type`='$type' ";
@@ -31,7 +32,7 @@ if(mysqli_num_rows($result1) == 0) {
 
 $result =  mysqli_query($db, $sql);
 
-// $res = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
 
 echo  json_encode($result);
 

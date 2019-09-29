@@ -12,8 +12,8 @@ $(() => {
         let t = $(e.currentTarget);
         let src = t.attr('src');
         t.toggleClass('hover');
-        zoom.attr('src', src.replace('_50', '_360'));
-        bigimg.attr('src', src.replace('_50', '_800_pc'))
+        zoom.attr('src', src.replace('_60', '_360').replace('_50', '_360'));
+        bigimg.attr('src', src.replace('_60', '_800_pc').replace('_50', '_800_pc'))
     });
 
     zoom_box.mouseenter((e) => {
@@ -22,6 +22,11 @@ $(() => {
         });
         zoomdiv.css('display', 'block');
     });
+
+    zoom_box.mouseleave((e) => {
+        zoomPup.css('visibility', 'hidden');
+        zoomdiv.css('display', 'none');
+    })
 
     zoom_box.mousemove((e) => {
         let x = e.pageX - zoom_box.offset().left;
@@ -34,18 +39,13 @@ $(() => {
             top
         });
 
-        //设置右边大图left,top属性
-        //倍数为800/360
+        //设置右边大图left,top属性=>倍数为800/360
         bigimg.css({
             left: -left * 2.2,
             top: -top * 2.2
         })
     })
 
-    zoom_box.mouseleave((e) => {
-        zoomPup.css('visibility', 'hidden');
-        zoomdiv.css('display', 'none');
-    })
 
     function offset(x, y) {
         // let x = e.offsetX;
@@ -95,7 +95,7 @@ $(() => {
                 product_code,
                 num,
                 type,
-                flag: false
+                flag: 1
             },
             dataType: "json",
             success: function(response) {
@@ -128,37 +128,3 @@ $(() => {
     })
 
 })
-
-/* 
-    $('.addTo-cart').click((e) => {
-
-
-        //获取当前用户id
-        let id = Cookie.get('userId');
-        // let id = 33;
-
-        //获取当前商品id => php:添加至数据库,数量 加 1
-        let product_code = $(e.target).parents('.product-item').attr('id');
-        // let product_code = '5468';
-
-        let num = 1;
-        let type = 1;
-
-        $.ajax({
-            type: "post",
-            url: "./server/addToCart.php",
-            data: {
-                id,
-                product_code,
-                num,
-                type
-            },
-            dataType: "json",
-            success: function(response) {
-                if (response) {
-                    window.location.href = `./add_cart_succeed.html?p_code=${product_code}&num=${num}&type=${type}`;
-                }
-            }
-        });
-    });
-*/

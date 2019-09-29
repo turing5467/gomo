@@ -2,9 +2,9 @@ const config = {
     user: 'root', // 数据库账号
     password: '', // 数据库密码
     database: 'product', // 数据库名字
-    data: './product_detail.json', // json数据相当于当前文件的路径
+    data: './detail.json', // json数据相当于当前文件的路径
     table: 'detail', // 需要插入数据的数据表名
-    arr: ['code', 'product_num', 'small_pics', 'big_pics', 'magnify_pics', 'yjhx_tag', 'baina_tag', 'guanjia_tag', 'types'] // 表单字段插入的顺序
+    arr: ['code', 'product_num', 'mini_pics', 'big_pics', 'magnify_pics', 'yjhx_tag', 'baina_tag', 'guanjia_tag', 'types'] // 表单字段插入的顺序
 }
 
 

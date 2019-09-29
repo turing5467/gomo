@@ -24,7 +24,7 @@
     // opacity: .9;
     width: 200px;
     position: relative;
-    z-index: 9999;
+    z-index: 999;
     // opacity: .7;
     background: #666;
     > li {
@@ -605,6 +605,35 @@
     
     .top-right {
         .right-link {
+            &:hover {
+                    background: #fff;
+                    border-bottom: 1px solid #fff;
+                    .public-dropdown {
+                        padding: 15px;
+                        font-size: 0;
+                        height: 230px;
+                        border: 1px solid #e6e6e6;
+                        z-index: 9;
+                    }
+            }
+            .public-dropdown {
+                width: 230px;
+                position: absolute;
+                top: 30px;
+                background: #fff;
+                height: 0;
+                left: 0;
+                overflow: hidden;
+                a {
+                    display: inline-block;
+                    height: 200px;
+                    width: 200px;
+                    background: url(../img/ui.png);
+                }
+                .gome-qrcode {
+                    background-position: 0 -1511px;
+                }
+            }
             padding: 0 20px 0 10px;
             float: left;
             position: relative;
@@ -1875,3 +1904,167 @@
     overflow: hidden;
 }
 
+.havecount .i-cart {
+    background-position: -70px -701px;
+}
+.havecount .shopnum {
+    background-color: #dd00a7;
+}
+.havecount .shopnum i {
+    border-color: transparent transparent transparent #d7000f;
+}
+#gome-sitemap {
+    position: static;
+    &:hover {
+        .public-dropdown {
+            height: 199px;
+            border: 1px solid #eee;
+        }
+    }
+    .public-dropdown {
+        z-index: 9999;
+    left: 351px;
+        width: 1198px;
+        a {
+            background: none;
+            height: 22px;
+            line-height: 22px;
+        }
+    }
+    dl {
+        float: left;
+        padding: 0 15px 0 40px;
+        border-left: 1px solid #f3f3f3;
+        margin: 15px 0;
+    }
+    dt {
+        font: 700 14px/14px Arial,"Microsoft YaHei";
+        *line-height: 16px;
+        margin: 0 0 14px;
+    }
+    dd {
+        overflow: hidden;
+        min-height: 120px;
+    }
+    ul {
+        float: left;
+        width: 75px;
+    }
+    li {
+        width: 100%;
+        text-align: left;
+        font: 12px/24px Arial,"Microsoft YaHei";
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .none {
+        border-left: 0;
+    }
+}
+.gome-top li {
+    float: left;
+    position: relative;
+    font: 400 12px/30px Arial,"Microsoft YaHei";
+}
+
+#gome-service {
+    &:hover {
+        .public-dropdown {
+            height: 180px;
+        }
+    }
+    a {
+        background: none;
+        height: 20px;
+        line-height: 20px;
+    }
+    .public-dropdown {
+        padding-left: 10px;
+        z-index: 999;
+        width: 215px;
+        padding-top: 0;
+    }
+    p {
+        font: 700 12px/24px Arial,"Microsoft YaHei";
+        color: #898989;
+        margin-top: 10px;
+    }
+    ul {
+        padding: 0 0 10px;
+        height: 58px;
+        overflow: hidden;
+        
+    }
+    li {
+        float: left;
+        font: 12px/24px Arial,"Microsoft YaHei";
+        width: 33%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .live800-service {
+        color: #fff;
+        background: #dd00a7;
+        text-align: center;
+        display: block;
+        line-height: 25px;
+        height: 25px;
+        cursor: pointer;
+        font-weight: 400;
+        margin-top: 4px;
+        em {
+            font-size: 19px;
+            line-height: 25px;
+            height: 25px;
+            color: #fff;
+            background: 0 0;
+        }
+    }
+    span {
+        color: #a5a5a5;
+        display: none;
+        font: 400 16px/25px Arial,"Microsoft YaHei";
+        margin: 5px 0 0;
+        letter-spacing: 1px;
+        em {
+            background-image: url(../img/ui.png);
+            background-position: -73px -415px;
+        }
+        ins {
+            font: 12px/24px Arial,"Microsoft YaHei";
+            letter-spacing: 0;
+        }
+    }
+}
+
+#gome-phone {
+    .gome-qrcode {
+        background-position: 0 -799px !important;
+    }
+    position: static;
+    b em {
+        font-size: 17px;
+        color: #dd00a7;
+        background: 0 0;
+        line-height: 30px;
+        height: 30px;
+        top: 0;
+    }
+    .public-dropdown{
+        padding: 0;
+        left: auto;
+        right: 0;
+        width: auto;
+        a {
+            display: inline-block;
+            height: 170px;
+            width: 130px !important;
+            background: url(../img/ui.png);
+            
+        }
+        
+    }
+    
+}

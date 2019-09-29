@@ -9,7 +9,7 @@ $result = mysqli_query($db, $sql);
 # 003-把数据转换为JSON数据返回
 // print_r($result);
 $totalCount = mysqli_num_rows($result); 
-$size = 48;
+$size = 24;
 $pageCount = ceil($totalCount/ $size);
 // $response = array("status" => "success", "data" => $pageCount);
 // echo json_encode($response, true);

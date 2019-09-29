@@ -45,7 +45,7 @@ function renderOneShop(data) {
                         <div class="cart-col-8">
                             <div class="cart-good-pro">
                                 <div class="cart-saleprops-text">
-                                    <div class="cart-salesPro-item">              <span class="cart-good-key" title="版本">版本</span>                          <span class="cart-good-value" data-type=${ele[7]} title="${ele[6].split(',')[ele[7]-1]}">：${ele[6].split(',')[ele[7]-1]}</span>                      </div>                                        </div>                               <div class="cart-coupon cart-modify-saleprops">                        <div class="js-popup-child">修改               <i class="c-i cart-arrow arrowdown_red js-i"></i>                       </div>                                      <div class="cart-coupon-box" gui-popupbox="">                                          <div class="js-show-salepropsBox">                  </div></div></div></div></div>            <!--sales property -->
+                                    <div class="cart-salesPro-item">              <span class="cart-good-key" title="版本">版本</span>                          <span class="cart-good-value" data-type=${ele[7]} title="${ele[6].split(',')[ele[7]-1]}">：${ele[6].split(',')[ele[7]-1]}</span>                      </div>                                        </div>                               <div class="cart-coupon cart-modify-saleprops">                                     <div class="cart-coupon-box" gui-popupbox="">                                          <div class="js-show-salepropsBox">                  </div></div></div></div></div>            <!--sales property -->
                                     <div class="cart-col-4 cart-price-height47">     <div class="cart-good-real-price " data-price=${ele[3]}>             <!--主品-->       ¥&nbsp;${ele[3]}                    </div>               <div class="red">           </div>             </div>   <div class="cart-col-5">                                                                <div class="gui-count cart-count">
                                     <a href="javascript:;" class="gui-count-btn gui-count-sub ${ele[8]=="1"?'gui-count-disabled':''}">-</a>
                                     <a href="javascript:;" class="gui-count-btn gui-count-add">+</a>
@@ -59,10 +59,10 @@ function renderOneShop(data) {
 }
 
 $(() => {
-    let coupon = $('.cart-coupon-trigger2');
-    coupon.click((e) => {
-        $(e.target).next().css('display', 'block');
-    })
+    // let coupon = $('.cart-coupon-trigger2');
+    // coupon.click((e) => {
+    //     $(e.target).next().css('display', 'block');
+    // })
 
     $.ajaxSetup({
         url: "./server/addToCart.php",
@@ -72,6 +72,8 @@ $(() => {
             console.log(res);
         }
     });
+
+    let cart_list = $('.cart-list').eq(0);
 
     let totalItem = $('.selected-item').eq(0);
     let totalPrice = $('.selected-price').eq(0);
@@ -104,7 +106,7 @@ $(() => {
                 product_code,
                 num,
                 type,
-                flag: true
+                flag: 1
             }
         });
 
@@ -129,7 +131,7 @@ $(() => {
                 product_code,
                 num,
                 type,
-                flag: true
+                flag: 1
             }
         })
         let item_price = $(e.target).parents('.cart-shop-good').find('.cart-good-real-price').data('price');
@@ -153,7 +155,7 @@ $(() => {
                     product_code,
                     num,
                     type,
-                    flag: true
+                    flag: 1
                 }
             })
         } else {
@@ -176,45 +178,66 @@ $(() => {
     //删除
     let delBtn = $('.delfixed');
     delBtn.click((e) => {
-        // id product_code type
-        let p = $(e.target).parents('.cart-shop-goods').eq(0);
-        let product_code = $(e.target).parents('.cart-shop-good').attr('id');
-        let type = $(e.target).parents('.cart-shop-good').find('.cart-good-value').data('type') - 0;
-        $.ajax({
-            url: './server/deleteFromCart.php',
-            data: {
-                id,
-                product_code,
-                type
-            },
-            success(res) {
-                if (res) {
-                    $(e.target).parents('.cart-shop-good').remove();
+        if (confirm('确定要删除选中商品吗?')) {
 
-                    if (p.children().length == 0) {
-                        p.prev().remove();
+            // id product_code type
+            let p = $(e.target).parents('.cart-shop-good').eq(0);
+            let pp = $(e.target).parents('.cart-shop-goods').eq(0);
+
+            let product_code = p.attr('id');
+            let type = p.find('.cart-good-value').data('type') - 0;
+            $.ajax({
+                url: './server/deleteFromCart.php',
+                data: {
+                    id,
+                    product_code,
+                    type
+                },
+                success(res) {
+                    if (res) {
                         p.remove();
+
+                        if (pp.children().length == 0) {
+                            pp.prev().remove();
+                            pp.remove();
+                        }
                     }
                 }
-            }
-        })
-    });
-    let delAll = $('.del-goods');
-    delAll.click(() => {
-        if (confirm('确定要删除选中商品吗?')) {
-            // $.ajax({
-            //     url: './server/deleteAllFromCart.php',
-            //     data: {
-            //         id
-            //     },
-            //     success(res) {
-            //         if (res) {
-            //             $('.cart-list').html('');
-            //         }
-            //     }
-            // })
+            })
         }
+    });
+    let delMany = $('.del-goods');
+    delMany.click((e) => {
+        if (confirm('确定要删除选中商品吗?')) {
+            let itemToDel = $('.cart-shop-goods').find('.checkbox_chose');
+            itemToDel.each((i, ele) => {
+                let p = $(ele).parents('.cart-shop-good').eq(0);
+                let pp = $(ele).parents('.cart-shop-goods').eq(0);
 
+                let product_code = p.attr('id');
+                let type = p.find('.cart-good-value').data('type') - 0;
+                $.ajax({
+                    url: "./server/deleteFromCart.php",
+                    data: {
+                        id,
+                        product_code,
+                        type
+                    },
+                    success(res) {
+                        if (res) {
+                            p.remove();
+
+                            if (pp.children().length == 0) {
+                                pp.prev().remove();
+                                pp.remove();
+                            }
+                        }
+                    }
+                });
+            })
+            totalItem.text(countTotalItem());
+            totalPrice.text('￥' + countTotalPrice());
+        }
     })
 
 
@@ -229,6 +252,8 @@ $(() => {
     let checkItem = $('.checkItem');
 
     let shops = Array.from(checkShop);
+    let items = Array.from(checkItem);
+    // console.log(shops);
 
 
 
@@ -256,37 +281,26 @@ $(() => {
 
     //店铺选中按钮
     checkShop.on('click', (e) => {
-        let t = $(e.target).parent().find('.checkShop').get(0);
-        let isShopChecked = (t.className == "checkShop c-i checkbox_chose");
-        console.log(isShopChecked);
-
-
-        // let cur_items = $(t).parents('.cart-shop-header').next().find('.checkItem');
+        let t = $(e.target).parent().find('.checkShop');
+        let isShopChecked = t.hasClass('checkbox_chose');
+        let cur_shop_items = t.parents('.cart-shop-header').next().find('.checkItem');
 
         if (isShopChecked) {
-            // console.log(t);
-            // $(t).addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
-            // console.log(t);
-            t.className = "checkShop good-checkboxs-no";
-
-            // cur_items.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
-
+            t.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+            cur_shop_items.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
         } else {
-            console.log('false');
-
-            // $(t).removeClass('good-checkboxs-no').addClass('c-i checkbox_chose');
-            t.className = "checkShop c-i checkbox_chose";
-            // cur_items.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
-
+            t.removeClass('good-checkboxs-no').addClass('c-i checkbox_chose');
+            cur_shop_items.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
         }
 
-
-
+        //这时样式已经发生改变
         //所有店铺选中或有一个店铺未选中,则触发全选按钮的单击事件
-        if (shops.every((e) => $(e).is('.checkbox_chose')) ||
-            shops.some((e) => $(e).is('.good-checkboxs-no'))) {
-            checkAll.trigger('click');
+        if (shops.every((e) => $(e).is('.checkbox_chose'))) {
+            checkAll.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+        } else if (shops.some((e) => $(e).is('.good-checkboxs-no'))) {
+            checkAll.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
         }
+
 
         totalItem.text(countTotalItem());
         totalPrice.text('￥' + countTotalPrice());
@@ -294,22 +308,29 @@ $(() => {
 
     //商品选中
     checkItem.on('click', (e) => {
-        // let t = $(e.target);
+        let t = $(e.target);
         let isItemChecked = $(e.target).hasClass('checkbox_chose');
-        // t.toggleClass('c-i checkbox_chose good-checkboxs-no');
+        let cur_shop_items = Array.from(t.parents('.cart-shop-goods').find('.checkItem'));
+        let cur_shop = t.parents('.cart-shop-goods').prev().find('.checkShop');
+        console.log(cur_shop);
 
         if (isItemChecked) {
-            $(e.target).addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+            t.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
         } else {
-            $(e.target).addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+            t.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
         }
 
-        //当前店铺所有商品选中或有商品未选中,则触发当前店铺全选按钮
-        let cur_shop_items = Array.from($(e.target).parents('.cart-shop-goods').find('.checkItem'));
-
-        if (cur_shop_items.every((ele) => $(ele).is('.checkbox_chose')) || cur_shop_items.some((e) => $(e).is('.good-checkboxs-no'))) {
-
-            $(e.target).parents('.cart-shop-goods').prev().find('.checkShop').trigger('click');
+        //1.如果本店商品全部选中,添加店铺全选
+        //2.有一个商品未选中,取消店铺全选按钮,取消购物车全选按钮
+        //3.购物车所有商品全部选中,添加购物车全选
+        if (cur_shop_items.every((e) => $(e).is('.checkbox_chose'))) {
+            cur_shop.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+            if (items.every((e) => $(e).is('.checkbox_chose'))) {
+                checkAll.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+            }
+        } else if (cur_shop_items.some((e) => $(e).is('.good-checkboxs-no'))) {
+            cur_shop.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+            checkAll.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
         }
 
         totalItem.text(countTotalItem());

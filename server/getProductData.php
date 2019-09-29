@@ -6,7 +6,7 @@
 $db = mysqli_connect("127.0.0.1", "root", "", "product");
 //中文乱码解决
 mysqli_set_charset($db,'utf8');
-$size = 48;
+$size = 24;
 
 
 mysqli_set_charset($db,'utf8');
