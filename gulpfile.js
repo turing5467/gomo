@@ -13,7 +13,7 @@ let options = {
     minifyJS: true, //压缩页面JS
     minifyCSS: true //压缩页面CSS
 };
-let htmlMinTask = () => src('./src/*.html').pipe(htmlMin(options)).pipe(dest('./dist/'));
+let htmlMinTask = () => src('./src/html/*.html').pipe(htmlMin(options)).pipe(dest('./dist/html'));
 exports.htmlMinTask = htmlMinTask;
 
 // 02=>压缩css文件

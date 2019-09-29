@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"><title>详情页</title><script src="../js/jquery-1.12.4.js"></script><script src="../js/e5-do.js"></script><script src="../js/Cookie.js"></script><script src="../js/detail.js?v=1"></script><link rel="stylesheet" href="../css/base.min.css?"><link rel="stylesheet" href="../css/detail.min.css"></head><body><script>var data;
+        let o = e5.getUrlPrmt(window.location.search);
+        let code = o.code;
+        $.ajax({
+            type: "get",
+            url: "../server/getDetailData.php",
+            data: {
+                code
+            },
+            async: false,
+            dataType: "json",
+            success: function(response) {
+                console.log(response[0]);
+                data = response[0];
+            }
+        });</script><div class="container"><div class="head" style="height:200px"></div><div class="content"><div class="prd-firstscreen-left"><div class="magnifier"><div class="pic-big"><div class="jqzoom"><script>$('.magnifier  .jqzoom').prepend(`<span class=pic-l-b title='点击看${data.name}大图'>`).prepend(`<img src=${data.big_pics.split(',')[0]} alt='${data.name}'>`);</script><div class="jqZoomPup"><span class="jqCross"><b></b><s></s></span><div class="jqBlock"></div></div></div><div class="zoomdiv"><script>$('.zoomdiv').append(`<img class=bigimg src=${data.magnify_pics.split(',')[0]}>`);</script></div></div><div class="pic-list j-listroll"><div class="pic-btn"><a href="javascript:;" class="pic-btn-l"><b class="j-gRbtnU"><s></s> </b></a><a href="javascript:;" class="pic-btn-r"><em class="j-gRbtnD"><i></i></em></a></div><div class="pic-small clearfix"><ul><script>$('.pic-list ul').eq(0).html(() => {
+                                        return data.mini_pics.split(',').map((ele, index) => {
+                                            let tail = '';
+                                            if (index > 0) {
+                                                tail += `第${index+1}张高清大图`
+                                            }
+                                            return `<li>
+                                                <a href=javascript:;>
+                                                    <img width=50 height=50 alt='${data.name+tail}' title='${data.name+tail}' src=${ele}>
+                                                </a>    
+                                            </li>`
+                                        })
+                                    });</script></ul></div></div></div><div class="toolbar"><script>$('.toolbar').append(`<span class="product-number" title="${data.product_num}">商品编号：${data.product_num}</span>`);</script><a class="collect" id="collect" href="javascript:;"><i></i>收藏</a> <a class="showWish" id="showWish" href="javascript:;"><i></i>提心愿</a> <a class="shareGold" href="javascript:;" share_page="02" share_id="A0005003447" share_typeid="02"><i></i>分享</a></div></div><div class="prd-firstscreen-center" id="gm-prd-main"><script>$('#gm-prd-main').html(() => {
+                        let hgroup = `<div class=hgroup>
+                                <h1>${data.name}</h1>
+                                <h4 class=prdtitcx>${data.prom_text}</h4>
+                            </div>`;
+
+                        let quan_html = data.promotion.split(',').map((ele) => {
+                            return `<b class="blue-label"><i class="left"></i>店铺劵 | ${ele.replace('券','满')}<i class="right"></i></b>`;
+                        }).join('');
+                        let property_1 = `
+                        <div class="prd-properties-other m20 tese clearfix">
+                            <label class="prd-properties-left line20">特　　色</label>
+                            <div class="prd-properties-right">
+                                <span class="yijiuhuanxin ${data.yjhx_tag==false?'dn':''}"><em></em><b></b><a href="//yjhx.gome.com.cn/" target="_blank">${data.yjhx_tag}</a></span>
+                                <span class="baina ${data.baina_tag==false?'dn':''}"><em></em><b></b><a href="javascript:;" target="_blank">${data.baina_tag}</a></span>
+                                <span class="guanjia ${data.guanjia_tag==false?'dn':''}"><em></em><b></b><a href="//mall.gome.com.cn/80011410/" target="_blank">${data.guanjia_tag}</a></span>
+                            </div>
+                        </div>
+                        <div class="prd-properties-other fuwu clearfix">
+                            <label class="prd-properties-left">服　　务</label>
+                            <div class="prd-properties-right">
+                                <span id="service_bable">
+                                    由<a href="//mall.gome.com.cn/80006441/" target="_blank">${data.shop_name == 'null'?'国美':data.shop_name}</a>
+                                    <span id="shipingAddr"></span>发货并负责售后服务。
+                                </span>
+                            </div>
+                        </div>`;
+                        let prdmod = data.types.split(',').map((ele) => {
+                            return `
+                            <div class="prdmod">
+                                <a href="javascript:;" title="${ele}此商品有货" vals=${ele} >${ele}<i></i></a>
+                            </div>`;
+                        }).join('');
+                        console.log(data.types.split(',').length);
+
+                        let property_2 = `<div id="salesProperty" class="m20">
+                            <div class="prd-properties-other  banben clearfix" id="booleanMainsale" data-type="版本" data-idx="0">
+                                ${data.types.split(',').length > 1 ? '<label class="prdLeft">版　　本</label>':''}
+                                <div class="prdRight clearfix">${data.types.split(',').length > 1 ?prdmod:''}</div>
+                            </div>
+                    </div>`;
+
+                        let price_box = `<div class=prd-price-1>
+                    <div class="prd-price-other line33 p20  clearfix">
+                            <label class="prd-price-left">国&nbsp;&nbsp;美&nbsp;&nbsp;价</label>
+                        <div class="unitprice prd-price-right">
+                            <span id="prdPrice" class="price"><em>¥</em>${data.price}</span>
+                            <a href="javascript:;" id="reduce" class="reduce">降价通知</a>
+                        </div>
+                        <div class="prd-price-flr">
+                            <div class="prd-price-line">|</div>
+                            <div class="prd-price-lineright">
+                                <p>好评度<em id="haocnt">100%</em></p>
+                                <p class="pincnt"><a href="javascript:;" class="reduce" id="goappr"><em id="pincnt">${data.comment}</em>人评价</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prd-price-other lanjuan-top clearfix">
+                        <label class="prd-price-left">领　　劵</label>
+                        <div class="prd-price-right lanjuan" id="lanjuan">
+                            ${quan_html}
+                        </div>
+                    </div>
+                </div>`;
+                        let property_box = `<div class=prd-properties id=prd_properties-min>
+                        <div class=prd-properties-1>${property_1}</div>
+                        <div class=prd-properties-2>${property_2}</div>
+                    </div>`;
+
+                        let btn_box = `
+            <div class=prd-buttons id=btnLink>
+                <div class="count-wrapper" id="btnCount">
+                    <input type="text" class="quantity j-gACval" id="enterQty" maxlength="5" value="1" onfocus="this.className='j-gACval quantity focus'" onblur="this.className='quantity j-gACval'" autocomplete="off">
+                    <a href="javascript:;" class="plus j-gACbtnA">+</a>
+                    <a href="javascript:;" class="minus j-gACbtn disab">-</a>
+                </div>
+                <a href="javascript:;" class="btn-product btn-addcart" id="addCart">加入购物车</a>
+                <a href="javascript:;" id="mobtn" class="btn-product mobtn"><i class="mobtnma"></i>手机下单 <div><img _src="//ss.gome.com.cn/item/v1/qr/verify/A0005003447/pop8012228952/flag/item" alt="二维码" src="//ss.gome.com.cn/item/v1/qr/verify/A0005003447/pop8012228952/flag/item"></div></a>
+            </div>`;
+
+                        let tip_box = `
+            <div class="prd-tips wenxintishi_wrap clearfix">
+                <p>温馨提示</p>
+                <ol class="wenxinti">
+                    <li> 
+                        正品保障；
+                        支持7天无理由退货
+                    </li>
+                </ol>
+            </div>`;
+                        return hgroup + price_box + property_box + btn_box + tip_box;
+                    });</script></div><div class="prd-firstscreen-right"></div></div></div></body></html>

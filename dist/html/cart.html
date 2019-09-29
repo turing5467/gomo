@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"><title>我的购物车</title><script src="../js/jquery-1.12.4.js"></script><script src="../js/Cookie.js"></script><script src="../js/cart.js?v=1"></script><link rel="stylesheet" href="../css/base.min.css"><link rel="stylesheet" href="../css/index.min.css"><link rel="stylesheet" href="../css/cart.min.css"></head><body><div class="cart-lists"><div class="container"><div class="cart-main-header clearfix"><div class="cart-col-1 pr"><div style="margin-top:16px" class="good-checkboxs-no checkAll"><input type="checkbox" style="display:none"></div></div><div class="cart-col-2">全选</div><div style="width:389px" class="cart-col-3">商品信息</div><div class="cart-col-4"><div class="cart-good-real-price">单价</div></div><div class="cart-col-5 text-left">数量</div><div class="cart-col-6"><div class="cart-good-amount">小计</div></div><div class="cart-col-7">操作</div></div></div><div class="container cart-list"></div><script>let id = Cookie.get('userId');
+            $.ajax({
+                type: "get",
+                url: "../server/getCart.php",
+                data: {
+                    id
+                },
+                dataType: "json",
+                async: false,
+                success: function(response) {
+
+                    //按照店铺分类
+                    let shops = [];
+                    response.forEach((ele, index) => {
+                        //店铺名 => 商品索引
+                        let flag = shops.findIndex((e) => e.shop_name == ele[4]);
+                        if (flag != -1) {
+                            shops[flag].products.push(ele);
+                        } else {
+                            let o = {};
+                            o.shop_name = ele[4];
+                            o.products = [];
+                            o.products.push(ele);
+                            shops.push(o);
+                        }
+                    });
+
+                    //按照名称排序,名称相同则按照单价升序
+                    shops.forEach((ele) => ele.products.sort((a, b) => a[1] == b[1] ? a[3] * 1 - b[3] * 1 : a[1] - b[1]));
+
+                    shops.forEach((e) => {
+                        renderOneShop(e);
+                    });
+                }
+            });</script><div class="cart-bottom-wrap"><div class="cart-bottom-info"><div class="container" style="position:relative"><div class="cart-col-1 pr"><div class="good-checkboxs-no checkAll"><input type="checkbox" style="display:none"></div><div class="pabs hide selectAllItemOffBottom selectAllItemOffCheck"><div class="white-arrow">◆</div>您还未选择商品</div></div><div class="cart-col-2">全选 <a href="javascript:" act-batch-remove-item="" class="black del-goods" style="margin-left:20px" data-save="true">删除</a></div><div class="cart-col-3 mlf14"></div><div class="cart-col-4 cart-totle-price pl84"><div g-hoverup-obj="" class="cart-bottom-selectgood">已选 <span class="cart-price-red selected-item">0</span> 件商品 <em class="c-i arrow-top"></em> <i class="c-i bottom-arrow" click-document-hide="" style="display:none"></i></div><div class="bottom-total-pirce"><dl><dt>总计（不含运费）：</dt><dd class="cart-price-red ffyh selected-price" style="font-size:18px;font-weight:900">￥0.00</dd></dl></div></div><div class="cart-col-5"><a href="javascript:" act-init-order="" class="init-disabled order-btn"><span class="btn-normal">去结算<em class="c-i arrowRight-white"></em></span><div class="btn-loading">结算中<i></i></div></a></div></div></div></div></div></body></html>
