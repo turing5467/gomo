@@ -1,6 +1,6 @@
 # gmzx
 
-(github)[https://github.com/turing5467/gomo]
+[github](https://github.com/turing5467/gomo)
 
 ## 首页
 
