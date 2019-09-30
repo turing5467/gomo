@@ -21,6 +21,9 @@ let cssMin = require('gulp-cssmin');
 let cssMinTask = () => src('./src/css/*.css').pipe(cssMin()).pipe(dest('./dist/css'));
 exports.cssMinTask = cssMinTask;
 
+let cssCopy = () => src('./src/css/*').pipe(dest('./dist/css'));
+exports.cssCopy = cssCopy;
+
 //03 => 重命名
 let rename = require('gulp-rename');
 

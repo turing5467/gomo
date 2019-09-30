@@ -30,22 +30,11 @@ $(() => {
         }
     });
 
-    //回车登录
-    document.onkeyup = (e) => {
-        e.preventDefault();
-        if (e.which == 13) {
-            login();
-        }
-    }
-
     loginBtn.click((e) => {
         e.preventDefault();
-        login();
-    });
-
-    function login() {
         phone = oPhone.val();
         password = oPassword.val();
+
         let data = {
             phone,
             password
@@ -60,7 +49,7 @@ $(() => {
                     if (isAutoLogin) {
                         store.set('userInfo', data);
                     } else {
-                        store.remove('userInfo')
+                        store.remove('userInfo');
                     }
                     // document.cookie = `userId=${response.data[0].id}`;
                     Cookie.remove('userId');
@@ -72,8 +61,7 @@ $(() => {
                 }
             }
         });
-    }
-
+    });
 
     //无关紧要
     //扫码登录 <=> 账户登录

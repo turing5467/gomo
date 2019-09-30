@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Pragma" content="no-cache">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>详情页</title>
     <script src="../js/jquery-1.12.4.js"></script>
     <script src="../js/e5-do.js"></script>
     <script src="../js/Cookie.js"></script>
-    <script src="../js/detail.js?v=1"></script>
+    <script src="../js/detail.js"></script>
     <link rel="stylesheet" href="../css/base.min.css?">
     <link rel="stylesheet" href="../css/detail.min.css">
 </head>
@@ -35,6 +36,7 @@
         });
     </script>
     <div class="container">
+        <div style="text-align: center"><a href="./index.html">返回首页</a></div>
         <div class="head" style="height: 200px"></div>
         <div class="content">
             <div class="prd-firstscreen-left">
@@ -50,8 +52,6 @@
                             </div>
                         </div>
                         <div class="zoomdiv">
-                            <!-- <img src="" alt="" class="bigimg"> -->
-                            <!-- <script></script> -->
                             <script>
                                 $('.zoomdiv').append(`<img class=bigimg src=${data.magnify_pics.split(',')[0]}>`);
                             </script>

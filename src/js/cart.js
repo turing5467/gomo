@@ -224,14 +224,14 @@ $(() => {
         let isCheckedAll = t.hasClass('checkbox_chose');
 
         if (isCheckedAll) {
-            checkAll.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
-            checkShop.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
-            checkItem.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+            deCheck(checkAll);
+            deCheck(checkShop);
+            deCheck(checkItem);
 
         } else {
-            checkAll.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
-            checkShop.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
-            checkItem.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+            enCheck(checkAll);
+            enCheck(checkShop);
+            enCheck(checkItem);
         }
 
         // //计算价格
@@ -247,21 +247,20 @@ $(() => {
         let cur_shop_items = t.parents('.cart-shop-header').next().find('.checkItem');
 
         if (isShopChecked) {
-            t.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
-            cur_shop_items.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+            deCheck(t);
+            deCheck(cur_shop_items);
         } else {
-            t.removeClass('good-checkboxs-no').addClass('c-i checkbox_chose');
-            cur_shop_items.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+            enCheck(t);
+            enCheck(cur_shop_items);
         }
 
         //这时样式已经发生改变
         //所有店铺选中或有一个店铺未选中,则触发全选按钮的单击事件
         if (shops.every((e) => $(e).is('.checkbox_chose'))) {
-            checkAll.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+            enCheck(checkAll);
         } else if (shops.some((e) => $(e).is('.good-checkboxs-no'))) {
-            checkAll.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+            deCheck(checkAll);
         }
-
 
         totalItem.text(countTotalItem());
         totalPrice.text('￥' + countTotalPrice());
@@ -275,27 +274,35 @@ $(() => {
         let cur_shop = t.parents('.cart-shop-goods').prev().find('.checkShop');
 
         if (isItemChecked) {
-            t.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+            deCheck(t);
         } else {
-            t.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+            enCheck(t);
         }
 
         //1.如果本店商品全部选中,添加店铺全选
         //2.有一个商品未选中,取消店铺全选按钮,取消购物车全选按钮
         //3.购物车所有商品全部选中,添加购物车全选
         if (cur_shop_items.every((e) => $(e).is('.checkbox_chose'))) {
-            cur_shop.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+            enCheck(cur_shop);
             if (items.every((e) => $(e).is('.checkbox_chose'))) {
-                checkAll.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+                enCheck(checkAll);
             }
         } else if (cur_shop_items.some((e) => $(e).is('.good-checkboxs-no'))) {
-            cur_shop.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
-            checkAll.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+            deCheck(cur_shop);
+            deCheck(checkAll);
         }
 
         totalItem.text(countTotalItem());
         totalPrice.text('￥' + countTotalPrice());
     })
+
+    function enCheck(ele) {
+        ele.addClass('c-i checkbox_chose').removeClass('good-checkboxs-no');
+    }
+
+    function deCheck(ele) {
+        ele.addClass('good-checkboxs-no').removeClass('c-i').removeClass('checkbox_chose');
+    }
 
     function countTotalItem() {
         let total = 0;

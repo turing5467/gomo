@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Pragma" content="no-cache">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>国美会员注册</title>
     <script src="../js/jquery-1.12.4.js"></script>
     <script src="../js/e5-do.js"></script>
-    <script src="../js/register.js"></script>
+    <script src="../js/Cookie.js"></script>
+    <script src="../js/register.js?v=2"></script>
     <link rel="stylesheet" href="../css/base.min.css">
     <link rel="stylesheet" href="../css/register_uc.min.css?">
-    <link rel="stylesheet" href="../css/register.min.css">
     <link rel="stylesheet" href="../css/footer.min.css?v=1">
+    <link rel="stylesheet" href="../css/register.min.css?v=1">
 </head>
 
 <body>
@@ -489,7 +491,7 @@
                             <div class="form-group clearfix">
                                 <input type="text" name="verifyCode" id="oVerify" maxlength="6" placeholder="输入验证码">
                                 <button class="getVerifyCode">获取短信验证码</button>
-                                <div class="restSecondBtn" disabled="">
+                                <div class="restSecondBtn">
                                     <span class="remainSeconds">60</span> 秒后重新获取
                                 </div>
                             </div>
@@ -500,27 +502,27 @@
                         <form class="form-2">
                             <div class="form-group">
                                 <button class="clearTextBtn">&times;</button>
-                                <input type="text" name="" id="oName" placeholder="请输入用户名(6-10位)" tabindex="1">
+                                <input type="text" name="" id="oName" placeholder="请输入用户名(6-10位)" tabindex="1" style="background: none;">
                                 <span></span>
                             </div>
                             <div class="form-group">
                                 <button class="clearTextBtn">&times;</button>
                                 <button class="pwdToShowBtn"></button>
-                                <input type="password" id="oPwd" placeholder="请输入密码(6-16位)" tabindex="2">
+                                <input type="password" id="oPwd" placeholder="请输入密码(6-16位)" tabindex="2" style="background: none;">
                                 <span></span>
                             </div>
-                            <button class="nextStepBtn">下一步</button>
+                            <button class=" nextStepBtn ">下一步</button>
                         </form>
                     </div>
-                    <div class="step-content round-3-content">
-                        <div class="title">恭喜您，<span class="enPhone">15607002736</span> 注册国美会员成功！
+                    <div class="step-content round-3-content ">
+                        <div class="title ">恭喜您，<span class="enPhone ">15607002736</span> 注册国美会员成功！
                         </div>
-                        <p class="p1">
+                        <p class="p1 ">
                             您的账号可以在国美网站和旗下所有门店通用<br/> 快开始您的购物之旅吧
                         </p>
-                        <button class="go-shopping">去购物</button>
-                        <p class="p2">
-                            <span class="remain-5-seconds">5</span> S&nbsp;后自动跳转至首页
+                        <button class="go-shopping ">去购物</button>
+                        <p class="p2 ">
+                            <span class="remain-5-seconds ">5</span> S&nbsp;后自动跳转至首页
                         </p>
                     </div>
                 </div>
@@ -528,7 +530,7 @@
         </div>
         <!-- content end -->
 
-        <div id="gomo-foot">
+        <div id=gomo-foot>
             <script>
                 $('#gomo-foot').load('./footer.html .gomo-foot-box');
             </script>

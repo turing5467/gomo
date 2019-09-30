@@ -1,4 +1,7 @@
 $(() => {
+
+    //先清除cookie
+    Cookie.remove('userId');
     //协议
     $('.inpBtn').click((e) => {
         e.preventDefault();
@@ -35,34 +38,45 @@ $(() => {
 
 
     oPhone.on('input', (e) => {
-        let flag = false;
         e.preventDefault();
         phone = oPhone.val().trim();
 
         if (phone.length == 0) {
             oPhone.next('span').addClass('err').text("请输入手机号!");
             oPhone.parent().addClass("form-group-error");
-            flag = false;
+            flags_1[0] = false;
         } else {
             if (phoneReg.test(phone)) {
-                oPhone.next().addClass('info').text("手机号正确");
-                oPhone.parent().removeClass("form-group-error");
-                flag = true;
-                enPhone.text(phone);
+                $.ajax({
+                    type: "get",
+                    url: "../server/phoneUnique.php",
+                    data: {
+                        phone
+                    },
+                    success: function(response) {
+                        if (response == 0) {
+                            oPhone.parent().addClass("form-group-error");
+                            flags_1[0] = false;
+                            oPhone.next('span').addClass('err').text("手机号已被注册!");
+                        } else if (response == 1) {
+                            oPhone.parent().removeClass("form-group-error");
+                            flags_1[0] = true;
+                            oPhone.next('span').addClass('info').text("手机号可用!");
+                            enPhone.text(phone);
+                        }
+
+                    }
+                });
             } else {
                 oPhone.next('span').removeClass('info').addClass('err').text("手机号不存在");
-                flag = false;
+                flags_1[0] = false;
             }
         }
-        flags_1[0] = flag;
     });
-
-
-
-
 
     oGetVerify.on('click', (e) => {
         e.preventDefault();
+
         if (flags_1[0] == false) {
             return;
         } else {
@@ -73,8 +87,8 @@ $(() => {
                 dataType: 'json',
                 data: {
                     "showapi_timestamp": formatterDateTime(),
-                    "showapi_appid": '104996', //appid
-                    "showapi_sign": "e5e61227fb274a89afdd47d3164180d6", //密钥secret
+                    "showapi_appid": '105009', //appid
+                    "showapi_sign": "51084e3ee1f34d5c86af6e0e3506a8fa", //密钥secret
                     "mobile": phone,
                     "content": `{\"code\":\"${code}\",\"minute\":\"3\",\"comName\":\"国美商城\"}`,
                     "tNum": "T150606060601",
@@ -83,36 +97,38 @@ $(() => {
                     alert("操作失败!");
                 },
                 success: function(result) {
+
                     if (result.showapi_res_code == 0) {
                         flags_1[1] = true;
                         oRemainSeconds.parent().addClass('active');
-                        remainSecond(oRemainSeconds, 59);
-                        oRemainSeconds.parent().removeClass('active');
+                        new Promise((resolve) => {
+                            remainSecond(oRemainSeconds, 59, () => {
+                                resolve();
+                            });
+                        }).then(() => {
+                            oRemainSeconds.parent().removeClass('active');
+                        })
                     }
                 }
             });
         }
-    })
-    nextStep(nextStep_1, flags_1, '.round-1', '.round-2', '.round-1-content')
+    });
 
+    nextStep_1.click((e) => {
+        e.preventDefault();
+        nextStep(flags_1, '.round-1', '.round-2', '.round-1-content');
+    })
     oVerify.on('input', () => {
         verify = oVerify.val();
-
-        if (verify == code) {
-            if (flags_1[1] == true) {
-                flags_1[1] = true;
-            } else {
-                flags_1[1] = false;
-            }
-        }
+        flags_1[1] = (verify == code);
     })
 
     oName.on('input', (e) => {
-        let flag = false;
+        //由于涉及请求(异步),因此不可以直接定义flag变量
         username = oName.val().trim();
         if (username.length < 6) {
             oName.parent().addClass("form-group-error");
-            flag = false;
+            flags_2[0] = false;
             oName.next('span').addClass('err').text("用户名太短!");
             if (username.length == 0) {
                 oName.next('span').text("请输入用户名!");
@@ -120,37 +136,31 @@ $(() => {
 
         } else {
             if (nameReg.test(username)) {
-
                 $.ajax({
                     type: "post",
                     url: "../server/usernameUnique.php",
                     data: {
                         username
                     },
-                    // dataType: "dataType",
                     success: function(response) {
-                        //response 为 0 ,用户名重复
-                        //为1,可用
                         if (response == 0) {
                             oName.parent().addClass("form-group-error");
-                            flag = false;
+                            flags_2[0] = false;
                             oName.next('span').addClass('err').text("用户名已被注册!");
                         } else if (response == 1) {
                             oName.parent().removeClass("form-group-error");
-                            flag = true;
+                            flags_2[0] = true;
                             oName.next('span').addClass('info').text("用户名可用!");
                         }
                     }
                 });
 
-
             } else {
                 oName.parent().removeClass("form-group-error");
-                flag = false;
+                flags_2[0] = false;
                 oName.next('span').addClass('err').text("用户名非法!");
             }
         }
-        flags_2[0] = flag;
     });
 
     oPwd.on('input', (e) => {
@@ -178,8 +188,8 @@ $(() => {
         flags_2[1] = flag;
     });
 
-    nextStep(nextStep_2, flags_2, '.round-2', '.round-3', '.round-2-content');
-    nextStep_2.on('click', () => {
+    nextStep_2.click((e) => {
+        e.preventDefault();
         $.ajax({
             type: "post",
             url: "../server/register.php",
@@ -187,12 +197,17 @@ $(() => {
                 phone,
                 username,
                 pwd
+            },
+            success(res) {
+                if (res == 1) {
+                    nextStep(flags_2, '.round-2', '.round-3', '.round-2-content');
+                    remainSecond(remain5Sseconds, 4, () => {
+                        window.location.href = './login.html';
+                    });
+
+                }
             }
-        }).done(() => {
-            remainSecond(remain5Sseconds, 4, () => {
-                window.location.href = './index.html';
-            });
-        });
+        })
 
     });
     goShop.click((e) => {
@@ -212,7 +227,7 @@ $(() => {
             ele.text(i);
             if (i == 0) {
                 clearInterval(timer);
-                fn();
+                fn && fn();
             }
             i--;
         }, ms);
@@ -241,23 +256,17 @@ $(() => {
         return datetime;
     }
 
-    function nextStep(ele, flagArr, str1, str2, str3) {
-        ele.on('click', (e) => {
-            e.preventDefault();
-            // flagArr[0] = true;
-            // flagArr[1] = true;
-            if (flagArr.some((ele) => ele == false)) {
-                return false;
-            } else {
-                //下一步
-                //1.step-slider变换
+    function nextStep(flagArr, str1, str2, str3) {
 
-                $(str1).next().addClass('active');
-                $(str1).siblings(str2).addClass('active');
+        if (flagArr.some((e) => e == false)) {
+            return;
+        } else {
+            //1.step-slider变换
+            $(str1).next().addClass('active');
+            $(str1).siblings(str2).addClass('active');
 
-                //2.step-content变换
-                $(str3).removeClass('cur').next().addClass('cur');
-            }
-        })
+            //2.step-content变换
+            $(str3).removeClass('cur').next().addClass('cur');
+        }
     }
 })
