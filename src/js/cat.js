@@ -104,7 +104,6 @@ function getType() {
 }
 
 $(() => {
-
     //设置ajax全局配置
     $.ajaxSetup({
         url: "../server/getProductData.php",
@@ -118,12 +117,215 @@ $(() => {
         }
     });
 
+    $.getJSON('../server/hot_tj.json', (res) => {
+        $('#hot-list').html(() => {
+            return res.map((ele) => {
+
+                return `
+                <li class=item>
+                    <p class="pic">
+                        <a href=# title='${ele.name}'>
+                        <img src=${ele.pic} alt=${ele.name}></a>
+                    </p>
+                    <p class=name>
+                        <a href=# title='${ele.name}'>${ele.name}</a>
+                    </p>
+                    <p class=price>${ele.price}</p>
+                    <p class=btn>
+                        <a class=buy href=#>立即抢购</a>
+                    </p>
+                </li>
+                `;
+            }).join('');
+        })
+    });
+
+    let facets = $('.nSearch-facets').eq(0);
+    new Promise((resolve) => {
+        $.getJSON('../server/facets.json', function(res) {
+
+            let brand = $('<div id=facets-category-brand class="facets-category clearfix"></div>').appendTo(facets);
+
+            brand.append(`<span class=fc-key><b>品牌：</b></span>`);
+            $('<div>').addClass('fc-content').html(() => {
+                let li_html = res.brands.map((ele) => {
+
+                    return `<li class=c-brand>
+                                    <a href="javascript:;" name=${ele.title} style=${ele.style}>
+                                        ${ele.title}
+                                    </a>
+                                </li>`
+                }).join('');
+                return `<ul class="category-brand clearfix">${li_html}</ul>`
+            }).appendTo(brand);
+
+            res.commonFacets.forEach((e) => {
+                let common_facet = $('<div>').addClass('facets-category facets-category-common  clearfix');
+
+                common_facet.append(`<span class="fc-key fir">${e.key}</span>`);
+
+                $('<div>').addClass('fc-content').html(() => {
+                    let li_html = e.contents.map((ee) => {
+                        return `<li><a class="facet">${ee}</a></li>`;
+                    }).join('');
+                    return `<ul class=clearfix>${li_html}<ul>`;
+                }).appendTo(common_facet);
+
+                common_facet.appendTo(facets);
+            });
+            resolve();
+        });
+    }).then(() => {
+        facets.find('.facets-category-common:gt(3)').addClass('fc-hide');
+        facets.append(`<div class="fccc-control-warp">
+            <span class="fccc-control" id="fc-common-show">更多选项（屏幕规格,显卡类型,硬盘容量,内存容量,操作系统,Game+游戏装备）</span>
+            <span class="fccc-up" id="fc-common-hide">收起&nbsp;&nbsp;</span>
+        </div>`);
+        let control_down = facets.find('.fccc-control').eq(0);
+        let control_up = facets.find('.fccc-up').eq(0);
+        let control_box = control_down.parent();
+        control_down.click((e) => {
+            $('.fc-hide').removeClass('fc-hide');
+            control_box.addClass('show');
+        })
+        control_up.click((e) => {
+            $('.facets-category-common:gt(3)').addClass('fc-hide');
+            control_box.removeClass('show');
+        });
+        let priceRangeBtn = $('.facets-category-common').eq(0).find('.facet');
+        priceRangeBtn.click((e) => {
+
+            e.preventDefault();
+
+            let val1, val2;
+            if ($(e.target).text().indexOf('-') != -1) {
+                [val1, val2] = $(e.target).text().trim().split('-');
+
+            } else {
+                [val1, val2] = [10000, 1000000];
+            }
+            $('.product-box').eq(0).html('');
+            $.ajax({
+                data: {
+                    page: 0,
+                    type: 4,
+                    'low_price': val1 * 1,
+                    'high_price': val2 * 1
+                }
+            });
+        })
+    })
+
+    let prdBox = $('.product-right-box').eq(0);
+    $.getJSON('../server/productLeft.json', (res) => {
+
+        //销量排行榜
+        let prd = $('<div id=prdRight-2>').appendTo(prdBox);
+
+        let prd_item = $('<div class=prd-right-normal>').appendTo(prd);
+
+        prd_item.append(`<h3 class=hd>${res[0].title}</h3>`);
+        $('<ul class="sell-product">').html(() => {
+            return res[0].lists.map((ele, index) => {
+                return `<li class=active>
+                                        <p class="num num${index+1}">${index+1}</p>
+                                        <div class=pdetail>
+                                            <p class=pic>
+                                                <a class=bigD_item><img src=${ele.pic}></a>
+                                            </p>    
+                                            <p class=name>
+                                                <a class=bigD_item>${ele.name}</a>
+                                            </p>
+                                            <p class=price>${ele.price}</p>
+                                        </div>
+                                    </li>`
+            }).join('');
+        }).appendTo(prd_item);
+
+        //另外两个
+        res.slice(1).forEach((ele, index) => {
+            let prd = $('<div id=prdRight-' + (index + 3) + '>').appendTo(prdBox);
+
+            let prd_item = $('<div class=prd-right-normal>').appendTo(prd);
+
+            prd_item.append(`<h3 class=hd>${ele.title}</h3>`);
+            $('<ul class=bd id=bigD_liulan>').html(() => {
+                return ele.lists.map((e, index) => {
+                    return `<li class=buy-items>
+                                            <div class=pic>
+                                                <a class=bigD_item><img src=${e.pic}></a>
+                                            </div>    
+                                            <div class=price>${e.price}</div>
+                                            <div class=name>
+                                                <a class=bigD_item>${e.name}</a>
+                                            </div>
+                                    </li>`
+                }).join('');
+            }).appendTo(prd_item)
+        })
+
+    })
+
+    //携带信息跳转详情页
+    $.ajax({
+        type: "get",
+        url: "../server/getProductData.php?version=2",
+        data: {
+            page: 0,
+            type: 0
+        },
+        dataType: "json",
+        success(response) {
+            render(response.data);
+            let links = $('.item-link');
+
+            links.each((i, e) => {
+                let href = './detail.html?code=' + $(e).parents('li').attr('id');
+                $(e).attr('href', href);
+            })
+        }
+    });
+
+    //分页配置
+    $.ajax({
+        type: "get",
+        url: "../server/getPageCount.php",
+        // data: "",
+        dataType: "json",
+        success: function(response) {
+            kkpager.generPageHtml({
+                pno: 1,
+                total: response[1],
+                totalRecords: response[0],
+                mode: 'click',
+                click(n) {
+                    this.selectPage(n);
+                    $('.product-box').eq(0).html('');
+                    $.ajax({
+                        type: "get",
+                        url: "../server/getProductData.php",
+                        data: {
+                            page: n - 1,
+                            type: getType(),
+                        },
+                        dataType: "json",
+                        success: function(response) {
+
+                            if (response.status == 'success') {
+                                render(response.data);
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    });
 
     let flag = true;
 
     $('#sort-price').click((e) => {
 
-        //清空之前渲染的列表表
+        //清空之前渲染的列表
         $('.product-box').eq(0).html('');
         kkpager.selectPage(1);
 
@@ -132,7 +334,6 @@ $(() => {
 
         let type;
         if (flag == true) {
-            // console.log(e.currentTarget);
             t.addClass('price-up').removeClass('price-down');
             type = 1;
         } else {
@@ -218,27 +419,6 @@ $(() => {
 
     });
 
-    let priceRangeBtn = $('.facets-category-common').eq(0).find('.facet');
-    priceRangeBtn.click((e) => {
 
-        e.preventDefault();
-
-        let val1, val2;
-        if ($(e.target).text().indexOf('-') != -1) {
-            [val1, val2] = $(e.target).text().trim().split('-');
-
-        } else {
-            [val1, val2] = [10000, 1000000];
-        }
-        $('.product-box').eq(0).html('');
-        $.ajax({
-            data: {
-                page: 0,
-                type: 4,
-                'low_price': val1 * 1,
-                'high_price': val2 * 1
-            }
-        });
-    })
 
 })

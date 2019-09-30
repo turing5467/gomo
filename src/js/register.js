@@ -58,17 +58,7 @@ $(() => {
     });
 
 
-    oVerify.on('input', () => {
-        verify = oVerify.val();
 
-        if (verify == code) {
-            if (flags_1[1] == true) {
-                flags_1[1] = true;
-            } else {
-                flags_1[1] = false;
-            }
-        }
-    })
 
 
     oGetVerify.on('click', (e) => {
@@ -105,7 +95,17 @@ $(() => {
     })
     nextStep(nextStep_1, flags_1, '.round-1', '.round-2', '.round-1-content')
 
+    oVerify.on('input', () => {
+        verify = oVerify.val();
 
+        if (verify == code) {
+            if (flags_1[1] == true) {
+                flags_1[1] = true;
+            } else {
+                flags_1[1] = false;
+            }
+        }
+    })
 
     oName.on('input', (e) => {
         let flag = false;
@@ -187,10 +187,6 @@ $(() => {
                 phone,
                 username,
                 pwd
-            },
-            // dataType: "dataType",
-            success: function(response) {
-                console.log(response);
             }
         }).done(() => {
             remainSecond(remain5Sseconds, 4, () => {

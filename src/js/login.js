@@ -56,7 +56,6 @@ $(() => {
             data,
             dataType: 'json',
             success: function(response) {
-                console.log(response);
                 if (response.status == "success") {
                     if (isAutoLogin) {
                         store.set('userInfo', data);
@@ -110,8 +109,6 @@ $(() => {
                 height: h1 + 'px'
             });
         } else {
-            console.log(h2);
-
             ele.animate({
                 height: h2 + 'px'
             });

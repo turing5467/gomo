@@ -11,34 +11,18 @@
     <script src="../js/carousel.js"></script>
     <script src="../js/e5-do.js"></script>
     <script src="../js/Cookie.js"></script>
-    <script src="../js/index.js?"></script>
+    <script src="../js/index.js"></script>
     <link rel="stylesheet" href="../css/base.min.css">
-    <link rel="stylesheet" href="../css/carousel.min.css?">
-    <link rel="stylesheet" href="../css/help.min.css?">
-    <link rel="stylesheet" href="../css/footer.min.css?">
-    <link rel="stylesheet" href="../css/index.min.css?">
+    <link rel="stylesheet" href="../css/carousel.min.css">
+    <link rel="stylesheet" href="../css/help.min.css">
+    <link rel="stylesheet" href="../css/footer.min.css">
+    <link rel="stylesheet" href="../css/index.min.css">
 </head>
 
 <body>
     <!-- 
     滚动条事件待完善
  -->
-    <script>
-        let timer = null;
-
-        function elevatorScroll(height, step = 10) {
-            timer && clearInterval(timer);
-            timer = setInterval(() => {
-                if ($(window).scrollTop() < height + 1) {
-                    window.scrollBy(0, step);
-                } else if ($(window).scrollTop() > height + step + 1) {
-                    window.scrollBy(0, -step)
-                } else {
-                    clearInterval(timer);
-                }
-            }, 1000 / 60);
-        }
-    </script>
     <div class=" container">
         <div class="stick-nav clearfix ">
             <div class="w1200-bg">
@@ -48,11 +32,6 @@
                         <a href="javascript:;">全部商品分类</a>
                     </h2>
                 </div>
-                <script>
-                    $(() => {
-                        $('.search-box').clone().appendTo($('.stick-nav .w1200-bg'));
-                    });
-                </script>
             </div>
 
         </div>
@@ -83,28 +62,6 @@
                             Hi,
                             <a href="# ">
                                 <span class="user-name "></span>
-                                <script>
-                                    let id = Cookie.get('userId');
-                                    $.ajax({
-                                        type: "get",
-                                        url: "../server/getUserName.php",
-                                        data: {
-                                            id
-                                        },
-                                        dataType: "json",
-                                        success: function(response) {
-                                            if (response.status == 'success') {
-                                                $('.user-name').eq(0).text(response.data[0].username);
-                                                $('.top-left').eq(0).prepend('<a class=fl href="./index.html">国美首页</a>');
-                                            } else {
-                                                $('.logout').eq(0).remove();
-                                                $('.top-left').eq(0).append('<a href="./login.html">登陆</a><a class="gome-link-register" href="./register.html">注册有礼<i></i></a>');
-                                            }
-                                        }
-                                    });
-                                </script>
-                                <!-- <em class="level "></em> -->
-                                <!-- <i></i> -->
                             </a>
                             <div class="hide-user-box "></div>
                         </div>
@@ -294,23 +251,6 @@
                         <b></b>
                         </a>
                         </span>
-                        <script>
-                            $.ajax({
-                                type: "get",
-                                url: "../server/getCart.php",
-                                data: {
-                                    id
-                                },
-                                dataType: "json",
-                                success: function(response) {
-
-                                    $('#commerceItemQuantityId').html(response.length);
-                                    if (response.length != 0) {
-                                        $('.shop-car').addClass('havecount');
-                                    }
-                                }
-                            });
-                        </script>
                     </div>
                 </div>
             </div>
@@ -371,96 +311,7 @@
                 <div class="home-nav-column w1200-bg ">
                     <ul class="nav-first ">
                         <div class="lisbg "></div>
-                        <script>
-                            let navFirst = $('.nav-first');
-                            $.getJSON('../server/nav.json?version=1', function(res) {
-                                //一级菜单
-                                let html = res.map(function(ele, index) {
-                                    let ahtml = ele.l_titles.map(
-                                        (e) => {
-                                            return `
-                                                        <a href="./">${e}</a>
-                                                    `;
-                                        }
-                                    ).join('');
-
-                                    //二级菜单
-
-                                    //标签
-                                    let tag_html = ele.r_l_tags.map((e, index) => {
-                                        return `
-                                                    <a href="#" class="sec-tag ">${e}</a>
-                                                `;
-                                    }).join('');
-                                    let tagHTML = `<div class="sec-tags clearfix ">${tag_html}</div>`
-
-                                    let list_html = ele.r_l_navs.map(
-                                        (e, index) => {
-                                            let title = `
-                                                        <div class="title">${e.n_l_title}</div>
-                                                    `;
-                                            let list = e.r_l_contents.map(
-                                                (ee, index) => {
-
-                                                    if (ee.className) {
-                                                        return `
-                                                                <a class="hot " href="./cat.html?intcmp=${ee.code}" code=${ee.code}>${ee.text}</a>
-                                                                `
-                                                    } else {
-                                                        return `
-                                                                <a href="./cat.html?intcmp=${ee.code}" code=${ee.code}>${ee.text}</a>
-                                                                `;
-                                                    }
-                                                }
-                                            ).join('');
-                                            list = `<div class="list ">${list}</div>`
-                                            return `<div class="sec-list ">${title+list}</div>`;
-                                        }
-                                    ).join('');
-                                    let listHTML = `<div class="sec-lists ">${list_html}</div>`;
-
-                                    //右烂
-                                    let img_html = '';
-                                    let brand_img_html = ele.r_r_brand_imgs.map(
-                                        (e, index) => {
-                                            return `<a href="# ">
-                                                    <img src=${e} > 
-                                                    </a>
-                                                    `
-                                        }
-                                    ).join('');
-                                    img_html = `
-                                                <div class="top_img_box ">${brand_img_html}</div>
-                                            `;
-
-                                    if (ele.r_r_big_img) {
-                                        img_html += `
-                                                <div class="bottom_img_box ">
-                                                        <a href="# ">
-                                                <img src=${ele.r_r_big_img}>
-                                                </a>
-                                                </div>
-                                                `;
-                                    }
-                                    let imgHTML = `
-                                            <div class="sec-right-box clearfix ">
-                                                ${img_html}
-                                            </div>
-                                            `;
-
-
-                                    let secHTML = `<div class="nav-second clearfix ">${tagHTML+listHTML+imgHTML}</div>`;
-
-
-                                    return `<li>${ahtml+secHTML}</li>`;
-                                });
-                                navFirst.html(html);
-                                navFirst.clone(true).appendTo($('.top-nav-l'));
-                            });
-                        </script>
                     </ul>
-
-
 
                     <div id="slide" class="w1200-bg">
                         <ul class="list ">
@@ -491,17 +342,6 @@
                         </ul>
                     </div>
 
-                    <script>
-                        $('#slide').enCarousel({
-                            _width: 750,
-                            _height: 450,
-                            nextText: '>',
-                            prevText: '<',
-                            fade: 1000,
-                            time: 3000,
-                            pagelocat: true
-                        });
-                    </script>
                     <div class="gm_sever_bg "></div>
                     <div class="gm_sever gm_kuaixun4 ">
                         <div class="gm_kuaixun edit-mode " modelid="1000060768 " modeltype=" ">
@@ -625,66 +465,14 @@
                                     :
                                     <em class="ac second "></em>
                                 </i>
-                                <script>
-                                    let hour = $('.hour').eq(0);
-                                    let minute = $('.minute').eq(0);
-                                    let second = $('.second').eq(0);
-                                    let start = new Date();
-                                    let end = new Date('2019-10-1 12:00');
-                                    let {
-                                        h,
-                                        m,
-                                        s
-                                    } = e5.getEndTime(start, end);
-                                    hour.text(h.toString().padStart(2, '0'))
-                                    minute.text(m.toString().padStart(2, '0'))
-                                    second.text(s.toString().padStart(2, '0'))
-                                    window.setInterval(() => {
-                                        start = new Date();
-                                        let {
-                                            h,
-                                            m,
-                                            s
-                                        } = e5.getEndTime(start, end);
-                                        hour.text(h.toString().padStart(2, '0'))
-                                        minute.text(m.toString().padStart(2, '0'))
-                                        second.text(s.toString().padStart(2, '0'))
-                                    }, 1000);
-                                </script>
                             </div>
                         </div>
-                        <div class="mrbq_body ">
+                        <div class="mrbq_body">
                             <ul></ul>
-                            <div class="btns ">
+                            <div class="btns">
                                 <button class="pre btn ">&lt;</button>
                                 <button class="nex btn ">&gt;</button>
                             </div>
-                            <!-- 一个 li 4个div商品 -->
-                            <script>
-                                let ele = $('.mrbq_body ul').eq(0);
-                                $.getJSON('../server/mrbq.json', function(res) {
-                                    let count = 4;
-                                    let len = res.length;
-                                    let group = Math.ceil(len / count);
-                                    for (let i = 0; i < group; i++) {
-                                        let j = i * count;
-                                        let html = res.slice(j, j + count).map((ele, index) => {
-                                            return `<div class="list_li fl ">
-                                                <a href="# ">
-                                                    <img src=${ele.src}>
-                                                    <div class="price ">
-                                                        <i>${ele.price}</i>
-                                                        <i class="del ">${ele.del_price}</i>
-                                                    </div>
-                                                    <p class="name ">${ele.title}</p>
-                                                    </a>
-                                                    </div>
-                                                    `
-                                        });
-                                        $('<li class="clearfix ">').html(html).appendTo(ele);
-                                    }
-                                })
-                            </script>
                         </div>
                     </div>
                     <div class="mrbq_right fr ">
@@ -706,17 +494,6 @@
                                 <img class="lazyloading img_w199 " src="//gfs10.gomein.net.cn/T1Mm_XByCv1RCvBVdK.jpg " data-lazy-init="//gfs10.gomein.net.cn/T1Mm_XByCv1RCvBVdK.jpg " data-lazy-img="done " alt="国美抢购 " title=" " width="199 " height="209 ">
                             </a>
                             <div class="pool_data ">
-                                <script>
-                                    var pool1_data = {
-                                        "data ": [{
-                                            "href ": "//tuan.gome.com.cn/ ",
-                                            "src ": "//gfs13.gomein.net.cn/T14QhXB_dv1RCvBVdK.jpg ",
-                                            "code ": "1000060844-1 ",
-                                            "alt ": "团购 ",
-                                            chance: "50 "
-                                        }]
-                                    }
-                                </script>
                             </div>
                             <div class="pool edit-mode " modelid="1000060844 " modeltype="2 ">
                                 <a href="//tuan.gome.com.cn/ " data-code="1000060844-1 " target="_blank "><img class="lazyloading img_w199 " src="//gfs13.gomein.net.cn/T14QhXB_dv1RCvBVdK.jpg " data-lazy-init="//gfs13.gomein.net.cn/T14QhXB_dv1RCvBVdK.jpg
@@ -736,17 +513,6 @@
                                 <img class="lazyloading img_w199 ml5 " src="//gfs12.gomein.net.cn/T1g3CXBmCv1RCvBVdK.jpg " data-lazy-init="//gfs12.gomein.net.cn/T1g3CXBmCv1RCvBVdK.jpg " data-lazy-img="done " alt="智享生活 " title=" " width="199
         " height="209 "></a>
                             <div class="pool_data ">
-                                <!-- <script>
-                                    var pool2_data = {
-                                        "data ": [{
-                                            "href ": "//3c.gome.com.cn/ ",
-                                            "src ": "//gfs13.gomein.net.cn/T1qsAXB4Vv1RCvBVdK.jpg ",
-                                            "code ": "1000060848-1 ",
-                                            "alt ": "潮3C ",
-                                            chance: "50 "
-                                        }]
-                                    }
-                                </script> -->
                             </div>
                             <div class="pool edit-mode " modelid="1000060848 " modeltype="2 ">
                                 <a href="//3c.gome.com.cn/ " data-code="1000060848-1 " target="_blank "><img class="lazyloading img_w199 ml5 " src="//gfs13.gomein.net.cn/T1qsAXB4Vv1RCvBVdK.jpg " data-lazy-init="//gfs13.gomein.net.cn/T1qsAXB4Vv1RCvBVdK.jpg
@@ -836,239 +602,10 @@
                             <a class="nex " onselectstart="return false " style="-moz-user-select:none; "></a>
                         </div>
                     </div>
-                    <div class="guess_main ">
-                        <!-- 3个ul -->
-                        <script>
-                            let guess_main = $('.guess_main');
-                            new Promise((resolve) => {
-                                $.getJSON('../server/guess.json', (data) => {
-
-                                    for (let i = 0; i < data.length; i++) {
-                                        $('<ul>').html(() => {
-                                            return data[i].map((ele) => {
-                                                return `<li>
-                                            <a href="# ">
-                                            <img src=${ele.img}>
-                                            <p class=guess_title>${ele.guess_title}
-                                            </p>
-                                            <p class="guess_price ">
-                                                ${ele.guess_price}
-                                            </p>
-                                            </a>
-                                                </li>`
-                                            })
-                                        }).appendTo(guess_main);
-                                    }
-                                    resolve();
-                                })
-                            }).then(() => {
-                                guess_main.find('ul').eq(0).css({
-                                    display: 'block'
-                                })
-                            })
-                        </script>
+                    <div class="guess_main">
                     </div>
                 </div>
                 <div class="floors "></div>
-                <script>
-                    $.getJSON('../server/floor.json', function(res) {
-                        $('.floors').eq(0).html(
-                            function() {
-                                return res.map((ele, index) => {
-                                    let floor = $('<div class="floor "></div>');
-
-                                    //楼层头部
-                                    let mt = $('<div class=mt></div>');
-
-                                    $('<div class=mtTop></div>').html(ele.title).appendTo(mt).appendTo(mt);
-
-                                    $('<ul class=tab></ul>').html(function() {
-                                        return ele.tab_titles.map((e, index) => {
-                                            return `<li><a href=#>${e}</a></li>`
-                                        }).join('');
-                                    }).appendTo(mt);
-
-                                    //楼层中间
-                                    let mc = $('<div class=mc></div>');
-
-                                    let mc_l = $('<div class=mc_l></div>');
-                                    $(`<a class=mc_l_img><img src=${ele.channel_img}></a>`).appendTo(mc_l);
-
-                                    let keyAll = $('<div class=keyAll></div>');
-
-                                    $('<div class=channelbg></div>').html(`<div class=channel>${ele.channel}</div>`).appendTo(keyAll);
-                                    $('<div class="keywords"></div>').html(
-                                        function() {
-                                            return ele.keywords.map((e) => {
-                                                let ul = $('<ul>').html(e.map((ee) => {
-                                                    return `<li><a href="#">${ee}</a></li>`
-                                                }).join(''));
-
-                                                return ul.get(0).outerHTML;
-                                            }).join('');
-                                        }
-                                    ).appendTo(keyAll);
-                                    keyAll.appendTo(mc_l);
-
-                                    mc_l.appendTo(mc);
-
-                                    let main_wrap = $('<div class=main_wrap></div>');
-
-                                    let main_1 = $('<div class=main></div>');
-                                    let mc_c = $('<div class=mc_c></div>').html(() => {
-                                        let li_html = ele.tab_content_1.l_imgs.map((e) => {
-                                            return `<li>
-                                                    <a href="javascript:; ">
-                                                        <img src=${e}>
-                                                    </a>
-                                                    </li>`
-                                        }).join('');
-                                        return `<ul class=slider>${li_html}</ul>`
-                                    }).appendTo(main_1);
-
-
-                                    let mc_r = $('<div class=mc_r></div>').html(() => {
-                                        let li_html = ele.tab_content_1.r_imgs.map((e) => {
-                                            return `<li>
-                                                    <a href="javascript:; ">
-                                                        <img src=${e}></a>
-                                                    </li>`
-                                        }).join('');
-                                        return `<ul class=mc_r_inner>${li_html}</ul>`;
-                                    }).appendTo(main_1);
-
-
-                                    main_1.appendTo(main_wrap);
-
-
-                                    ele.tab_contents.forEach((e) => {
-                                        $('<div class=main>').html(
-                                            () => {
-                                                let li_html = e.map((ee) => {
-                                                    return `<li>
-                                                            <a href="# ">
-                                                                <img src=${ee.img} alt=${ee.title}>
-                                                                <p class="p_name ">${ee.title}
-                                                                </p>
-                                                                <p class="p_price ">${ee.price}
-                                                                </p>
-                                                            </a>
-                                                            </li>`
-                                                }).join('');
-                                                return `<ul class=main_inner>${li_html}</ul>`
-                                            }
-                                        ).appendTo(main_wrap);
-                                    });
-                                    main_wrap.append(`<div class=page_slider><p class=page_down><a href=javascript:; class=slider_next></a><span class=next></span></p></div>`);
-                                    main_wrap.appendTo(mc);
-
-                                    mt.appendTo(floor);
-                                    mc.appendTo(floor);
-
-                                    return floor.get(0).outerHTML;
-
-                                }).join('');
-                            }
-
-                        );
-                        //楼层选项卡
-                        $('.tab').each((index, ele) => {
-                            $(ele).find('li').eq(0).addClass('active');
-                        });
-
-                        let arr = new Array($('.tab').length).fill(0);
-                        $('.tab li').on('mouseenter', (e) => {
-                            let t = e.currentTarget;
-
-                            $(t).addClass('active').siblings().removeClass('active');
-                            let index = $(t).index();
-
-                            $(t).parents('.floor').find('.main').eq(index).css('display', 'block').siblings('.main').css('display', 'none');
-
-                            arr[$(t).parents('.floor').index()] = index;
-
-                        });
-
-                        $('.main').on('click', '.next', (e) => {
-                            e.preventDefault();
-                        });
-
-
-                        let floor = $('.floor');
-                        let nexts = $('.slider_next');
-
-                        // floor.each((index, ele) => {
-                        //     let i = $(ele).find('.active').index();
-                        //     arr.push(i);
-                        // });
-
-                        $('.page_slider').click((e) => {
-
-                            let floor_index = $(e.target).parents('.floor').index();
-                            let floor_tab_len = floor.eq(floor_index).find('.tab li').length;
-
-
-                            if (arr[floor_index] == floor_tab_len - 1) {
-                                arr[floor_index] = 0;
-                            } else {
-                                ++arr[floor_index];
-                            }
-                            $('.tab').eq(floor_index).find('li').eq(arr[floor_index]).trigger('mouseenter');
-
-                        });
-
-
-                        //滚动条事件
-                        let elevator = $('#elevator');
-                        let handler = $('.handler');
-                        let stickNav = $('.stick-nav');
-
-                        //获取楼层
-                        let floor_scrollTop = Array.from(floor.map((index, ele) => {
-                            return $(ele).offset().top;
-                        }));
-                        //[1877, 2418, 2959, 3500, 4041, 4582, 5123]
-
-
-                        function scrollFn() {
-                            let w_top = $(window).scrollTop();
-                            if (w_top >= 1400) {
-                                elevator.css('display', 'block');
-                                if (window.innerWidth < 800) {
-                                    elevator.css('display', 'none');
-                                }
-
-                                let index = floor_scrollTop.findIndex((ele, index) => floor_scrollTop[index + 1] >= w_top);
-                                handler.eq(index).addClass('current').siblings().removeClass('current');
-
-                            } else if (w_top >= 700) {
-                                stickNav.css('display', 'block');
-                                elevator.css('display', 'none');
-                            } else if (w_top < 700) {
-                                stickNav.css('display', 'none');
-                                elevator.css('display', 'none');
-                            }
-
-
-                        }
-                        $(window).scroll(e5.throttle(scrollFn, 100));
-                        $(window).resize(e5.throttle(() => {
-                            if (window.innerWidth < 1200) {
-                                elevator.css('display', 'none');
-                            }
-                        }, 500));
-
-
-                        handler.on('click', 'a', (e) => {
-                            e.preventDefault();
-                            let index = $(e.currentTarget).parent().index();
-
-                            elevatorScroll(floor_scrollTop[index], 30);
-
-                        })
-
-                    });
-                </script>
                 <script>
                     $('<div id="gomo-help"></div>').load('./help.html .gomo-help').appendTo($('#content .w1200-bg'));
                 </script>
