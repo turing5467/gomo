@@ -1,0 +1,7 @@
+{
+    // "terminal.integrated.shell.windows": "D:\\Program Files\\Git\bin\\bash.exe",
+    "terminal.integrated.fontSize": 14, 
+    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.fontFamily": "consolas",
+    "terminal.integrated.cursorBlinking": true,
+}
