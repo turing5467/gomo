@@ -1,5 +1,7 @@
 # gmzx
 
+(github)[https://github.com/turing5467/gomo]
+
 ## 首页
 
 - 二级导航(滚动到一定距离会吸顶)
